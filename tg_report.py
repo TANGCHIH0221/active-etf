@@ -397,8 +397,9 @@ def main():
 
     # 每次執行都寫狀態:(1) 記錄心跳 (2) 讓 workflow 每天都有 commit,
     # 公開 repo 連續 60 天沒活動 GitHub 會自動停用排程。
-    if args.force:
-        print("[info] --force 模式,不寫回狀態檔")
+    # dry-run 也不能寫:否則下一次正式執行會以為已推過而靜默,訊息就漏掉了。
+    if args.force or args.dry_run:
+        print("[info] %s 模式,不寫回狀態檔" % ("--force" if args.force else "--dry-run"))
     else:
         state["last_run_utc"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
         state["last_run_tpe"] = tpe.strftime("%Y-%m-%d %H:%M:%S")
