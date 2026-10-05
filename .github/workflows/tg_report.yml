@@ -1,0 +1,124 @@
+# 主動式 ETF 持股異動 → Telegram 推播。
+#
+# 刻意跟原作者的 update.yml 分開兩個檔案:update.yml 負責抓 PCF 並更新
+# active.json,這支只負責讀 active.json 發推播。之後 Sync fork 時不會衝突。
+#
+# 排程時間(cron 一律 UTC,台灣 = UTC+8):
+#   11:30 UTC = 台灣 19:30  一般班
+#   14:30 UTC = 台灣 22:30  晚班(--late,當天完全沒新資料才發提醒)
+# GitHub 排程是 best-effort、實測延遲 1-3 小時,所以兩班都可能晚到。
+# 重複推播不靠時間判斷,而是靠 tg_state/state.json 記的「每檔 ETF 最後處理的
+# 資料日」:第一班推過 09-30 的資料,第二班看到狀態已是 09-30 就靜默。
+# 就算兩班被延遲到擠在一起也不會重複。
+name: ETF 異動 Telegram 推播
+
+on:
+  schedule:
+    - cron: "30 11 * * 1-5"   # 台灣 19:30 一般班
+    - cron: "30 14 * * 1-5"   # 台灣 22:30 晚班
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "執行模式"
+        type: choice
+        default: normal
+        options: [normal, late, force, dry-run]
+
+permissions:
+  contents: write
+
+# 兩班若被延遲到同時執行,排隊而不是並跑 —— 免得同時改 tg_state 又同時 push。
+concurrency:
+  group: tg-report
+  cancel-in-progress: false
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          # 下面要 git pull --rebase,shallow clone 會出問題。repo 只有 3.5 MiB,
+          # 抓完整歷史的成本可以忽略。
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      # 原作者的 update.yml 可能剛好在跑並 push 了新的 active.json,
+      # 先拉最新的再讀,免得推播的是舊資料。
+      - name: Pull latest active.json
+        run: git pull --rebase --autostash origin main
+
+      - name: Decide mode
+        id: mode
+        run: |
+          FLAGS=""
+          if [ "${{ github.event.schedule }}" = "30 14 * * 1-5" ]; then
+            FLAGS="--late"
+          fi
+          case "${{ inputs.mode }}" in
+            late)    FLAGS="--late" ;;
+            force)   FLAGS="--force" ;;
+            dry-run) FLAGS="--dry-run" ;;
+          esac
+          echo "flags=$FLAGS" >> "$GITHUB_OUTPUT"
+          echo "本次執行參數: '$FLAGS'"
+
+      - name: Send report
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python tg_report.py ${{ steps.mode.outputs.flags }}
+
+      # 每次執行都會更新 state.json 的 last_run_utc,所以平日天天有 commit。
+      # 公開 repo 連續 60 天沒有活動,GitHub 會自動停用排程 —— 這個心跳就是
+      # 在當兵期間維持排程不被停用的保險。
+      - name: Commit state
+        run: |
+          if git diff --quiet -- tg_state/ && [ -z "$(git status --porcelain tg_state/)" ]; then
+            echo "狀態無變化,不需 commit"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add tg_state/
+          git commit -m "chore(tg): 更新推播狀態 $(TZ=Asia/Taipei date '+%Y/%m/%d %H:%M')"
+          # 原作者的 workflow 也會 push 到同一個 branch,一定會撞 —— 重試到成功。
+          for i in 1 2 3 4 5; do
+            if git push origin HEAD:main; then
+              echo "✅ 第 $i 次嘗試 push 成功"
+              exit 0
+            fi
+            echo "⚠️ 第 $i 次 push 失敗,拉取後重試"
+            git pull --rebase --autostash origin main || true
+            sleep $((i * 10))
+          done
+          echo "::error::push 連續 5 次失敗"
+          exit 1
+
+      # 在營區裡看不到 GitHub,壞掉一定要主動通知。這一步不依賴 tg_report.py,
+      # 直接打 Telegram API —— 腳本本身壞掉時也發得出來。
+      - name: Notify on failure
+        if: failure()
+        env:
+          TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          CHAT: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          RUN_URL="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          TEXT="🚨 ETF 推播 workflow 失敗
+時間: $(TZ=Asia/Taipei date '+%Y/%m/%d %H:%M') (台灣)
+觸發: ${{ github.event_name }}
+log: ${RUN_URL}"
+          curl -sS -X POST "https://api.telegram.org/bot${TOKEN}/sendMessage" \
+            --data-urlencode "chat_id=${CHAT}" \
+            --data-urlencode "text=${TEXT}" \
+            --data-urlencode "disable_web_page_preview=true" >/dev/null \
+            && echo "已發送失敗通知" || echo "連失敗通知都發不出去"

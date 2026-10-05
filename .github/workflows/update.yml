@@ -65,6 +65,11 @@ jobs:
       # 線上即使仍是舊版，資料日也會相同而誤判成功。HTML 與 active.json 各自比對。
       # 不符時依序：等待 → Pages API 重建 → 空 commit 觸發全新部署 → 仍失敗才亮紅燈。
       - name: Verify live deployment
+        # fork 專用:這一步是拿「本 repo 產生的 build_id」去比對硬寫死的
+        # nctuwanglin.github.io,在 fork 上永遠比不中,會空轉 7.5 分鐘、
+        # 多推一個 empty commit、最後紅燈 —— 即使 active.json 其實已更新成功。
+        # fork 不需要 GitHub Pages,直接跳過;只有原作者的 repo 才執行。
+        if: github.repository_owner == 'nctuwanglin'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
