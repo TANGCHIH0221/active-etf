@@ -113,10 +113,9 @@ jobs:
           CHAT: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
           RUN_URL="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
-          TEXT="🚨 ETF 推播 workflow 失敗
-時間: $(TZ=Asia/Taipei date '+%Y/%m/%d %H:%M') (台灣)
-觸發: ${{ github.event_name }}
-log: ${RUN_URL}"
+          # 換行用 printf 組,不能把續行頂格寫 —— 會跳出 run: | 區塊、整個 YAML 解析失敗。
+          TEXT=$(printf '🚨 ETF 推播 workflow 失敗\n時間: %s (台灣)\n觸發: %s\nlog: %s' \
+            "$(TZ=Asia/Taipei date '+%Y/%m/%d %H:%M')" "${{ github.event_name }}" "${RUN_URL}")
           curl -sS -X POST "https://api.telegram.org/bot${TOKEN}/sendMessage" \
             --data-urlencode "chat_id=${CHAT}" \
             --data-urlencode "text=${TEXT}" \
