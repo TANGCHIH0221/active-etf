@@ -58,7 +58,16 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           DATE=$(TZ=Asia/Taipei date "+%Y/%m/%d %H:%M")
           git commit -m "auto: 更新主動式 ETF 持股與異動 ${DATE}"
-          git push
+          # fork 專用:tg_report.yml 也會 push tg_state/ 到同一個 branch,兩者撞到時
+          # 單發 git push 會被拒。兩邊改的檔案不重疊,rebase 後重試即可。
+          for i in 1 2 3 4 5; do
+            git push && exit 0
+            echo "⚠️ 第 $i 次 push 失敗,拉取後重試"
+            git pull --rebase origin main || true
+            sleep $((i * 10))
+          done
+          echo "::error::push 連續 5 次失敗"
+          exit 1
 
       # Pages 部署間歇性失敗時 workflow 會綠燈但線上是舊資料（處置股儀表板已踩過兩次）。
       # **以內容雜湊 build_id 驗證，不是只比資料日**：同日修 UI 或補資料後，
