@@ -1,26 +1,24 @@
 {
- "build_id": "18c020d583ba",
+ "build_id": "bf38a1ee0a79",
  "consensus": {
   "decrease": [
    {
     "code": "2303",
     "etfs": [
      "00403A",
-     "00405A",
-     "00991A"
+     "00405A"
     ],
     "name": "聯電",
-    "shares_delta": -18150000
+    "shares_delta": -15750000
    },
    {
     "code": "2345",
     "etfs": [
      "00980A",
-     "00982A",
-     "00991A"
+     "00982A"
     ],
     "name": "智邦科技",
-    "shares_delta": -342000
+    "shares_delta": -143000
    },
    {
     "code": "2845",
@@ -133,17 +131,15 @@
    "2455",
    "3016",
    "3055",
+   "3167",
    "3219",
-   "3374",
    "3443",
-   "4542",
-   "4979",
-   "6218",
+   "4174",
    "6526",
-   "7772",
    "7792",
    "8084",
-   "8227"
+   "8227",
+   "8996"
   ],
   "notes": {
    "1503": "https://nctuwanglin.github.io/stock-research-notes/1503-shihlin-electric.html",
@@ -6292,78 +6288,7 @@
   "00991A": {
    "close": 19.47,
    "data_date": "2026-10-05",
-   "events": [
-    {
-     "adjusted_shares_delta": -1000000,
-     "code": "2408",
-     "name": "南亞科技",
-     "prev_shares": 13000000,
-     "prev_weight": 8.486,
-     "scale": 1.0,
-     "shares": 12000000,
-     "shares_delta": -1000000,
-     "shares_delta_pct": -7.69,
-     "type": "DECREASE",
-     "weight": 7.714,
-     "weight_delta": -0.772
-    },
-    {
-     "adjusted_shares_delta": 500000,
-     "code": "1303",
-     "name": "南亞塑膠",
-     "prev_shares": 8000000,
-     "prev_weight": 2.581,
-     "scale": 1.0,
-     "shares": 8500000,
-     "shares_delta": 500000,
-     "shares_delta_pct": 6.25,
-     "type": "INCREASE",
-     "weight": 2.948,
-     "weight_delta": 0.367
-    },
-    {
-     "adjusted_shares_delta": -221000,
-     "code": "2308",
-     "name": "台達電子",
-     "prev_shares": 871000,
-     "prev_weight": 2.038,
-     "scale": 1.0,
-     "shares": 650000,
-     "shares_delta": -221000,
-     "shares_delta_pct": -25.37,
-     "type": "DECREASE",
-     "weight": 1.581,
-     "weight_delta": -0.457
-    },
-    {
-     "adjusted_shares_delta": -2400000,
-     "code": "2303",
-     "name": "聯華電子",
-     "prev_shares": 10400000,
-     "prev_weight": 2.084,
-     "scale": 1.0,
-     "shares": 8000000,
-     "shares_delta": -2400000,
-     "shares_delta_pct": -23.08,
-     "type": "DECREASE",
-     "weight": 1.48,
-     "weight_delta": -0.604
-    },
-    {
-     "adjusted_shares_delta": -199000,
-     "code": "2345",
-     "name": "智邦科技",
-     "prev_shares": 200000,
-     "prev_weight": 0.488,
-     "scale": 1.0,
-     "shares": 1000,
-     "shares_delta": -199000,
-     "shares_delta_pct": -99.5,
-     "type": "DECREASE",
-     "weight": 0.003,
-     "weight_delta": -0.485
-    }
-   ],
+   "events": [],
    "holders": null,
    "holdings": [
     {
@@ -6675,7 +6600,7 @@
    "premium_pct": -0.05,
    "quote_date": "2026-10-05",
    "scale": 82449089354.0,
-   "status": "ok"
+   "status": "stale"
   },
   "00992A": {
    "close": 20.21,
@@ -8974,13 +8899,7 @@
     }
    ],
    "name": "南亞",
-   "recent_events": [
-    {
-     "date": "2026-10-05",
-     "etf": "00991A",
-     "type": "INCREASE"
-    }
-   ],
+   "recent_events": [],
    "total_shares": 32995071,
    "total_value": 9436590306,
    "total_weight": 29.1343
@@ -9637,11 +9556,6 @@
      "date": "2026-10-05",
      "etf": "00985A",
      "type": "INCREASE"
-    },
-    {
-     "date": "2026-10-05",
-     "etf": "00991A",
-     "type": "DECREASE"
     }
    ],
    "total_shares": 157264546,
@@ -9744,13 +9658,7 @@
     }
    ],
    "name": "台達電",
-   "recent_events": [
-    {
-     "date": "2026-10-05",
-     "etf": "00991A",
-     "type": "DECREASE"
-    }
-   ],
+   "recent_events": [],
    "total_shares": 14566500,
    "total_value": 29205832500,
    "total_weight": 52.6296
@@ -10258,11 +10166,6 @@
     {
      "date": "2026-10-05",
      "etf": "00982A",
-     "type": "DECREASE"
-    },
-    {
-     "date": "2026-10-05",
-     "etf": "00991A",
      "type": "DECREASE"
     }
    ],
@@ -11011,13 +10914,7 @@
     }
    ],
    "name": "南亞科",
-   "recent_events": [
-    {
-     "date": "2026-10-05",
-     "etf": "00991A",
-     "type": "DECREASE"
-    }
-   ],
+   "recent_events": [],
    "total_shares": 18712000,
    "total_value": 9917360000,
    "total_weight": 31.3847

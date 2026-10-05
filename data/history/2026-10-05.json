@@ -6006,78 +6006,7 @@
   },
   "00991A": {
    "data_date": "2026-10-05",
-   "events": [
-    {
-     "adjusted_shares_delta": -1000000,
-     "code": "2408",
-     "name": "南亞科技",
-     "prev_shares": 13000000,
-     "prev_weight": 8.486,
-     "scale": 1.0,
-     "shares": 12000000,
-     "shares_delta": -1000000,
-     "shares_delta_pct": -7.69,
-     "type": "DECREASE",
-     "weight": 7.714,
-     "weight_delta": -0.772
-    },
-    {
-     "adjusted_shares_delta": 500000,
-     "code": "1303",
-     "name": "南亞塑膠",
-     "prev_shares": 8000000,
-     "prev_weight": 2.581,
-     "scale": 1.0,
-     "shares": 8500000,
-     "shares_delta": 500000,
-     "shares_delta_pct": 6.25,
-     "type": "INCREASE",
-     "weight": 2.948,
-     "weight_delta": 0.367
-    },
-    {
-     "adjusted_shares_delta": -221000,
-     "code": "2308",
-     "name": "台達電子",
-     "prev_shares": 871000,
-     "prev_weight": 2.038,
-     "scale": 1.0,
-     "shares": 650000,
-     "shares_delta": -221000,
-     "shares_delta_pct": -25.37,
-     "type": "DECREASE",
-     "weight": 1.581,
-     "weight_delta": -0.457
-    },
-    {
-     "adjusted_shares_delta": -2400000,
-     "code": "2303",
-     "name": "聯華電子",
-     "prev_shares": 10400000,
-     "prev_weight": 2.084,
-     "scale": 1.0,
-     "shares": 8000000,
-     "shares_delta": -2400000,
-     "shares_delta_pct": -23.08,
-     "type": "DECREASE",
-     "weight": 1.48,
-     "weight_delta": -0.604
-    },
-    {
-     "adjusted_shares_delta": -199000,
-     "code": "2345",
-     "name": "智邦科技",
-     "prev_shares": 200000,
-     "prev_weight": 0.488,
-     "scale": 1.0,
-     "shares": 1000,
-     "shares_delta": -199000,
-     "shares_delta_pct": -99.5,
-     "type": "DECREASE",
-     "weight": 0.003,
-     "weight_delta": -0.485
-    }
-   ],
+   "events": [],
    "holdings": [
     {
      "code": "2330",
@@ -6386,7 +6315,7 @@
     "scale": 82449089354.0,
     "units": 4231916000.0
    },
-   "status": "ok"
+   "status": "stale"
   },
   "00992A": {
    "data_date": "2026-10-05",
