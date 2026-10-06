@@ -16,13 +16,19 @@ on:
   schedule:
     - cron: "30 11 * * 1-5"   # 台灣 19:30 一般班
     - cron: "30 14 * * 1-5"   # 台灣 22:30 晚班
+  # GitHub 排程實測常延遲 5-10 小時(2026-10 觀察:19:30 班跑在隔天 05:34),
+  # 所以主要觸發改成「資料更新 workflow 一跑完就接著推」,上面的排程退為備援。
+  # 狀態檔去重,多跑幾次無害。
+  workflow_run:
+    workflows: ["每日自動更新主動式 ETF 儀表板"]
+    types: [completed]
   workflow_dispatch:
     inputs:
       mode:
         description: "執行模式"
         type: choice
         default: normal
-        options: [normal, late, force, dry-run]
+        options: [normal, late, force, dry-run, fail-test]
 
 permissions:
   contents: write
@@ -34,18 +40,39 @@ concurrency:
 
 jobs:
   report:
-    runs-on: ubuntu-latest
+    # 鎖版本:ubuntu-latest 2026-10-19 起換 Ubuntu 26,避免入伍後換版出事
+    runs-on: ubuntu-24.04
     steps:
       - name: Checkout main
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           ref: main
           # 下面要 git pull --rebase,shallow clone 會出問題。repo 只有 3.5 MiB,
           # 抓完整歷史的成本可以忽略。
           fetch-depth: 0
 
+      # 資料更新 workflow 失敗時,這裡是唯一會告訴你的地方(那支是原作者的,不改它)
+      - name: Alert if data update failed
+        if: github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'failure'
+        env:
+          TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          CHAT: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          TEXT=$(printf '⚠️ ETF 資料更新失敗\n時間: %s (台灣)\n今天的推播可能沒有新資料,下一班會自動重試。\nlog: %s' \
+            "$(TZ=Asia/Taipei date '+%Y/%m/%d %H:%M')" "${{ github.event.workflow_run.html_url }}")
+          curl -sS -X POST "https://api.telegram.org/bot${TOKEN}/sendMessage" \
+            --data-urlencode "chat_id=${CHAT}" --data-urlencode "text=${TEXT}" \
+            --data-urlencode "disable_web_page_preview=true" >/dev/null
+
+      # 手動測試「失敗通知」用:故意失敗,讓最後的 Notify on failure 觸發
+      - name: Simulated failure (fail-test)
+        if: inputs.mode == 'fail-test'
+        run: |
+          echo "fail-test 模式:故意失敗以測試 TG 失敗通知"
+          exit 1
+
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.11"
 
