@@ -1,24 +1,26 @@
 {
- "build_id": "bf38a1ee0a79",
+ "build_id": "51f31ab44a07",
  "consensus": {
   "decrease": [
    {
     "code": "2303",
     "etfs": [
      "00403A",
-     "00405A"
+     "00405A",
+     "00991A"
     ],
     "name": "聯電",
-    "shares_delta": -15750000
+    "shares_delta": -18150000
    },
    {
     "code": "2345",
     "etfs": [
      "00980A",
-     "00982A"
+     "00982A",
+     "00991A"
     ],
     "name": "智邦科技",
-    "shares_delta": -143000
+    "shares_delta": -342000
    },
    {
     "code": "2845",
@@ -27,7 +29,16 @@
      "00984A"
     ],
     "name": "遠東國際商業銀行股份有限公司",
-    "shares_delta": -5131173
+    "shares_delta": -5131720
+   },
+   {
+    "code": "5289",
+    "etfs": [
+     "00406A",
+     "00984A"
+    ],
+    "name": "宜鼎國際",
+    "shares_delta": -27872
    },
    {
     "code": "5534",
@@ -36,7 +47,7 @@
      "00999A"
     ],
     "name": "長虹",
-    "shares_delta": -450000
+    "shares_delta": -717500
    },
    {
     "code": "6805",
@@ -54,7 +65,7 @@
      "00999A"
     ],
     "name": "裕融",
-    "shares_delta": -915000
+    "shares_delta": -1328500
    }
   ],
   "increase": [
@@ -62,10 +73,11 @@
     "code": "2059",
     "etfs": [
      "00980A",
+     "00985A",
      "00999A"
     ],
     "name": "川湖科技",
-    "shares_delta": 22000
+    "shares_delta": 34000
    },
    {
     "code": "2303",
@@ -74,7 +86,7 @@
      "00985A"
     ],
     "name": "聯華電子",
-    "shares_delta": 1101000
+    "shares_delta": 1639000
    },
    {
     "code": "2327",
@@ -83,7 +95,25 @@
      "00985A"
     ],
     "name": "國巨*",
-    "shares_delta": 565000
+    "shares_delta": 767000
+   },
+   {
+    "code": "2330",
+    "etfs": [
+     "00984A",
+     "00985A"
+    ],
+    "name": "台積電",
+    "shares_delta": 249000
+   },
+   {
+    "code": "2454",
+    "etfs": [
+     "00984A",
+     "00999A"
+    ],
+    "name": "聯發科",
+    "shares_delta": 12000
    },
    {
     "code": "3008",
@@ -93,16 +123,35 @@
      "00985A"
     ],
     "name": "大立光",
-    "shares_delta": 30000
+    "shares_delta": 46000
+   },
+   {
+    "code": "3017",
+    "etfs": [
+     "00984A",
+     "00985A"
+    ],
+    "name": "奇鋐",
+    "shares_delta": 46000
+   },
+   {
+    "code": "3037",
+    "etfs": [
+     "00985A",
+     "00995A"
+    ],
+    "name": "欣興電子",
+    "shares_delta": 130000
    },
    {
     "code": "3653",
     "etfs": [
      "00980A",
+     "00984A",
      "00985A"
     ],
     "name": "健策精密工業",
-    "shares_delta": 34000
+    "shares_delta": 58000
    },
    {
     "code": "5274",
@@ -121,6 +170,15 @@
     ],
     "name": "嘉基科技",
     "shares_delta": 140000
+   },
+   {
+    "code": "7769",
+    "etfs": [
+     "00980A",
+     "00985A"
+    ],
+    "name": "鴻勁精密",
+    "shares_delta": 19000
    }
   ]
  },
@@ -223,7 +281,7 @@
  },
  "etfs": {
   "00400A": {
-   "close": 16.52,
+   "close": 16.61,
    "data_date": "2026-10-05",
    "events": [
     {
@@ -548,14 +606,14 @@
    "name": "主動國泰動能高息",
    "nav": 16.53,
    "nav_date": "2026-10-05",
-   "premium_note": null,
-   "premium_pct": -0.06,
-   "quote_date": "2026-10-05",
+   "premium_note": "NAV 2026-10-05 與收盤價 2026-10-06 非同日,不計折溢價",
+   "premium_pct": null,
+   "quote_date": "2026-10-06",
    "scale": 30714386851.0,
    "status": "ok"
   },
   "00401A": {
-   "close": 14.66,
+   "close": 14.67,
    "data_date": "2026-10-05",
    "events": [],
    "holders": null,
@@ -899,16 +957,16 @@
    ],
    "issuer": "摩根",
    "name": "主動摩根台灣鑫收",
-   "nav": 14.39,
+   "nav": 14.7,
    "nav_date": "2026-10-05",
-   "premium_note": null,
-   "premium_pct": 1.88,
-   "quote_date": "2026-10-05",
-   "scale": 3768669597.0,
+   "premium_note": "NAV 2026-10-05 與收盤價 2026-10-06 非同日,不計折溢價",
+   "premium_pct": null,
+   "quote_date": "2026-10-06",
+   "scale": 3850644198.0,
    "status": "ok"
   },
   "00403A": {
-   "close": 11.44,
+   "close": 11.42,
    "data_date": "2026-10-05",
    "events": [
     {
@@ -1247,14 +1305,14 @@
    "name": "主動統一升級50",
    "nav": 11.51,
    "nav_date": "2026-10-05",
-   "premium_note": null,
-   "premium_pct": -0.61,
-   "quote_date": "2026-10-05",
+   "premium_note": "NAV 2026-10-05 與收盤價 2026-10-06 非同日,不計折溢價",
+   "premium_pct": null,
+   "quote_date": "2026-10-06",
    "scale": 148923436043.0,
    "status": "ok"
   },
   "00404A": {
-   "close": 10.11,
+   "close": 10.14,
    "data_date": "2026-10-05",
    "events": [
     {
@@ -1671,14 +1729,14 @@
    "name": "主動聯博動能50",
    "nav": 10.18,
    "nav_date": "2026-10-05",
-   "premium_note": null,
-   "premium_pct": -0.69,
-   "quote_date": "2026-10-05",
+   "premium_note": "NAV 2026-10-05 與收盤價 2026-10-06 非同日,不計折溢價",
+   "premium_pct": null,
+   "quote_date": "2026-10-06",
    "scale": 4294088599.0,
    "status": "ok"
   },
   "00405A": {
-   "close": 9.86,
+   "close": 9.8,
    "data_date": "2026-10-05",
    "events": [
     {
@@ -2079,14 +2137,14 @@
    "name": "主動富邦台灣龍耀",
    "nav": 9.91,
    "nav_date": "2026-10-05",
-   "premium_note": null,
-   "premium_pct": -0.5,
-   "quote_date": "2026-10-05",
+   "premium_note": "NAV 2026-10-05 與收盤價 2026-10-06 非同日,不計折溢價",
+   "premium_pct": null,
+   "quote_date": "2026-10-06",
    "scale": 26286005607.0,
    "status": "ok"
   },
   "00406A": {
-   "close": 10.31,
+   "close": 10.33,
    "data_date": "2026-10-05",
    "events": [
     {
@@ -2491,9 +2549,9 @@
    "name": "主動中信台灣收益",
    "nav": 10.32,
    "nav_date": "2026-10-05",
-   "premium_note": null,
-   "premium_pct": -0.1,
-   "quote_date": "2026-10-05",
+   "premium_note": "NAV 2026-10-05 與收盤價 2026-10-06 非同日,不計折溢價",
+   "premium_pct": null,
+   "quote_date": "2026-10-06",
    "scale": 64417538693.0,
    "status": "ok"
   },
@@ -2808,14 +2866,14 @@
    "name": "主動凱基台灣",
    "nav": 10.76,
    "nav_date": "2026-10-05",
-   "premium_note": null,
-   "premium_pct": -0.46,
-   "quote_date": "2026-10-05",
+   "premium_note": "NAV 2026-10-05 與收盤價 2026-10-06 非同日,不計折溢價",
+   "premium_pct": null,
+   "quote_date": "2026-10-06",
    "scale": 24129021058.0,
    "status": "ok"
   },
   "00408A": {
-   "close": 11.03,
+   "close": 11.06,
    "data_date": "2026-10-05",
    "events": [],
    "holders": null,
@@ -3055,12 +3113,6 @@
      "weight": 0.67
     },
     {
-     "code": "3443",
-     "name": "創意",
-     "shares": 1000,
-     "weight": 0.56
-    },
-    {
      "code": "7769",
      "name": "鴻勁",
      "shares": 1500,
@@ -3070,6 +3122,12 @@
      "code": "3105",
      "name": "穩懋",
      "shares": 14000,
+     "weight": 0.56
+    },
+    {
+     "code": "3443",
+     "name": "創意",
+     "shares": 1000,
      "weight": 0.56
     },
     {
@@ -3125,14 +3183,14 @@
    "name": "主動第一金優股息",
    "nav": 11.08,
    "nav_date": "2026-10-05",
-   "premium_note": null,
-   "premium_pct": -0.45,
-   "quote_date": "2026-10-05",
+   "premium_note": "NAV 2026-10-05 與收盤價 2026-10-06 非同日,不計折溢價",
+   "premium_pct": null,
+   "quote_date": "2026-10-06",
    "scale": 1547391358.0,
    "status": "ok"
   },
   "00410A": {
-   "close": 13.24,
+   "close": 13.16,
    "data_date": "2026-10-05",
    "events": [
     {
@@ -3345,15 +3403,15 @@
    "name": "主動永豐科技趨勢",
    "nav": 13.25,
    "nav_date": "2026-10-05",
-   "premium_note": null,
-   "premium_pct": -0.08,
-   "quote_date": "2026-10-05",
+   "premium_note": "NAV 2026-10-05 與收盤價 2026-10-06 非同日,不計折溢價",
+   "premium_pct": null,
+   "quote_date": "2026-10-06",
    "scale": 2037924273.0,
    "status": "ok"
   },
   "00980A": {
-   "close": 26.96,
-   "data_date": "2026-10-02",
+   "close": 26.95,
+   "data_date": "2026-10-05",
    "events": [
     {
      "adjusted_shares_delta": 12000,
@@ -3366,8 +3424,8 @@
      "shares_delta": 12000,
      "shares_delta_pct": 17.91,
      "type": "INCREASE",
-     "weight": 4.75,
-     "weight_delta": 0.8
+     "weight": 5.04,
+     "weight_delta": 1.09
     },
     {
      "adjusted_shares_delta": 10000,
@@ -3380,8 +3438,8 @@
      "shares_delta": 10000,
      "shares_delta_pct": 6.41,
      "type": "INCREASE",
-     "weight": 4.26,
-     "weight_delta": 0.39
+     "weight": 4.52,
+     "weight_delta": 0.65
     },
     {
      "adjusted_shares_delta": 13000,
@@ -3394,8 +3452,8 @@
      "shares_delta": 13000,
      "shares_delta_pct": 14.29,
      "type": "INCREASE",
-     "weight": 3.5,
-     "weight_delta": 0.38
+     "weight": 3.58,
+     "weight_delta": 0.46
     },
     {
      "adjusted_shares_delta": 12000,
@@ -3408,8 +3466,8 @@
      "shares_delta": 12000,
      "shares_delta_pct": 13.19,
      "type": "INCREASE",
-     "weight": 2.84,
-     "weight_delta": 0.35
+     "weight": 2.86,
+     "weight_delta": 0.37
     },
     {
      "adjusted_shares_delta": -56000,
@@ -3422,8 +3480,8 @@
      "shares_delta": -56000,
      "shares_delta_pct": -14.25,
      "type": "DECREASE",
-     "weight": 1.84,
-     "weight_delta": -0.3
+     "weight": 1.96,
+     "weight_delta": -0.18
     },
     {
      "adjusted_shares_delta": -32000,
@@ -3436,8 +3494,8 @@
      "shares_delta": -32000,
      "shares_delta_pct": -18.39,
      "type": "DECREASE",
-     "weight": 1.38,
-     "weight_delta": -0.27
+     "weight": 1.41,
+     "weight_delta": -0.24
     },
     {
      "adjusted_shares_delta": 12000,
@@ -3450,22 +3508,8 @@
      "shares_delta": 12000,
      "shares_delta_pct": 46.15,
      "type": "INCREASE",
-     "weight": 1.18,
-     "weight_delta": 0.38
-    },
-    {
-     "adjusted_shares_delta": 545000,
-     "code": "2303",
-     "name": "聯華電子",
-     "prev_shares": 929000,
-     "prev_weight": 0.75,
-     "scale": 1.0,
-     "shares": 1474000,
-     "shares_delta": 545000,
-     "shares_delta_pct": 58.67,
-     "type": "INCREASE",
-     "weight": 1.18,
-     "weight_delta": 0.43
+     "weight": 1.22,
+     "weight_delta": 0.42
     },
     {
      "adjusted_shares_delta": -37000,
@@ -3478,8 +3522,22 @@
      "shares_delta": -37000,
      "shares_delta_pct": -20.56,
      "type": "DECREASE",
-     "weight": 1.15,
-     "weight_delta": -0.23
+     "weight": 1.22,
+     "weight_delta": -0.16
+    },
+    {
+     "adjusted_shares_delta": 545000,
+     "code": "2303",
+     "name": "聯華電子",
+     "prev_shares": 929000,
+     "prev_weight": 0.75,
+     "scale": 1.0,
+     "shares": 1474000,
+     "shares_delta": 545000,
+     "shares_delta_pct": 58.67,
+     "type": "INCREASE",
+     "weight": 1.07,
+     "weight_delta": 0.32
     },
     {
      "adjusted_shares_delta": -241000,
@@ -3492,22 +3550,8 @@
      "shares_delta": -241000,
      "shares_delta_pct": -21.01,
      "type": "DECREASE",
-     "weight": 0.96,
-     "weight_delta": -0.25
-    },
-    {
-     "adjusted_shares_delta": -350000,
-     "code": "3231",
-     "name": "緯創資通",
-     "prev_shares": 1298000,
-     "prev_weight": 1.23,
-     "scale": 1.0,
-     "shares": 948000,
-     "shares_delta": -350000,
-     "shares_delta_pct": -26.96,
-     "type": "DECREASE",
-     "weight": 0.87,
-     "weight_delta": -0.36
+     "weight": 0.92,
+     "weight_delta": -0.29
     },
     {
      "adjusted_shares_delta": -78000,
@@ -3520,8 +3564,22 @@
      "shares_delta": -78000,
      "shares_delta_pct": -23.64,
      "type": "DECREASE",
-     "weight": 0.85,
-     "weight_delta": -0.21
+     "weight": 0.9,
+     "weight_delta": -0.16
+    },
+    {
+     "adjusted_shares_delta": -350000,
+     "code": "3231",
+     "name": "緯創資通",
+     "prev_shares": 1298000,
+     "prev_weight": 1.23,
+     "scale": 1.0,
+     "shares": 948000,
+     "shares_delta": -350000,
+     "shares_delta_pct": -26.96,
+     "type": "DECREASE",
+     "weight": 0.86,
+     "weight_delta": -0.37
     },
     {
      "adjusted_shares_delta": -48000,
@@ -3534,8 +3592,8 @@
      "shares_delta": -48000,
      "shares_delta_pct": -19.05,
      "type": "DECREASE",
-     "weight": 0.8,
-     "weight_delta": -0.22
+     "weight": 0.77,
+     "weight_delta": -0.25
     },
     {
      "adjusted_shares_delta": 33000,
@@ -3548,8 +3606,8 @@
      "shares_delta": 33000,
      "shares_delta_pct": 56.9,
      "type": "INCREASE",
-     "weight": 0.72,
-     "weight_delta": 0.25
+     "weight": 0.7,
+     "weight_delta": 0.23
     },
     {
      "adjusted_shares_delta": -1067000,
@@ -3562,8 +3620,8 @@
      "shares_delta": -1067000,
      "shares_delta_pct": -26.48,
      "type": "DECREASE",
-     "weight": 0.66,
-     "weight_delta": -0.25
+     "weight": 0.63,
+     "weight_delta": -0.28
     },
     {
      "adjusted_shares_delta": -38000,
@@ -3576,8 +3634,8 @@
      "shares_delta": -38000,
      "shares_delta_pct": -39.58,
      "type": "DECREASE",
-     "weight": 0.43,
-     "weight_delta": -0.32
+     "weight": 0.44,
+     "weight_delta": -0.31
     }
    ],
    "holders": 72290.0,
@@ -3586,103 +3644,109 @@
      "code": "2330",
      "name": "台灣積體電路製造",
      "shares": 753000,
-     "weight": 9.31
+     "weight": 9.26
     },
     {
      "code": "2454",
      "name": "聯發科技",
      "shares": 249000,
-     "weight": 6.1
+     "weight": 6.14
     },
     {
      "code": "2059",
      "name": "川湖科技",
      "shares": 79000,
-     "weight": 4.75
+     "weight": 5.04
     },
     {
      "code": "2383",
      "name": "台光電子材料",
      "shares": 166000,
-     "weight": 4.26
+     "weight": 4.52
     },
     {
      "code": "3037",
      "name": "欣興電子",
      "shares": 625000,
-     "weight": 4.04
+     "weight": 3.95
     },
     {
      "code": "2308",
      "name": "台達電子工業",
      "shares": 404000,
-     "weight": 3.77
+     "weight": 3.87
     },
     {
      "code": "3653",
      "name": "健策精密工業",
      "shares": 104000,
-     "weight": 3.5
+     "weight": 3.58
     },
     {
      "code": "1303",
      "name": "南亞塑膠工業",
      "shares": 2416000,
-     "weight": 3.11
-    },
-    {
-     "code": "2408",
-     "name": "南亞科技",
-     "shares": 1096000,
-     "weight": 2.85
+     "weight": 3.3
     },
     {
      "code": "7769",
      "name": "鴻勁精密",
      "shares": 103000,
-     "weight": 2.84
+     "weight": 2.86
     },
     {
-     "code": "3081",
-     "name": "聯亞光電工業",
-     "shares": 161600,
-     "weight": 2.34
+     "code": "2408",
+     "name": "南亞科技",
+     "shares": 1096000,
+     "weight": 2.77
     },
     {
      "code": "3443",
      "name": "創意電子",
      "shares": 59000,
-     "weight": 2.31
+     "weight": 2.42
+    },
+    {
+     "code": "3081",
+     "name": "聯亞光電工業",
+     "shares": 161600,
+     "weight": 2.32
     },
     {
      "code": "3017",
      "name": "奇鋐科技",
      "shares": 134000,
-     "weight": 2.28
+     "weight": 2.29
     },
     {
      "code": "3711",
      "name": "日月光投資控股",
      "shares": 621000,
-     "weight": 2.19
+     "weight": 2.2
     },
     {
      "code": "2344",
      "name": "華邦電子",
      "shares": 2293000,
-     "weight": 2.03
+     "weight": 1.98
     },
     {
      "code": "2317",
      "name": "鴻海精密工業",
      "shares": 1616000,
-     "weight": 2.01
+     "weight": 1.96
+    },
+    {
+     "code": "2368",
+     "name": "金像電子（股）公司",
+     "shares": 337000,
+     "weight": 1.96
     },
     {
      "code": "6223",
      "name": "旺矽科技",
      "shares": 74000,
-     "weight": 1.94
+     "weight": 1.95
     },
     {
      "code": "5274",
@@ -3691,166 +3755,160 @@
      "weight": 1.89
     },
     {
-     "code": "2368",
-     "name": "金像電子（股）公司",
-     "shares": 337000,
-     "weight": 1.84
-    },
-    {
      "code": "6515",
      "name": "穎崴科技",
      "shares": 61000,
-     "weight": 1.83
+     "weight": 1.81
     },
     {
      "code": "8046",
      "name": "南亞電路板",
      "shares": 251000,
-     "weight": 1.81
+     "weight": 1.79
     },
     {
      "code": "8299",
      "name": "群聯電子",
      "shares": 168000,
-     "weight": 1.74
-    },
-    {
-     "code": "6669",
-     "name": "緯穎科技服務",
-     "shares": 155105,
-     "weight": 1.6
+     "weight": 1.68
     },
     {
      "code": "2360",
      "name": "致茂電子",
      "shares": 148000,
-     "weight": 1.6
+     "weight": 1.64
+    },
+    {
+     "code": "6669",
+     "name": "緯穎科技服務",
+     "shares": 155105,
+     "weight": 1.59
     },
     {
      "code": "2327",
      "name": "國巨",
      "shares": 485000,
-     "weight": 1.5
+     "weight": 1.45
     },
     {
      "code": "2345",
      "name": "智邦科技",
      "shares": 142000,
-     "weight": 1.38
+     "weight": 1.41
     },
     {
      "code": "3189",
      "name": "景碩科技",
      "shares": 266000,
-     "weight": 1.38
-    },
-    {
-     "code": "3026",
-     "name": "禾伸堂企業",
-     "shares": 286000,
-     "weight": 1.18
+     "weight": 1.39
     },
     {
      "code": "3008",
      "name": "大立光電",
      "shares": 38000,
-     "weight": 1.18
-    },
-    {
-     "code": "2303",
-     "name": "聯華電子",
-     "shares": 1474000,
-     "weight": 1.18
-    },
-    {
-     "code": "2382",
-     "name": "廣達電腦",
-     "shares": 718000,
-     "weight": 1.18
+     "weight": 1.22
     },
     {
      "code": "6274",
      "name": "台燿科技",
      "shares": 143000,
-     "weight": 1.15
+     "weight": 1.22
+    },
+    {
+     "code": "2382",
+     "name": "廣達電腦",
+     "shares": 718000,
+     "weight": 1.13
+    },
+    {
+     "code": "3026",
+     "name": "禾伸堂企業",
+     "shares": 286000,
+     "weight": 1.12
+    },
+    {
+     "code": "2303",
+     "name": "聯華電子",
+     "shares": 1474000,
+     "weight": 1.07
     },
     {
      "code": "3036",
      "name": "文曄科技",
      "shares": 906000,
-     "weight": 0.96
+     "weight": 0.92
     },
     {
      "code": "2891",
      "name": "中國信託金融控股",
      "shares": 2781000,
-     "weight": 0.93
+     "weight": 0.9
     },
     {
      "code": "2376",
      "name": "技嘉科技",
      "shares": 484000,
-     "weight": 0.89
-    },
-    {
-     "code": "3231",
-     "name": "緯創資通",
-     "shares": 948000,
-     "weight": 0.87
+     "weight": 0.9
     },
     {
      "code": "6213",
      "name": "聯茂電子",
      "shares": 252000,
-     "weight": 0.85
+     "weight": 0.9
+    },
+    {
+     "code": "3231",
+     "name": "緯創資通",
+     "shares": 948000,
+     "weight": 0.86
     },
     {
      "code": "3293",
      "name": "鈊象電子",
      "shares": 204000,
-     "weight": 0.8
+     "weight": 0.77
     },
     {
      "code": "3264",
      "name": "欣銓科技",
      "shares": 650000,
-     "weight": 0.79
+     "weight": 0.75
     },
     {
      "code": "5904",
      "name": "寶雅國際",
      "shares": 2255500,
-     "weight": 0.76
+     "weight": 0.74
     },
     {
      "code": "7751",
      "name": "竑騰科技",
      "shares": 91000,
-     "weight": 0.72
+     "weight": 0.7
     },
     {
      "code": "3529",
      "name": "力旺電子",
      "shares": 44000,
-     "weight": 0.69
+     "weight": 0.66
     },
     {
      "code": "2884",
      "name": "玉山金融控股",
      "shares": 2962622,
-     "weight": 0.66
+     "weight": 0.63
     },
     {
      "code": "6805",
      "name": "富世達",
      "shares": 54000,
-     "weight": 0.62
+     "weight": 0.63
     },
     {
      "code": "3665",
      "name": "貿聯控股（BizLink Holding In",
      "shares": 48336,
-     "weight": 0.61
+     "weight": 0.57
     },
     {
      "code": "3044",
@@ -3859,16 +3917,16 @@
      "weight": 0.52
     },
     {
-     "code": "6831",
-     "name": "邁科科技",
-     "shares": 182000,
-     "weight": 0.43
-    },
-    {
      "code": "8996",
      "name": "高力熱處理工業",
      "shares": 58000,
-     "weight": 0.43
+     "weight": 0.44
+    },
+    {
+     "code": "6831",
+     "name": "邁科科技",
+     "shares": 182000,
+     "weight": 0.42
     },
     {
      "code": "8210",
@@ -3885,16 +3943,16 @@
    ],
    "issuer": "野村",
    "name": "主動野村臺灣優選",
-   "nav": 25.99,
-   "nav_date": "2026-10-02",
-   "premium_note": "NAV 2026-10-02 與收盤價 2026-10-05 非同日,不計折溢價",
+   "nav": 27.03,
+   "nav_date": "2026-10-05",
+   "premium_note": "NAV 2026-10-05 與收盤價 2026-10-06 非同日,不計折溢價",
    "premium_pct": null,
-   "quote_date": "2026-10-05",
-   "scale": 20211131520.0,
+   "quote_date": "2026-10-06",
+   "scale": 20940942790.0,
    "status": "ok"
   },
   "00981A": {
-   "close": 32.65,
+   "close": 32.6,
    "data_date": "2026-10-05",
    "events": [
     {
@@ -4261,14 +4319,14 @@
    "name": "主動統一台股增長",
    "nav": 32.79,
    "nav_date": "2026-10-05",
-   "premium_note": null,
-   "premium_pct": -0.43,
-   "quote_date": "2026-10-05",
+   "premium_note": "NAV 2026-10-05 與收盤價 2026-10-06 非同日,不計折溢價",
+   "premium_pct": null,
+   "quote_date": "2026-10-06",
    "scale": 300344488623.0,
    "status": "ok"
   },
   "00982A": {
-   "close": 24.67,
+   "close": 24.69,
    "data_date": "2026-10-05",
    "events": [
     {
@@ -4635,15 +4693,15 @@
    "name": "主動群益台灣強棒",
    "nav": 24.78,
    "nav_date": "2026-10-05",
-   "premium_note": null,
-   "premium_pct": -0.44,
-   "quote_date": "2026-10-05",
+   "premium_note": "NAV 2026-10-05 與收盤價 2026-10-06 非同日,不計折溢價",
+   "premium_pct": null,
+   "quote_date": "2026-10-06",
    "scale": 53635478962.0,
    "status": "ok"
   },
   "00984A": {
-   "close": 16.1,
-   "data_date": "2026-10-02",
+   "close": 16.25,
+   "data_date": "2026-10-05",
    "events": [
     {
      "adjusted_shares_delta": 18000,
@@ -4656,8 +4714,22 @@
      "shares_delta": 18000,
      "shares_delta_pct": 16.22,
      "type": "INCREASE",
-     "weight": 4.46,
-     "weight_delta": 0.5
+     "weight": 4.6,
+     "weight_delta": 0.64
+    },
+    {
+     "adjusted_shares_delta": 9000,
+     "code": "2330",
+     "name": "台積電",
+     "prev_shares": 167000,
+     "prev_weight": 4.24,
+     "scale": 1.0,
+     "shares": 176000,
+     "shares_delta": 9000,
+     "shares_delta_pct": 5.39,
+     "type": "INCREASE",
+     "weight": 4.48,
+     "weight_delta": 0.24
     },
     {
      "adjusted_shares_delta": 454000,
@@ -4670,8 +4742,8 @@
      "shares_delta": 454000,
      "shares_delta_pct": 20.51,
      "type": "INCREASE",
-     "weight": 4.05,
-     "weight_delta": 0.66
+     "weight": 4.01,
+     "weight_delta": 0.62
     },
     {
      "adjusted_shares_delta": 1305000,
@@ -4684,22 +4756,8 @@
      "shares_delta": 1305000,
      "shares_delta_pct": 19.26,
      "type": "INCREASE",
-     "weight": 3.3,
-     "weight_delta": 0.46
-    },
-    {
-     "adjusted_shares_delta": 406000,
-     "code": "2882",
-     "name": "國泰金",
-     "prev_shares": 2440000,
-     "prev_weight": 2.74,
-     "scale": 1.0,
-     "shares": 2846000,
-     "shares_delta": 406000,
-     "shares_delta_pct": 16.64,
-     "type": "INCREASE",
-     "weight": 3.2,
-     "weight_delta": 0.46
+     "weight": 3.26,
+     "weight_delta": 0.42
     },
     {
      "adjusted_shares_delta": 500000,
@@ -4712,8 +4770,22 @@
      "shares_delta": 500000,
      "shares_delta_pct": 12.0,
      "type": "INCREASE",
+     "weight": 3.15,
+     "weight_delta": 0.29
+    },
+    {
+     "adjusted_shares_delta": 406000,
+     "code": "2882",
+     "name": "國泰金",
+     "prev_shares": 2440000,
+     "prev_weight": 2.74,
+     "scale": 1.0,
+     "shares": 2846000,
+     "shares_delta": 406000,
+     "shares_delta_pct": 16.64,
+     "type": "INCREASE",
      "weight": 3.14,
-     "weight_delta": 0.28
+     "weight_delta": 0.4
     },
     {
      "adjusted_shares_delta": 643000,
@@ -4726,8 +4798,8 @@
      "shares_delta": 643000,
      "shares_delta_pct": 26.41,
      "type": "INCREASE",
-     "weight": 3.1,
-     "weight_delta": 0.77
+     "weight": 3.0,
+     "weight_delta": 0.67
     },
     {
      "adjusted_shares_delta": 32000,
@@ -4740,8 +4812,8 @@
      "shares_delta": 32000,
      "shares_delta_pct": 9.73,
      "type": "INCREASE",
-     "weight": 2.6,
-     "weight_delta": 0.18
+     "weight": 2.64,
+     "weight_delta": 0.22
     },
     {
      "adjusted_shares_delta": 4242000,
@@ -4754,8 +4826,8 @@
      "shares_delta": 4242000,
      "shares_delta_pct": 210.52,
      "type": "INCREASE",
-     "weight": 2.35,
-     "weight_delta": 1.59
+     "weight": 2.31,
+     "weight_delta": 1.55
     },
     {
      "adjusted_shares_delta": 731000,
@@ -4768,8 +4840,8 @@
      "shares_delta": 731000,
      "shares_delta_pct": 16.29,
      "type": "INCREASE",
-     "weight": 2.32,
-     "weight_delta": 0.33
+     "weight": 2.27,
+     "weight_delta": 0.28
     },
     {
      "adjusted_shares_delta": 1004000,
@@ -4782,8 +4854,8 @@
      "shares_delta": 1004000,
      "shares_delta_pct": 26.34,
      "type": "INCREASE",
-     "weight": 2.2,
-     "weight_delta": 0.44
+     "weight": 2.13,
+     "weight_delta": 0.37
     },
     {
      "adjusted_shares_delta": 842000,
@@ -4796,22 +4868,22 @@
      "shares_delta": 842000,
      "shares_delta_pct": 26.36,
      "type": "INCREASE",
-     "weight": 1.99,
-     "weight_delta": 0.4
+     "weight": 1.94,
+     "weight_delta": 0.35
     },
     {
-     "adjusted_shares_delta": 57000,
-     "code": "3264",
-     "name": "欣銓",
-     "prev_shares": 660000,
-     "prev_weight": 1.65,
+     "adjusted_shares_delta": 2000,
+     "code": "3653",
+     "name": "健策",
+     "prev_shares": 25000,
+     "prev_weight": 1.75,
      "scale": 1.0,
-     "shares": 717000,
-     "shares_delta": 57000,
-     "shares_delta_pct": 8.64,
+     "shares": 27000,
+     "shares_delta": 2000,
+     "shares_delta_pct": 8.0,
      "type": "INCREASE",
-     "weight": 1.77,
-     "weight_delta": 0.12
+     "weight": 1.92,
+     "weight_delta": 0.17
     },
     {
      "adjusted_shares_delta": 689000,
@@ -4824,8 +4896,8 @@
      "shares_delta": 689000,
      "shares_delta_pct": 26.32,
      "type": "INCREASE",
-     "weight": 1.49,
-     "weight_delta": 0.28
+     "weight": 1.46,
+     "weight_delta": 0.25
     },
     {
      "adjusted_shares_delta": 17000,
@@ -4838,8 +4910,8 @@
      "shares_delta": 17000,
      "shares_delta_pct": 14.29,
      "type": "INCREASE",
-     "weight": 1.39,
-     "weight_delta": 0.18
+     "weight": 1.4,
+     "weight_delta": 0.19
     },
     {
      "adjusted_shares_delta": 692000,
@@ -4852,8 +4924,8 @@
      "shares_delta": 692000,
      "shares_delta_pct": 26.33,
      "type": "INCREASE",
-     "weight": 1.35,
-     "weight_delta": 0.33
+     "weight": 1.28,
+     "weight_delta": 0.26
     },
     {
      "adjusted_shares_delta": 655000,
@@ -4866,8 +4938,8 @@
      "shares_delta": 655000,
      "shares_delta_pct": 26.33,
      "type": "INCREASE",
-     "weight": 1.22,
-     "weight_delta": 0.24
+     "weight": 1.18,
+     "weight_delta": 0.2
     },
     {
      "adjusted_shares_delta": 1000,
@@ -4880,8 +4952,50 @@
      "shares_delta": 1000,
      "shares_delta_pct": 23.81,
      "type": "INCREASE",
-     "weight": 0.99,
-     "weight_delta": 0.18
+     "weight": 1.0,
+     "weight_delta": 0.19
+    },
+    {
+     "adjusted_shares_delta": 4000,
+     "code": "2454",
+     "name": "聯發科",
+     "prev_shares": 15000,
+     "prev_weight": 0.76,
+     "scale": 1.0,
+     "shares": 19000,
+     "shares_delta": 4000,
+     "shares_delta_pct": 26.67,
+     "type": "INCREASE",
+     "weight": 0.97,
+     "weight_delta": 0.21
+    },
+    {
+     "adjusted_shares_delta": 18000,
+     "code": "6691",
+     "name": "洋基工程",
+     "prev_shares": 68000,
+     "prev_weight": 0.51,
+     "scale": 1.0,
+     "shares": 86000,
+     "shares_delta": 18000,
+     "shares_delta_pct": 26.47,
+     "type": "INCREASE",
+     "weight": 0.68,
+     "weight_delta": 0.17
+    },
+    {
+     "adjusted_shares_delta": 101000,
+     "code": "3605",
+     "name": "宏致",
+     "prev_shares": 301000,
+     "prev_weight": 0.55,
+     "scale": 1.0,
+     "shares": 402000,
+     "shares_delta": 101000,
+     "shares_delta_pct": 33.55,
+     "type": "INCREASE",
+     "weight": 0.67,
+     "weight_delta": 0.12
     },
     {
      "adjusted_shares_delta": 40000,
@@ -4922,120 +5036,8 @@
      "shares_delta": 188000,
      "shares_delta_pct": 26.4,
      "type": "INCREASE",
-     "weight": 0.64,
-     "weight_delta": 0.14
-    },
-    {
-     "adjusted_shares_delta": 18000,
-     "code": "6691",
-     "name": "洋基工程",
-     "prev_shares": 68000,
-     "prev_weight": 0.51,
-     "scale": 1.0,
-     "shares": 86000,
-     "shares_delta": 18000,
-     "shares_delta_pct": 26.47,
-     "type": "INCREASE",
-     "weight": 0.64,
-     "weight_delta": 0.13
-    },
-    {
-     "adjusted_shares_delta": -771000,
-     "code": "1229",
-     "name": "聯華實業",
-     "prev_shares": 771500,
-     "prev_weight": 0.32,
-     "scale": 1.0,
-     "shares": 500,
-     "shares_delta": -771000,
-     "shares_delta_pct": -99.94,
-     "type": "DECREASE",
-     "weight": 0.0,
-     "weight_delta": -0.32
-    },
-    {
-     "adjusted_shares_delta": -1528000,
-     "code": "2633",
-     "name": "台灣高鐵",
-     "prev_shares": 1528500,
-     "prev_weight": 0.4,
-     "scale": 1.0,
-     "shares": 500,
-     "shares_delta": -1528000,
-     "shares_delta_pct": -99.97,
-     "type": "DECREASE",
-     "weight": 0.0,
-     "weight_delta": -0.4
-    },
-    {
-     "adjusted_shares_delta": -5079000,
-     "code": "2845",
-     "name": "遠東銀行",
-     "prev_shares": 5079547,
-     "prev_weight": 0.68,
-     "scale": 1.0,
-     "shares": 547,
-     "shares_delta": -5079000,
-     "shares_delta_pct": -99.99,
-     "type": "DECREASE",
-     "weight": 0.0,
-     "weight_delta": -0.68
-    },
-    {
-     "adjusted_shares_delta": -797000,
-     "code": "2903",
-     "name": "遠百",
-     "prev_shares": 797500,
-     "prev_weight": 0.18,
-     "scale": 1.0,
-     "shares": 500,
-     "shares_delta": -797000,
-     "shares_delta_pct": -99.94,
-     "type": "DECREASE",
-     "weight": 0.0,
-     "weight_delta": -0.18
-    },
-    {
-     "adjusted_shares_delta": -252000,
-     "code": "5534",
-     "name": "長虹",
-     "prev_shares": 252500,
-     "prev_weight": 0.19,
-     "scale": 1.0,
-     "shares": 500,
-     "shares_delta": -252000,
-     "shares_delta_pct": -99.8,
-     "type": "DECREASE",
-     "weight": 0.0,
-     "weight_delta": -0.19
-    },
-    {
-     "adjusted_shares_delta": -178000,
-     "code": "6592",
-     "name": "和潤企業",
-     "prev_shares": 178500,
-     "prev_weight": 0.1,
-     "scale": 1.0,
-     "shares": 500,
-     "shares_delta": -178000,
-     "shares_delta_pct": -99.72,
-     "type": "DECREASE",
-     "weight": 0.0,
-     "weight_delta": -0.1
-    },
-    {
-     "adjusted_shares_delta": -552000,
-     "code": "9941",
-     "name": "裕融",
-     "prev_shares": 552500,
-     "prev_weight": 0.44,
-     "scale": 1.0,
-     "shares": 500,
-     "shares_delta": -552000,
-     "shares_delta_pct": -99.91,
-     "type": "DECREASE",
-     "weight": 0.0,
-     "weight_delta": -0.44
+     "weight": 0.61,
+     "weight_delta": 0.11
     },
     {
      "code": "8021",
@@ -5046,11 +5048,59 @@
      "type": "REMOVE"
     },
     {
+     "code": "2845",
+     "name": "遠東銀行",
+     "prev_shares": 5079547,
+     "prev_weight": 0.68,
+     "shares_delta": -5079547,
+     "type": "REMOVE"
+    },
+    {
+     "code": "9941",
+     "name": "裕融",
+     "prev_shares": 552500,
+     "prev_weight": 0.44,
+     "shares_delta": -552500,
+     "type": "REMOVE"
+    },
+    {
+     "code": "2633",
+     "name": "台灣高鐵",
+     "prev_shares": 1528500,
+     "prev_weight": 0.4,
+     "shares_delta": -1528500,
+     "type": "REMOVE"
+    },
+    {
+     "code": "1229",
+     "name": "聯華實業",
+     "prev_shares": 771500,
+     "prev_weight": 0.32,
+     "shares_delta": -771500,
+     "type": "REMOVE"
+    },
+    {
+     "code": "5534",
+     "name": "長虹",
+     "prev_shares": 252500,
+     "prev_weight": 0.19,
+     "shares_delta": -252500,
+     "type": "REMOVE"
+    },
+    {
      "code": "2520",
      "name": "冠德",
      "prev_shares": 488000,
      "prev_weight": 0.18,
      "shares_delta": -488000,
+     "type": "REMOVE"
+    },
+    {
+     "code": "2903",
+     "name": "遠百",
+     "prev_shares": 797500,
+     "prev_weight": 0.18,
+     "shares_delta": -797500,
      "type": "REMOVE"
     },
     {
@@ -5068,6 +5118,38 @@
      "prev_weight": 0.14,
      "shares_delta": -205000,
      "type": "REMOVE"
+    },
+    {
+     "code": "6592",
+     "name": "和潤企業",
+     "prev_shares": 178500,
+     "prev_weight": 0.1,
+     "shares_delta": -178500,
+     "type": "REMOVE"
+    },
+    {
+     "code": "5306",
+     "name": "桂盟",
+     "prev_shares": 56500,
+     "prev_weight": 0.05,
+     "shares_delta": -56500,
+     "type": "REMOVE"
+    },
+    {
+     "code": "7780",
+     "name": "大研生醫*",
+     "prev_shares": 322500,
+     "prev_weight": 0.05,
+     "shares_delta": -322500,
+     "type": "REMOVE"
+    },
+    {
+     "code": "5289",
+     "name": "宜鼎國際",
+     "prev_shares": 1355,
+     "prev_weight": 0.02,
+     "shares_delta": -1355,
+     "type": "REMOVE"
     }
    ],
    "holders": 63210.0,
@@ -5076,139 +5158,145 @@
      "code": "3017",
      "name": "奇鋐",
      "shares": 129000,
-     "weight": 4.46
+     "weight": 4.6
     },
     {
      "code": "2330",
      "name": "台積電",
-     "shares": 167000,
-     "weight": 4.21
+     "shares": 176000,
+     "weight": 4.48
     },
     {
      "code": "2881",
      "name": "富邦金控",
      "shares": 2668000,
-     "weight": 4.05
+     "weight": 4.01
     },
     {
      "code": "2887",
      "name": "台新新光金",
      "shares": 8082000,
-     "weight": 3.3
-    },
-    {
-     "code": "2882",
-     "name": "國泰金",
-     "shares": 2846000,
-     "weight": 3.2
+     "weight": 3.26
     },
     {
      "code": "2885",
      "name": "元大金",
      "shares": 4665880,
+     "weight": 3.15
+    },
+    {
+     "code": "2882",
+     "name": "國泰金",
+     "shares": 2846000,
      "weight": 3.14
     },
     {
      "code": "6505",
      "name": "台塑石化",
      "shares": 3078000,
-     "weight": 3.1
+     "weight": 3.0
     },
     {
      "code": "1303",
      "name": "南亞",
      "shares": 991000,
-     "weight": 2.6
-    },
-    {
-     "code": "2395",
-     "name": "研華",
-     "shares": 361000,
-     "weight": 2.6
+     "weight": 2.8
     },
     {
      "code": "2059",
      "name": "川湖",
      "shares": 20000,
-     "weight": 2.45
+     "weight": 2.64
     },
     {
-     "code": "2883",
-     "name": "凱基金控",
-     "shares": 6257000,
-     "weight": 2.35
+     "code": "2395",
+     "name": "研華",
+     "shares": 361000,
+     "weight": 2.64
     },
     {
      "code": "2408",
      "name": "南亞科",
      "shares": 441000,
-     "weight": 2.34
+     "weight": 2.31
     },
     {
-     "code": "2890",
-     "name": "永豐金控",
-     "shares": 5219000,
-     "weight": 2.32
-    },
-    {
-     "code": "2884",
-     "name": "玉山金控",
-     "shares": 4816000,
-     "weight": 2.2
+     "code": "2883",
+     "name": "凱基金控",
+     "shares": 6257000,
+     "weight": 2.31
     },
     {
      "code": "6187",
      "name": "萬潤科技",
      "shares": 157000,
-     "weight": 2.14
+     "weight": 2.31
+    },
+    {
+     "code": "2890",
+     "name": "永豐金控",
+     "shares": 5219000,
+     "weight": 2.27
+    },
+    {
+     "code": "2884",
+     "name": "玉山金控",
+     "shares": 4816000,
+     "weight": 2.13
+    },
+    {
+     "code": "3037",
+     "name": "欣興",
+     "shares": 154000,
+     "weight": 2.02
     },
     {
      "code": "2886",
      "name": "兆豐金控",
      "shares": 4036000,
-     "weight": 1.99
-    },
-    {
-     "code": "3037",
-     "name": "欣興",
-     "shares": 150000,
-     "weight": 1.97
+     "weight": 1.94
     },
     {
      "code": "3653",
      "name": "健策",
-     "shares": 26000,
-     "weight": 1.78
+     "shares": 27000,
+     "weight": 1.92
     },
     {
      "code": "3264",
      "name": "欣銓",
      "shares": 717000,
-     "weight": 1.77
-    },
-    {
-     "code": "2603",
-     "name": "長榮海運",
-     "shares": 726000,
-     "weight": 1.76
-    },
-    {
-     "code": "3045",
-     "name": "台灣大",
-     "shares": 1349000,
-     "weight": 1.66
+     "weight": 1.71
     },
     {
      "code": "3189",
      "name": "景碩科技",
      "shares": 156000,
-     "weight": 1.65
+     "weight": 1.69
+    },
+    {
+     "code": "2603",
+     "name": "長榮海運",
+     "shares": 726000,
+     "weight": 1.68
     },
     {
      "code": "3008",
      "name": "大立光電",
      "shares": 25000,
-     "weight": 1.58
+     "weight": 1.66
+    },
+    {
+     "code": "3045",
+     "name": "台灣大",
+     "shares": 1349000,
+     "weight": 1.63
+    },
+    {
+     "code": "6213",
+     "name": "聯茂",
+     "shares": 209000,
+     "weight": 1.55
     },
     {
      "code": "6446",
@@ -5217,112 +5305,100 @@
      "weight": 1.5
     },
     {
+     "code": "2383",
+     "name": "台光電子",
+     "shares": 26000,
+     "weight": 1.46
+    },
+    {
      "code": "2880",
      "name": "華南金控",
      "shares": 3307000,
-     "weight": 1.49
-    },
-    {
-     "code": "6213",
-     "name": "聯茂",
-     "shares": 209000,
-     "weight": 1.44
+     "weight": 1.46
     },
     {
      "code": "1560",
      "name": "中砂",
      "shares": 136000,
-     "weight": 1.39
-    },
-    {
-     "code": "2383",
-     "name": "台光電子",
-     "shares": 26000,
-     "weight": 1.36
+     "weight": 1.4
     },
     {
      "code": "2409",
      "name": "友達",
      "shares": 3320000,
-     "weight": 1.35
+     "weight": 1.28
     },
     {
      "code": "2464",
      "name": "盟立",
      "shares": 651000,
-     "weight": 1.28
-    },
-    {
-     "code": "2892",
-     "name": "第一金",
-     "shares": 3143000,
-     "weight": 1.22
+     "weight": 1.23
     },
     {
      "code": "3443",
      "name": "創意電子",
      "shares": 14000,
-     "weight": 1.11
+     "weight": 1.19
+    },
+    {
+     "code": "2892",
+     "name": "第一金",
+     "shares": 3143000,
+     "weight": 1.18
     },
     {
      "code": "5274",
      "name": "信驊科技",
      "shares": 5200,
-     "weight": 0.99
+     "weight": 1.0
+    },
+    {
+     "code": "2454",
+     "name": "聯發科",
+     "shares": 19000,
+     "weight": 0.97
     },
     {
      "code": "1326",
      "name": "台化",
      "shares": 1352000,
-     "weight": 0.98
-    },
-    {
-     "code": "2615",
-     "name": "萬海",
-     "shares": 826000,
-     "weight": 0.94
+     "weight": 0.96
     },
     {
      "code": "5904",
      "name": "寶雅*",
      "shares": 1352000,
-     "weight": 0.93
+     "weight": 0.92
     },
     {
-     "code": "2303",
-     "name": "聯電",
-     "shares": 564000,
-     "weight": 0.92
+     "code": "2615",
+     "name": "萬海",
+     "shares": 826000,
+     "weight": 0.9
     },
     {
      "code": "6669",
      "name": "緯穎",
      "shares": 40741,
-     "weight": 0.86
+     "weight": 0.87
     },
     {
-     "code": "2454",
-     "name": "聯發科",
-     "shares": 17000,
+     "code": "2303",
+     "name": "聯電",
+     "shares": 564000,
      "weight": 0.85
     },
     {
      "code": "3450",
      "name": "聯鈞",
      "shares": 144000,
-     "weight": 0.79
+     "weight": 0.78
     },
     {
      "code": "2344",
      "name": "華邦電子",
      "shares": 421000,
-     "weight": 0.76
-    },
-    {
-     "code": "3665",
-     "name": "貿聯-KY",
-     "shares": 28000,
-     "weight": 0.72
+     "weight": 0.75
     },
     {
      "code": "8046",
@@ -5331,58 +5407,58 @@
      "weight": 0.71
     },
     {
-     "code": "2855",
-     "name": "統一證券",
-     "shares": 1167000,
+     "code": "3665",
+     "name": "貿聯-KY",
+     "shares": 28000,
+     "weight": 0.69
+    },
+    {
+     "code": "6691",
+     "name": "洋基工程",
+     "shares": 86000,
      "weight": 0.68
-    },
-    {
-     "code": "3006",
-     "name": "晶豪",
-     "shares": 235000,
-     "weight": 0.68
-    },
-    {
-     "code": "5351",
-     "name": "鈺創",
-     "shares": 585000,
-     "weight": 0.68
-    },
-    {
-     "code": "2357",
-     "name": "華碩",
-     "shares": 68000,
-     "weight": 0.66
-    },
-    {
-     "code": "6214",
-     "name": "精誠資訊",
-     "shares": 349000,
-     "weight": 0.66
-    },
-    {
-     "code": "1409",
-     "name": "新纖",
-     "shares": 2566000,
-     "weight": 0.65
     },
     {
      "code": "2301",
      "name": "光寶科技",
      "shares": 229000,
-     "weight": 0.65
+     "weight": 0.67
     },
     {
-     "code": "2851",
-     "name": "中央再保",
-     "shares": 1400000,
-     "weight": 0.65
+     "code": "2357",
+     "name": "華碩",
+     "shares": 68000,
+     "weight": 0.67
+    },
+    {
+     "code": "2855",
+     "name": "統一證券",
+     "shares": 1167000,
+     "weight": 0.67
     },
     {
      "code": "3605",
      "name": "宏致",
-     "shares": 380000,
-     "weight": 0.65
+     "shares": 402000,
+     "weight": 0.67
+    },
+    {
+     "code": "2351",
+     "name": "順德",
+     "shares": 299000,
+     "weight": 0.66
+    },
+    {
+     "code": "3006",
+     "name": "晶豪",
+     "shares": 235000,
+     "weight": 0.66
+    },
+    {
+     "code": "5351",
+     "name": "鈺創",
+     "shares": 585000,
+     "weight": 0.66
     },
     {
      "code": "6197",
@@ -5391,9 +5467,21 @@
      "weight": 0.65
     },
     {
-     "code": "2351",
-     "name": "順德",
-     "shares": 299000,
+     "code": "6214",
+     "name": "精誠資訊",
+     "shares": 349000,
+     "weight": 0.65
+    },
+    {
+     "code": "7750",
+     "name": "新代",
+     "shares": 32000,
+     "weight": 0.65
+    },
+    {
+     "code": "1409",
+     "name": "新纖",
+     "shares": 2566000,
      "weight": 0.64
     },
     {
@@ -5403,16 +5491,10 @@
      "weight": 0.64
     },
     {
-     "code": "3714",
-     "name": "富采",
-     "shares": 900000,
-     "weight": 0.64
-    },
-    {
-     "code": "6691",
-     "name": "洋基工程",
-     "shares": 86000,
-     "weight": 0.64
+     "code": "2851",
+     "name": "中央再保",
+     "shares": 1400000,
+     "weight": 0.63
     },
     {
      "code": "8039",
@@ -5424,78 +5506,60 @@
      "code": "3711",
      "name": "日月光投控",
      "shares": 85000,
-     "weight": 0.61
+     "weight": 0.62
     },
     {
-     "code": "7750",
-     "name": "新代",
-     "shares": 32000,
+     "code": "3714",
+     "name": "富采",
+     "shares": 900000,
      "weight": 0.61
     },
     {
      "code": "4958",
      "name": "臻鼎-KY",
      "shares": 107000,
-     "weight": 0.6
+     "weight": 0.61
     },
     {
      "code": "2404",
      "name": "漢唐",
-     "shares": 32000,
-     "weight": 0.41
-    },
-    {
-     "code": "2006",
-     "name": "東和鋼鐵",
-     "shares": 368000,
-     "weight": 0.32
-    },
-    {
-     "code": "2379",
-     "name": "瑞昱",
-     "shares": 42000,
-     "weight": 0.32
-    },
-    {
-     "code": "2634",
-     "name": "漢翔公司",
-     "shares": 483000,
-     "weight": 0.32
-    },
-    {
-     "code": "2637",
-     "name": "慧洋-KY",
-     "shares": 319000,
-     "weight": 0.32
+     "shares": 34000,
+     "weight": 0.44
     },
     {
      "code": "5434",
      "name": "崇越",
      "shares": 54000,
-     "weight": 0.32
+     "weight": 0.33
     },
     {
-     "code": "5876",
-     "name": "上海商銀",
-     "shares": 641000,
-     "weight": 0.32
-    },
-    {
-     "code": "6670",
-     "name": "復盛應用",
-     "shares": 116000,
-     "weight": 0.32
-    },
-    {
-     "code": "2618",
-     "name": "長榮航",
-     "shares": 734000,
+     "code": "2006",
+     "name": "東和鋼鐵",
+     "shares": 368000,
      "weight": 0.31
     },
     {
-     "code": "2801",
-     "name": "彰銀",
-     "shares": 1122000,
+     "code": "2379",
+     "name": "瑞昱",
+     "shares": 42000,
+     "weight": 0.31
+    },
+    {
+     "code": "2634",
+     "name": "漢翔公司",
+     "shares": 483000,
+     "weight": 0.31
+    },
+    {
+     "code": "2637",
+     "name": "慧洋-KY",
+     "shares": 319000,
+     "weight": 0.31
+    },
+    {
+     "code": "3034",
+     "name": "聯詠",
+     "shares": 58000,
      "weight": 0.31
     },
     {
@@ -5505,15 +5569,33 @@
      "weight": 0.31
     },
     {
+     "code": "5876",
+     "name": "上海商銀",
+     "shares": 641000,
+     "weight": 0.31
+    },
+    {
+     "code": "6670",
+     "name": "復盛應用",
+     "shares": 116000,
+     "weight": 0.31
+    },
+    {
      "code": "1216",
      "name": "統一",
      "shares": 416000,
      "weight": 0.3
     },
     {
-     "code": "3034",
-     "name": "聯詠",
-     "shares": 55000,
+     "code": "2618",
+     "name": "長榮航",
+     "shares": 734000,
+     "weight": 0.3
+    },
+    {
+     "code": "2801",
+     "name": "彰銀",
+     "shares": 1122000,
      "weight": 0.3
     },
     {
@@ -5526,7 +5608,7 @@
      "code": "2313",
      "name": "華通",
      "shares": 62000,
-     "weight": 0.14
+     "weight": 0.15
     },
     {
      "code": "6274",
@@ -5547,161 +5629,213 @@
      "weight": 0.03
     },
     {
-     "code": "5289",
-     "name": "宜鼎國際",
-     "shares": 1354,
-     "weight": 0.02
-    },
-    {
      "code": "9933",
      "name": "中鼎",
      "shares": 18619,
      "weight": 0.01
     },
     {
-     "code": "1229",
-     "name": "聯華實業",
-     "shares": 500,
-     "weight": 0.0
-    },
-    {
      "code": "1795",
      "name": "美時製藥",
      "shares": 572,
-     "weight": 0.0
-    },
-    {
-     "code": "2633",
-     "name": "台灣高鐵",
-     "shares": 500,
-     "weight": 0.0
-    },
-    {
-     "code": "2845",
-     "name": "遠東銀行",
-     "shares": 547,
-     "weight": 0.0
-    },
-    {
-     "code": "2903",
-     "name": "遠百",
-     "shares": 500,
-     "weight": 0.0
-    },
-    {
-     "code": "5306",
-     "name": "桂盟",
-     "shares": 500,
-     "weight": 0.0
-    },
-    {
-     "code": "5534",
-     "name": "長虹",
-     "shares": 500,
-     "weight": 0.0
-    },
-    {
-     "code": "6592",
-     "name": "和潤企業",
-     "shares": 500,
-     "weight": 0.0
-    },
-    {
-     "code": "7780",
-     "name": "大研生醫*",
-     "shares": 500,
-     "weight": 0.0
-    },
-    {
-     "code": "9941",
-     "name": "裕融",
-     "shares": 500,
      "weight": 0.0
     }
    ],
    "issuer": "安聯",
    "name": "主動安聯台灣高息",
-   "nav": 15.84,
-   "nav_date": "2026-10-02",
-   "premium_note": "NAV 2026-10-02 與收盤價 2026-10-05 非同日,不計折溢價",
+   "nav": 16.17,
+   "nav_date": "2026-10-05",
+   "premium_note": "NAV 2026-10-05 與收盤價 2026-10-06 非同日,不計折溢價",
    "premium_pct": null,
-   "quote_date": "2026-10-05",
-   "scale": 9923785086.0,
+   "quote_date": "2026-10-06",
+   "scale": 10116054208.0,
    "status": "ok"
   },
   "00985A": {
-   "close": 24.58,
-   "data_date": "2026-10-02",
+   "close": 24.55,
+   "data_date": "2026-10-05",
    "events": [
     {
-     "adjusted_shares_delta": 326000,
+     "adjusted_shares_delta": 240000,
+     "code": "2330",
+     "name": "台灣積體電路製造",
+     "prev_shares": 680000,
+     "prev_weight": 14.95,
+     "scale": 1.0,
+     "shares": 920000,
+     "shares_delta": 240000,
+     "shares_delta_pct": 35.29,
+     "type": "INCREASE",
+     "weight": 16.01,
+     "weight_delta": 1.06
+    },
+    {
+     "adjusted_shares_delta": 246000,
+     "code": "2345",
+     "name": "智邦科技",
+     "prev_shares": 80000,
+     "prev_weight": 1.33,
+     "scale": 1.0,
+     "shares": 326000,
+     "shares_delta": 246000,
+     "shares_delta_pct": 307.5,
+     "type": "INCREASE",
+     "weight": 4.57,
+     "weight_delta": 3.24
+    },
+    {
+     "adjusted_shares_delta": 493000,
      "code": "2376",
      "name": "技嘉科技",
      "prev_shares": 1088000,
      "prev_weight": 3.51,
      "scale": 1.0,
-     "shares": 1414000,
-     "shares_delta": 326000,
-     "shares_delta_pct": 29.96,
+     "shares": 1581000,
+     "shares_delta": 493000,
+     "shares_delta_pct": 45.31,
      "type": "INCREASE",
-     "weight": 3.99,
-     "weight_delta": 0.48
+     "weight": 4.15,
+     "weight_delta": 0.64
     },
     {
-     "adjusted_shares_delta": 165000,
+     "adjusted_shares_delta": 124000,
+     "code": "3491",
+     "name": "昇達科技",
+     "prev_shares": 177000,
+     "prev_weight": 2.31,
+     "scale": 1.0,
+     "shares": 301000,
+     "shares_delta": 124000,
+     "shares_delta_pct": 70.06,
+     "type": "INCREASE",
+     "weight": 3.32,
+     "weight_delta": 1.01
+    },
+    {
+     "adjusted_shares_delta": 367000,
      "code": "2327",
      "name": "國巨",
      "prev_shares": 327000,
      "prev_weight": 1.72,
      "scale": 1.0,
-     "shares": 492000,
-     "shares_delta": 165000,
-     "shares_delta_pct": 50.46,
+     "shares": 694000,
+     "shares_delta": 367000,
+     "shares_delta_pct": 112.23,
      "type": "INCREASE",
-     "weight": 2.33,
-     "weight_delta": 0.61
+     "weight": 2.94,
+     "weight_delta": 1.22
     },
     {
-     "adjusted_shares_delta": 556000,
-     "code": "2303",
-     "name": "聯華電子",
-     "prev_shares": 1092000,
-     "prev_weight": 1.54,
+     "adjusted_shares_delta": -501000,
+     "code": "4904",
+     "name": "遠傳電信",
+     "prev_shares": 4427000,
+     "prev_weight": 4.07,
      "scale": 1.0,
-     "shares": 1648000,
-     "shares_delta": 556000,
-     "shares_delta_pct": 50.92,
-     "type": "INCREASE",
-     "weight": 2.01,
-     "weight_delta": 0.47
+     "shares": 3926000,
+     "shares_delta": -501000,
+     "shares_delta_pct": -11.32,
+     "type": "DECREASE",
+     "weight": 2.8,
+     "weight_delta": -1.27
     },
     {
-     "adjusted_shares_delta": 165000,
-     "code": "6531",
-     "name": "愛普科技",
-     "prev_shares": 76000,
-     "prev_weight": 0.62,
-     "scale": 1.0,
-     "shares": 241000,
-     "shares_delta": 165000,
-     "shares_delta_pct": 217.11,
-     "type": "INCREASE",
-     "weight": 1.82,
-     "weight_delta": 1.2
-    },
-    {
-     "adjusted_shares_delta": 21000,
+     "adjusted_shares_delta": 43000,
      "code": "3653",
      "name": "健策精密工業",
      "prev_shares": 13000,
      "prev_weight": 0.78,
      "scale": 1.0,
-     "shares": 34000,
-     "shares_delta": 21000,
-     "shares_delta_pct": 161.54,
+     "shares": 56000,
+     "shares_delta": 43000,
+     "shares_delta_pct": 330.77,
      "type": "INCREASE",
-     "weight": 1.75,
-     "weight_delta": 0.97
+     "weight": 2.73,
+     "weight_delta": 1.95
+    },
+    {
+     "adjusted_shares_delta": 28000,
+     "code": "3017",
+     "name": "奇鋐科技",
+     "prev_shares": 71000,
+     "prev_weight": 2.18,
+     "scale": 1.0,
+     "shares": 99000,
+     "shares_delta": 28000,
+     "shares_delta_pct": 39.44,
+     "type": "INCREASE",
+     "weight": 2.4,
+     "weight_delta": 0.22
+    },
+    {
+     "adjusted_shares_delta": 115000,
+     "code": "3037",
+     "name": "欣興電子",
+     "prev_shares": 153000,
+     "prev_weight": 1.63,
+     "scale": 1.0,
+     "shares": 268000,
+     "shares_delta": 115000,
+     "shares_delta_pct": 75.16,
+     "type": "INCREASE",
+     "weight": 2.4,
+     "weight_delta": 0.77
+    },
+    {
+     "adjusted_shares_delta": 260000,
+     "code": "6531",
+     "name": "愛普科技",
+     "prev_shares": 76000,
+     "prev_weight": 0.62,
+     "scale": 1.0,
+     "shares": 336000,
+     "shares_delta": 260000,
+     "shares_delta_pct": 342.11,
+     "type": "INCREASE",
+     "weight": 2.4,
+     "weight_delta": 1.78
+    },
+    {
+     "adjusted_shares_delta": 33000,
+     "code": "3008",
+     "name": "大立光電",
+     "prev_shares": 17000,
+     "prev_weight": 0.92,
+     "scale": 1.0,
+     "shares": 50000,
+     "shares_delta": 33000,
+     "shares_delta_pct": 194.12,
+     "type": "INCREASE",
+     "weight": 2.27,
+     "weight_delta": 1.35
+    },
+    {
+     "adjusted_shares_delta": 1094000,
+     "code": "2303",
+     "name": "聯華電子",
+     "prev_shares": 1092000,
+     "prev_weight": 1.54,
+     "scale": 1.0,
+     "shares": 2186000,
+     "shares_delta": 1094000,
+     "shares_delta_pct": 100.18,
+     "type": "INCREASE",
+     "weight": 2.25,
+     "weight_delta": 0.71
+    },
+    {
+     "adjusted_shares_delta": -1314000,
+     "code": "2412",
+     "name": "中華電信",
+     "prev_shares": 3202000,
+     "prev_weight": 4.08,
+     "scale": 1.0,
+     "shares": 1888000,
+     "shares_delta": -1314000,
+     "shares_delta_pct": -41.04,
+     "type": "DECREASE",
+     "weight": 1.86,
+     "weight_delta": -2.22
     },
     {
      "adjusted_shares_delta": 68000,
@@ -5714,22 +5848,78 @@
      "shares_delta": 68000,
      "shares_delta_pct": 101.49,
      "type": "INCREASE",
-     "weight": 1.66,
-     "weight_delta": 0.79
+     "weight": 1.56,
+     "weight_delta": 0.69
     },
     {
-     "adjusted_shares_delta": 17000,
-     "code": "3008",
-     "name": "大立光電",
-     "prev_shares": 17000,
-     "prev_weight": 0.92,
+     "adjusted_shares_delta": 140000,
+     "code": "3105",
+     "name": "穩懋半導體",
+     "prev_shares": 217000,
+     "prev_weight": 1.02,
      "scale": 1.0,
-     "shares": 34000,
-     "shares_delta": 17000,
-     "shares_delta_pct": 100.0,
+     "shares": 357000,
+     "shares_delta": 140000,
+     "shares_delta_pct": 64.52,
      "type": "INCREASE",
-     "weight": 1.62,
-     "weight_delta": 0.7
+     "weight": 1.48,
+     "weight_delta": 0.46
+    },
+    {
+     "adjusted_shares_delta": 71000,
+     "code": "3189",
+     "name": "景碩科技",
+     "prev_shares": 118000,
+     "prev_weight": 1.04,
+     "scale": 1.0,
+     "shares": 189000,
+     "shares_delta": 71000,
+     "shares_delta_pct": 60.17,
+     "type": "INCREASE",
+     "weight": 1.4,
+     "weight_delta": 0.36
+    },
+    {
+     "adjusted_shares_delta": 43000,
+     "code": "7750",
+     "name": "新代科技",
+     "prev_shares": 54000,
+     "prev_weight": 0.9,
+     "scale": 1.0,
+     "shares": 97000,
+     "shares_delta": 43000,
+     "shares_delta_pct": 79.63,
+     "type": "INCREASE",
+     "weight": 1.36,
+     "weight_delta": 0.46
+    },
+    {
+     "adjusted_shares_delta": 12000,
+     "code": "2059",
+     "name": "川湖科技",
+     "prev_shares": 1000,
+     "prev_weight": 0.1,
+     "scale": 1.0,
+     "shares": 13000,
+     "shares_delta": 12000,
+     "shares_delta_pct": 1200.0,
+     "type": "INCREASE",
+     "weight": 1.17,
+     "weight_delta": 1.07
+    },
+    {
+     "adjusted_shares_delta": 7000,
+     "code": "7769",
+     "name": "鴻勁精密",
+     "prev_shares": 18000,
+     "prev_weight": 0.87,
+     "scale": 1.0,
+     "shares": 25000,
+     "shares_delta": 7000,
+     "shares_delta_pct": 38.89,
+     "type": "INCREASE",
+     "weight": 0.98,
+     "weight_delta": 0.11
     }
    ],
    "holders": 47010.0,
@@ -5737,296 +5927,296 @@
     {
      "code": "2330",
      "name": "台灣積體電路製造",
-     "shares": 680000,
-     "weight": 12.84
+     "shares": 920000,
+     "weight": 16.01
     },
     {
-     "code": "2412",
-     "name": "中華電信",
-     "shares": 3734000,
-     "weight": 4.12
-    },
-    {
-     "code": "4904",
-     "name": "遠傳電信",
-     "shares": 5127000,
-     "weight": 4.1
+     "code": "2345",
+     "name": "智邦科技",
+     "shares": 326000,
+     "weight": 4.57
     },
     {
      "code": "2376",
      "name": "技嘉科技",
-     "shares": 1414000,
-     "weight": 3.99
+     "shares": 1581000,
+     "weight": 4.15
     },
     {
      "code": "3711",
      "name": "日月光投資控股",
-     "shares": 706000,
-     "weight": 3.8
+     "shares": 734000,
+     "weight": 3.68
+    },
+    {
+     "code": "3491",
+     "name": "昇達科技",
+     "shares": 301000,
+     "weight": 3.32
     },
     {
      "code": "2395",
      "name": "研華",
-     "shares": 517000,
+     "shares": 598000,
+     "weight": 2.99
+    },
+    {
+     "code": "2327",
+     "name": "國巨",
+     "shares": 694000,
+     "weight": 2.94
+    },
+    {
+     "code": "4904",
+     "name": "遠傳電信",
+     "shares": 3926000,
      "weight": 2.8
     },
     {
-     "code": "2454",
-     "name": "聯發科技",
-     "shares": 67000,
-     "weight": 2.5
+     "code": "3653",
+     "name": "健策精密工業",
+     "shares": 56000,
+     "weight": 2.73
+    },
+    {
+     "code": "3017",
+     "name": "奇鋐科技",
+     "shares": 99000,
+     "weight": 2.4
+    },
+    {
+     "code": "3037",
+     "name": "欣興電子",
+     "shares": 268000,
+     "weight": 2.4
+    },
+    {
+     "code": "6531",
+     "name": "愛普科技",
+     "shares": 336000,
+     "weight": 2.4
     },
     {
      "code": "2383",
      "name": "台光電子材料",
      "shares": 62000,
-     "weight": 2.43
+     "weight": 2.39
     },
     {
-     "code": "2327",
-     "name": "國巨",
-     "shares": 492000,
-     "weight": 2.33
+     "code": "2454",
+     "name": "聯發科技",
+     "shares": 67000,
+     "weight": 2.34
+    },
+    {
+     "code": "3008",
+     "name": "大立光電",
+     "shares": 50000,
+     "weight": 2.27
     },
     {
      "code": "2303",
      "name": "聯華電子",
-     "shares": 1648000,
-     "weight": 2.01
+     "shares": 2186000,
+     "weight": 2.25
     },
     {
-     "code": "3491",
-     "name": "昇達科技",
-     "shares": 177000,
-     "weight": 1.99
-    },
-    {
-     "code": "3017",
-     "name": "奇鋐科技",
-     "shares": 71000,
-     "weight": 1.84
-    },
-    {
-     "code": "6531",
-     "name": "愛普科技",
-     "shares": 241000,
-     "weight": 1.82
+     "code": "2412",
+     "name": "中華電信",
+     "shares": 1888000,
+     "weight": 1.86
     },
     {
      "code": "6669",
      "name": "緯穎科技服務",
      "shares": 114036,
-     "weight": 1.8
-    },
-    {
-     "code": "3653",
-     "name": "健策精密工業",
-     "shares": 34000,
-     "weight": 1.75
-    },
-    {
-     "code": "2317",
-     "name": "鴻海精密工業",
-     "shares": 910000,
-     "weight": 1.73
+     "weight": 1.66
     },
     {
      "code": "2308",
      "name": "台達電子工業",
      "shares": 120000,
-     "weight": 1.71
+     "weight": 1.63
     },
     {
-     "code": "6488",
-     "name": "環球晶圓",
-     "shares": 187000,
-     "weight": 1.68
+     "code": "2317",
+     "name": "鴻海精密工業",
+     "shares": 910000,
+     "weight": 1.56
     },
     {
      "code": "6442",
      "name": "光紅建聖",
      "shares": 135000,
-     "weight": 1.66
+     "weight": 1.56
     },
     {
-     "code": "3008",
-     "name": "大立光電",
-     "shares": 34000,
-     "weight": 1.62
+     "code": "6488",
+     "name": "環球晶圓",
+     "shares": 187000,
+     "weight": 1.49
+    },
+    {
+     "code": "3105",
+     "name": "穩懋半導體",
+     "shares": 357000,
+     "weight": 1.48
+    },
+    {
+     "code": "3189",
+     "name": "景碩科技",
+     "shares": 189000,
+     "weight": 1.4
     },
     {
      "code": "2377",
      "name": "微星科技",
      "shares": 1302000,
-     "weight": 1.52
+     "weight": 1.36
     },
     {
-     "code": "3037",
-     "name": "欣興電子",
-     "shares": 153000,
-     "weight": 1.51
-    },
-    {
-     "code": "2603",
-     "name": "長榮海運",
-     "shares": 787000,
-     "weight": 1.43
-    },
-    {
-     "code": "3665",
-     "name": "貿聯控股（BizLink Holding In",
-     "shares": 74000,
-     "weight": 1.42
+     "code": "7750",
+     "name": "新代科技",
+     "shares": 97000,
+     "weight": 1.36
     },
     {
      "code": "8046",
      "name": "南亞電路板",
      "shares": 128000,
-     "weight": 1.41
+     "weight": 1.29
+    },
+    {
+     "code": "2603",
+     "name": "長榮海運",
+     "shares": 787000,
+     "weight": 1.25
+    },
+    {
+     "code": "3665",
+     "name": "貿聯控股（BizLink Holding In",
+     "shares": 74000,
+     "weight": 1.24
     },
     {
      "code": "2610",
      "name": "中華航空",
      "shares": 8783000,
-     "weight": 1.35
+     "weight": 1.19
+    },
+    {
+     "code": "2059",
+     "name": "川湖科技",
+     "shares": 13000,
+     "weight": 1.17
     },
     {
      "code": "2408",
      "name": "南亞科技",
      "shares": 310000,
-     "weight": 1.23
+     "weight": 1.11
     },
     {
      "code": "6446",
      "name": "藥華醫藥",
      "shares": 138000,
-     "weight": 1.21
+     "weight": 1.11
     },
     {
      "code": "3081",
      "name": "聯亞光電工業",
      "shares": 54000,
-     "weight": 1.19
-    },
-    {
-     "code": "2345",
-     "name": "智邦科技",
-     "shares": 80000,
-     "weight": 1.19
+     "weight": 1.09
     },
     {
      "code": "1504",
      "name": "東元電機",
      "shares": 2177000,
-     "weight": 1.15
+     "weight": 1.02
+    },
+    {
+     "code": "7769",
+     "name": "鴻勁精密",
+     "shares": 25000,
+     "weight": 0.98
     },
     {
      "code": "1605",
      "name": "華新麗華",
      "shares": 3636000,
-     "weight": 1.06
-    },
-    {
-     "code": "3105",
-     "name": "穩懋半導體",
-     "shares": 217000,
-     "weight": 0.97
-    },
-    {
-     "code": "3189",
-     "name": "景碩科技",
-     "shares": 118000,
      "weight": 0.94
     },
     {
      "code": "1101",
      "name": "臺灣水泥",
      "shares": 4878000,
-     "weight": 0.93
+     "weight": 0.82
     },
     {
      "code": "1216",
      "name": "統一企業",
      "shares": 1657000,
-     "weight": 0.91
+     "weight": 0.81
     },
     {
      "code": "3661",
      "name": "世芯電子",
      "shares": 29000,
-     "weight": 0.83
+     "weight": 0.77
     },
     {
      "code": "1301",
      "name": "台灣塑膠工業",
      "shares": 1589000,
-     "weight": 0.82
-    },
-    {
-     "code": "7750",
-     "name": "新代科技",
-     "shares": 54000,
-     "weight": 0.77
-    },
-    {
-     "code": "7769",
-     "name": "鴻勁精密",
-     "shares": 18000,
-     "weight": 0.76
+     "weight": 0.74
     },
     {
      "code": "2027",
      "name": "大成不銹鋼工業",
      "shares": 2097000,
-     "weight": 0.76
-    },
-    {
-     "code": "6526",
-     "name": "達發科技",
-     "shares": 102000,
-     "weight": 0.64
-    },
-    {
-     "code": "8996",
-     "name": "高力熱處理工業",
-     "shares": 55000,
-     "weight": 0.63
+     "weight": 0.68
     },
     {
      "code": "6187",
      "name": "萬潤科技",
      "shares": 60000,
-     "weight": 0.61
+     "weight": 0.6
+    },
+    {
+     "code": "8996",
+     "name": "高力熱處理工業",
+     "shares": 55000,
+     "weight": 0.59
+    },
+    {
+     "code": "6526",
+     "name": "達發科技",
+     "shares": 102000,
+     "weight": 0.58
     },
     {
      "code": "2344",
      "name": "華邦電子",
      "shares": 243000,
-     "weight": 0.33
+     "weight": 0.3
     },
     {
      "code": "6147",
      "name": "頎邦科技",
      "shares": 141000,
-     "weight": 0.24
+     "weight": 0.21
     },
     {
      "code": "3324",
      "name": "雙鴻科技",
      "shares": 18000,
-     "weight": 0.2
+     "weight": 0.19
     },
     {
      "code": "2881",
      "name": "富邦金融控股",
      "shares": 139000,
-     "weight": 0.16
-    },
-    {
-     "code": "2059",
-     "name": "川湖科技",
-     "shares": 1000,
-     "weight": 0.09
+     "weight": 0.14
     },
     {
      "code": "2368",
@@ -6037,16 +6227,16 @@
    ],
    "issuer": "野村",
    "name": "主動野村台灣50",
-   "nav": 23.99,
-   "nav_date": "2026-10-02",
-   "premium_note": "NAV 2026-10-02 與收盤價 2026-10-05 非同日,不計折溢價",
+   "nav": 24.52,
+   "nav_date": "2026-10-05",
+   "premium_note": "NAV 2026-10-05 與收盤價 2026-10-06 非同日,不計折溢價",
    "premium_pct": null,
-   "quote_date": "2026-10-05",
-   "scale": 13239692659.0,
+   "quote_date": "2026-10-06",
+   "scale": 14795337187.0,
    "status": "ok"
   },
   "00987A": {
-   "close": 18.34,
+   "close": 18.2,
    "data_date": "2026-10-05",
    "events": [
     {
@@ -6279,16 +6469,87 @@
    "name": "主動台新優勢成長",
    "nav": 18.44,
    "nav_date": "2026-10-05",
-   "premium_note": null,
-   "premium_pct": -0.54,
-   "quote_date": "2026-10-05",
+   "premium_note": "NAV 2026-10-05 與收盤價 2026-10-06 非同日,不計折溢價",
+   "premium_pct": null,
+   "quote_date": "2026-10-06",
    "scale": 2649048148.0,
    "status": "ok"
   },
   "00991A": {
-   "close": 19.47,
+   "close": 19.35,
    "data_date": "2026-10-05",
-   "events": [],
+   "events": [
+    {
+     "adjusted_shares_delta": -1000000,
+     "code": "2408",
+     "name": "南亞科技",
+     "prev_shares": 13000000,
+     "prev_weight": 8.486,
+     "scale": 1.0,
+     "shares": 12000000,
+     "shares_delta": -1000000,
+     "shares_delta_pct": -7.69,
+     "type": "DECREASE",
+     "weight": 7.714,
+     "weight_delta": -0.772
+    },
+    {
+     "adjusted_shares_delta": 500000,
+     "code": "1303",
+     "name": "南亞塑膠",
+     "prev_shares": 8000000,
+     "prev_weight": 2.581,
+     "scale": 1.0,
+     "shares": 8500000,
+     "shares_delta": 500000,
+     "shares_delta_pct": 6.25,
+     "type": "INCREASE",
+     "weight": 2.948,
+     "weight_delta": 0.367
+    },
+    {
+     "adjusted_shares_delta": -221000,
+     "code": "2308",
+     "name": "台達電子",
+     "prev_shares": 871000,
+     "prev_weight": 2.038,
+     "scale": 1.0,
+     "shares": 650000,
+     "shares_delta": -221000,
+     "shares_delta_pct": -25.37,
+     "type": "DECREASE",
+     "weight": 1.581,
+     "weight_delta": -0.457
+    },
+    {
+     "adjusted_shares_delta": -2400000,
+     "code": "2303",
+     "name": "聯華電子",
+     "prev_shares": 10400000,
+     "prev_weight": 2.084,
+     "scale": 1.0,
+     "shares": 8000000,
+     "shares_delta": -2400000,
+     "shares_delta_pct": -23.08,
+     "type": "DECREASE",
+     "weight": 1.48,
+     "weight_delta": -0.604
+    },
+    {
+     "adjusted_shares_delta": -199000,
+     "code": "2345",
+     "name": "智邦科技",
+     "prev_shares": 200000,
+     "prev_weight": 0.488,
+     "scale": 1.0,
+     "shares": 1000,
+     "shares_delta": -199000,
+     "shares_delta_pct": -99.5,
+     "type": "DECREASE",
+     "weight": 0.003,
+     "weight_delta": -0.485
+    }
+   ],
    "holders": null,
    "holdings": [
     {
@@ -6596,14 +6857,14 @@
    "name": "主動復華未來50",
    "nav": 19.48,
    "nav_date": "2026-10-05",
-   "premium_note": null,
-   "premium_pct": -0.05,
-   "quote_date": "2026-10-05",
+   "premium_note": "NAV 2026-10-05 與收盤價 2026-10-06 非同日,不計折溢價",
+   "premium_pct": null,
+   "quote_date": "2026-10-06",
    "scale": 82449089354.0,
-   "status": "stale"
+   "status": "ok"
   },
   "00992A": {
-   "close": 20.21,
+   "close": 20.23,
    "data_date": "2026-10-05",
    "events": [
     {
@@ -6894,15 +7155,15 @@
    "name": "主動群益科技創新",
    "nav": 20.24,
    "nav_date": "2026-10-05",
-   "premium_note": null,
-   "premium_pct": -0.15,
-   "quote_date": "2026-10-05",
+   "premium_note": "NAV 2026-10-05 與收盤價 2026-10-06 非同日,不計折溢價",
+   "premium_pct": null,
+   "quote_date": "2026-10-06",
    "scale": 45021737144.0,
    "status": "ok"
   },
   "00993A": {
-   "close": 14.75,
-   "data_date": "2026-10-02",
+   "close": 14.73,
+   "data_date": "2026-10-05",
    "events": [],
    "holders": 46575.0,
    "holdings": [
@@ -6910,175 +7171,175 @@
      "code": "2330",
      "name": "台積電",
      "shares": 349000,
-     "weight": 8.32
+     "weight": 8.34
     },
     {
      "code": "3037",
      "name": "欣興",
      "shares": 531000,
-     "weight": 6.61
+     "weight": 6.52
     },
     {
      "code": "2454",
      "name": "聯發科",
      "shares": 131000,
-     "weight": 6.19
+     "weight": 6.27
     },
     {
      "code": "3017",
      "name": "奇鋐",
      "shares": 169000,
-     "weight": 5.55
+     "weight": 5.62
     },
     {
      "code": "2383",
      "name": "台光電子",
      "shares": 101000,
-     "weight": 5.0
+     "weight": 5.34
     },
     {
      "code": "3443",
      "name": "創意電子",
      "shares": 66000,
-     "weight": 4.98
+     "weight": 5.26
     },
     {
      "code": "3189",
      "name": "景碩科技",
      "shares": 440000,
-     "weight": 4.41
+     "weight": 4.47
     },
     {
      "code": "6223",
      "name": "旺矽",
      "shares": 82000,
-     "weight": 4.16
+     "weight": 4.2
     },
     {
      "code": "6669",
      "name": "緯穎",
      "shares": 195191,
-     "weight": 3.88
+     "weight": 3.89
     },
     {
      "code": "5274",
      "name": "信驊科技",
      "shares": 20600,
-     "weight": 3.7
+     "weight": 3.73
     },
     {
      "code": "8046",
      "name": "南電",
      "shares": 254000,
-     "weight": 3.54
+     "weight": 3.52
     },
     {
      "code": "2408",
      "name": "南亞科",
      "shares": 626000,
-     "weight": 3.14
+     "weight": 3.08
     },
     {
      "code": "2303",
      "name": "聯電",
      "shares": 1938000,
-     "weight": 2.99
+     "weight": 2.74
     },
     {
      "code": "3653",
      "name": "健策",
      "shares": 41000,
-     "weight": 2.66
+     "weight": 2.74
     },
     {
      "code": "6274",
      "name": "台燿",
      "shares": 159000,
-     "weight": 2.46
-    },
-    {
-     "code": "2345",
-     "name": "智邦",
-     "shares": 129000,
-     "weight": 2.42
+     "weight": 2.62
     },
     {
      "code": "2059",
      "name": "川湖",
      "shares": 20000,
-     "weight": 2.32
+     "weight": 2.48
+    },
+    {
+     "code": "2345",
+     "name": "智邦",
+     "shares": 129000,
+     "weight": 2.48
     },
     {
      "code": "2327",
      "name": "國巨*",
      "shares": 388000,
-     "weight": 2.32
+     "weight": 2.25
     },
     {
      "code": "2344",
      "name": "華邦電子",
      "shares": 1214000,
-     "weight": 2.07
-    },
-    {
-     "code": "3665",
-     "name": "貿聯-KY",
-     "shares": 83000,
-     "weight": 2.01
+     "weight": 2.04
     },
     {
      "code": "2308",
      "name": "台達電子",
      "shares": 108000,
-     "weight": 1.94
+     "weight": 2.01
     },
     {
      "code": "2455",
      "name": "全新",
      "shares": 348000,
-     "weight": 1.93
+     "weight": 1.96
+    },
+    {
+     "code": "3665",
+     "name": "貿聯-KY",
+     "shares": 83000,
+     "weight": 1.91
     },
     {
      "code": "3008",
      "name": "大立光電",
      "shares": 26000,
-     "weight": 1.56
+     "weight": 1.62
     },
     {
      "code": "1303",
      "name": "南亞",
      "shares": 553000,
-     "weight": 1.37
+     "weight": 1.47
     },
     {
      "code": "4958",
      "name": "臻鼎-KY",
      "shares": 246000,
-     "weight": 1.32
+     "weight": 1.31
     },
     {
      "code": "1560",
      "name": "中砂",
      "shares": 111000,
-     "weight": 1.08
+     "weight": 1.07
     },
     {
      "code": "6213",
      "name": "聯茂",
      "shares": 105000,
-     "weight": 0.68
+     "weight": 0.73
     },
     {
      "code": "2395",
      "name": "研華",
      "shares": 90000,
-     "weight": 0.61
+     "weight": 0.62
     },
     {
      "code": "3711",
      "name": "日月光投控",
      "shares": 90000,
-     "weight": 0.61
+     "weight": 0.62
     },
     {
      "code": "3324",
@@ -7090,7 +7351,7 @@
      "code": "2006",
      "name": "東和鋼鐵",
      "shares": 699000,
-     "weight": 0.58
+     "weight": 0.56
     },
     {
      "code": "3081",
@@ -7099,58 +7360,58 @@
      "weight": 0.53
     },
     {
-     "code": "2412",
-     "name": "中華電",
-     "shares": 357000,
-     "weight": 0.5
-    },
-    {
      "code": "6805",
      "name": "富世達",
      "shares": 22000,
+     "weight": 0.5
+    },
+    {
+     "code": "2412",
+     "name": "中華電",
+     "shares": 357000,
      "weight": 0.48
     },
     {
      "code": "2347",
      "name": "聯強",
      "shares": 474000,
-     "weight": 0.44
-    },
-    {
-     "code": "2606",
-     "name": "裕民",
-     "shares": 498000,
-     "weight": 0.36
+     "weight": 0.43
     },
     {
      "code": "3532",
      "name": "台勝科",
      "shares": 80000,
-     "weight": 0.36
+     "weight": 0.35
     },
     {
      "code": "6505",
      "name": "台塑石化",
      "shares": 378000,
-     "weight": 0.36
+     "weight": 0.35
+    },
+    {
+     "code": "2606",
+     "name": "裕民",
+     "shares": 498000,
+     "weight": 0.34
     },
     {
      "code": "2360",
      "name": "致茂",
      "shares": 15000,
-     "weight": 0.31
-    },
-    {
-     "code": "2603",
-     "name": "長榮海運",
-     "shares": 135000,
-     "weight": 0.31
+     "weight": 0.32
     },
     {
      "code": "3406",
      "name": "玉晶光",
      "shares": 33000,
-     "weight": 0.3
+     "weight": 0.32
+    },
+    {
+     "code": "2603",
+     "name": "長榮海運",
+     "shares": 135000,
+     "weight": 0.29
     },
     {
      "code": "3044",
@@ -7162,49 +7423,49 @@
      "code": "4904",
      "name": "遠傳",
      "shares": 266000,
-     "weight": 0.27
+     "weight": 0.26
     },
     {
      "code": "2301",
      "name": "光寶科技",
      "shares": 89000,
-     "weight": 0.24
+     "weight": 0.25
     },
     {
      "code": "2313",
      "name": "華通",
      "shares": 110000,
-     "weight": 0.24
+     "weight": 0.25
     },
     {
      "code": "6147",
      "name": "頎邦",
      "shares": 113000,
-     "weight": 0.24
+     "weight": 0.23
     },
     {
      "code": "2027",
      "name": "大成鋼",
      "shares": 459000,
-     "weight": 0.21
+     "weight": 0.2
     },
     {
      "code": "2618",
      "name": "長榮航",
      "shares": 487000,
-     "weight": 0.2
+     "weight": 0.19
     },
     {
      "code": "8299",
      "name": "群聯電子",
      "shares": 10000,
-     "weight": 0.2
+     "weight": 0.19
     },
     {
      "code": "3491",
      "name": "昇達科技",
      "shares": 11000,
-     "weight": 0.16
+     "weight": 0.17
     },
     {
      "code": "5289",
@@ -7215,16 +7476,16 @@
    ],
    "issuer": "安聯",
    "name": "主動安聯台灣",
-   "nav": 14.28,
-   "nav_date": "2026-10-02",
-   "premium_note": "NAV 2026-10-02 與收盤價 2026-10-05 非同日,不計折溢價",
+   "nav": 14.83,
+   "nav_date": "2026-10-05",
+   "premium_note": "NAV 2026-10-05 與收盤價 2026-10-06 非同日,不計折溢價",
    "premium_pct": null,
-   "quote_date": "2026-10-05",
-   "scale": 10479201510.0,
+   "quote_date": "2026-10-06",
+   "scale": 10783115466.0,
    "status": "ok"
   },
   "00994A": {
-   "close": 18.36,
+   "close": 18.32,
    "data_date": "2026-10-05",
    "events": [],
    "holders": null,
@@ -7480,14 +7741,14 @@
    "name": "主動第一金台股優",
    "nav": 18.44,
    "nav_date": "2026-10-05",
-   "premium_note": null,
-   "premium_pct": -0.43,
-   "quote_date": "2026-10-05",
+   "premium_note": "NAV 2026-10-05 與收盤價 2026-10-06 非同日,不計折溢價",
+   "premium_pct": null,
+   "quote_date": "2026-10-06",
    "scale": 4798918768.0,
    "status": "ok"
   },
   "00995A": {
-   "close": 18.83,
+   "close": 18.88,
    "data_date": "2026-10-05",
    "events": [
     {
@@ -7940,14 +8201,14 @@
    "name": "主動中信台灣卓越",
    "nav": 18.91,
    "nav_date": "2026-10-05",
-   "premium_note": null,
-   "premium_pct": -0.42,
-   "quote_date": "2026-10-05",
+   "premium_note": "NAV 2026-10-05 與收盤價 2026-10-06 非同日,不計折溢價",
+   "premium_pct": null,
+   "quote_date": "2026-10-06",
    "scale": 5088402748.0,
    "status": "ok"
   },
   "00996A": {
-   "close": 15.35,
+   "close": 15.36,
    "data_date": "2026-09-18",
    "events": [],
    "holders": null,
@@ -8269,15 +8530,15 @@
    "name": "主動兆豐台灣豐收",
    "nav": 14.14,
    "nav_date": "2026-09-18",
-   "premium_note": "NAV 2026-09-18 與收盤價 2026-10-05 非同日,不計折溢價",
+   "premium_note": "NAV 2026-09-18 與收盤價 2026-10-06 非同日,不計折溢價",
    "premium_pct": null,
-   "quote_date": "2026-10-05",
+   "quote_date": "2026-10-06",
    "scale": 4020617999.0,
    "status": "stale"
   },
   "00999A": {
-   "close": 11.76,
-   "data_date": "2026-10-02",
+   "close": 11.77,
+   "data_date": "2026-10-05",
    "events": [
     {
      "adjusted_shares_delta": 10000,
@@ -8290,8 +8551,8 @@
      "shares_delta": 10000,
      "shares_delta_pct": 25.64,
      "type": "INCREASE",
-     "weight": 5.11,
-     "weight_delta": 1.12
+     "weight": 5.48,
+     "weight_delta": 1.49
     },
     {
      "adjusted_shares_delta": 8000,
@@ -8304,64 +8565,66 @@
      "shares_delta": 8000,
      "shares_delta_pct": 7.77,
      "type": "INCREASE",
-     "weight": 4.71,
-     "weight_delta": 0.28
+     "weight": 4.81,
+     "weight_delta": 0.38
     },
     {
-     "adjusted_shares_delta": -198000,
+     "adjusted_shares_delta": -465000,
      "code": "5534",
      "name": "長虹建設",
      "prev_shares": 1981000,
      "prev_weight": 1.26,
      "scale": 1.0,
-     "shares": 1783000,
-     "shares_delta": -198000,
-     "shares_delta_pct": -9.99,
+     "shares": 1516000,
+     "shares_delta": -465000,
+     "shares_delta_pct": -23.47,
      "type": "DECREASE",
-     "weight": 1.12,
-     "weight_delta": -0.14
+     "weight": 0.91,
+     "weight_delta": -0.35
     },
     {
-     "adjusted_shares_delta": -363000,
+     "adjusted_shares_delta": -776000,
      "code": "9941",
      "name": "裕融企業",
      "prev_shares": 2014480,
      "prev_weight": 1.36,
      "scale": 1.0,
-     "shares": 1651480,
-     "shares_delta": -363000,
-     "shares_delta_pct": -18.02,
+     "shares": 1238480,
+     "shares_delta": -776000,
+     "shares_delta_pct": -38.52,
      "type": "DECREASE",
-     "weight": 1.09,
-     "weight_delta": -0.27
+     "weight": 0.79,
+     "weight_delta": -0.57
     },
     {
-     "adjusted_shares_delta": -257000,
+     "adjusted_shares_delta": -277000,
+     "code": "4746",
+     "name": "台耀化學",
+     "prev_shares": 1795000,
+     "prev_weight": 0.76,
+     "scale": 1.0,
+     "shares": 1518000,
+     "shares_delta": -277000,
+     "shares_delta_pct": -15.43,
+     "type": "DECREASE",
+     "weight": 0.6,
+     "weight_delta": -0.16
+    },
+    {
      "code": "2393",
      "name": "億光電子工業",
      "prev_shares": 513000,
      "prev_weight": 0.29,
-     "scale": 1.0,
-     "shares": 256000,
-     "shares_delta": -257000,
-     "shares_delta_pct": -50.1,
-     "type": "DECREASE",
-     "weight": 0.14,
-     "weight_delta": -0.15
+     "shares_delta": -513000,
+     "type": "REMOVE"
     },
     {
-     "adjusted_shares_delta": -49000,
      "code": "2727",
      "name": "王品餐飲",
      "prev_shares": 98000,
      "prev_weight": 0.2,
-     "scale": 1.0,
-     "shares": 49000,
-     "shares_delta": -49000,
-     "shares_delta_pct": -50.0,
-     "type": "DECREASE",
-     "weight": 0.1,
-     "weight_delta": -0.1
+     "shares_delta": -98000,
+     "type": "REMOVE"
     },
     {
      "code": "2395",
@@ -8378,211 +8641,193 @@
      "code": "2330",
      "name": "台灣積體電路製造",
      "shares": 288000,
-     "weight": 6.18
+     "weight": 6.22
     },
     {
      "code": "2059",
      "name": "川湖科技",
      "shares": 49000,
-     "weight": 5.11
+     "weight": 5.48
     },
     {
      "code": "2454",
      "name": "聯發科技",
      "shares": 111000,
-     "weight": 4.71
+     "weight": 4.81
     },
     {
      "code": "3653",
      "name": "健策精密工業",
      "shares": 77000,
-     "weight": 4.49
+     "weight": 4.65
     },
     {
      "code": "2383",
      "name": "台光電子材料",
      "shares": 93000,
-     "weight": 4.14
+     "weight": 4.44
     },
     {
      "code": "3037",
      "name": "欣興電子",
      "shares": 334000,
-     "weight": 3.74
+     "weight": 3.71
     },
     {
      "code": "6669",
      "name": "緯穎科技服務",
      "shares": 189225,
-     "weight": 3.39
+     "weight": 3.41
     },
     {
      "code": "7769",
      "name": "鴻勁精密",
      "shares": 64000,
-     "weight": 3.06
+     "weight": 3.12
     },
     {
      "code": "2308",
      "name": "台達電子工業",
      "shares": 185000,
-     "weight": 2.99
+     "weight": 3.11
     },
     {
      "code": "3081",
      "name": "聯亞光電工業",
      "shares": 101700,
-     "weight": 2.55
+     "weight": 2.56
     },
     {
      "code": "2368",
      "name": "金像電子（股）公司",
      "shares": 234000,
-     "weight": 2.22
+     "weight": 2.38
     },
     {
      "code": "6223",
      "name": "旺矽科技",
      "shares": 48000,
-     "weight": 2.19
-    },
-    {
-     "code": "2408",
-     "name": "南亞科技",
-     "shares": 479000,
-     "weight": 2.16
+     "weight": 2.22
     },
     {
      "code": "6515",
      "name": "穎崴科技",
      "shares": 41000,
-     "weight": 2.14
+     "weight": 2.13
     },
     {
-     "code": "2382",
-     "name": "廣達電腦",
-     "shares": 702500,
-     "weight": 2.0
+     "code": "2408",
+     "name": "南亞科技",
+     "shares": 479000,
+     "weight": 2.13
     },
     {
      "code": "3017",
      "name": "奇鋐科技",
      "shares": 67000,
-     "weight": 1.98
+     "weight": 2.01
     },
     {
      "code": "2357",
      "name": "華碩電腦",
      "shares": 238000,
-     "weight": 1.96
+     "weight": 1.98
     },
     {
-     "code": "3026",
-     "name": "禾伸堂企業",
-     "shares": 246000,
-     "weight": 1.76
+     "code": "2382",
+     "name": "廣達電腦",
+     "shares": 702500,
+     "weight": 1.95
     },
     {
      "code": "2345",
      "name": "智邦科技",
      "shares": 101000,
-     "weight": 1.7
+     "weight": 1.76
     },
     {
      "code": "3008",
      "name": "大立光電",
      "shares": 31000,
-     "weight": 1.67
+     "weight": 1.75
     },
     {
-     "code": "3702",
-     "name": "大聯大控股",
-     "shares": 1497000,
-     "weight": 1.53
-    },
-    {
-     "code": "5274",
-     "name": "信驊科技",
-     "shares": 9000,
-     "weight": 1.46
+     "code": "3026",
+     "name": "禾伸堂企業",
+     "shares": 246000,
+     "weight": 1.68
     },
     {
      "code": "6274",
      "name": "台燿科技",
      "shares": 104000,
-     "weight": 1.45
+     "weight": 1.55
     },
     {
-     "code": "3665",
-     "name": "貿聯控股（BizLink Holding In",
-     "shares": 65000,
-     "weight": 1.42
+     "code": "3702",
+     "name": "大聯大控股",
+     "shares": 1497000,
+     "weight": 1.49
+    },
+    {
+     "code": "5274",
+     "name": "信驊科技",
+     "shares": 9000,
+     "weight": 1.47
     },
     {
      "code": "3293",
      "name": "鈊象電子",
      "shares": 206000,
-     "weight": 1.4
-    },
-    {
-     "code": "3529",
-     "name": "力旺電子",
-     "shares": 49000,
-     "weight": 1.33
+     "weight": 1.37
     },
     {
      "code": "2360",
      "name": "致茂電子",
      "shares": 70000,
-     "weight": 1.32
+     "weight": 1.36
+    },
+    {
+     "code": "3665",
+     "name": "貿聯控股（BizLink Holding In",
+     "shares": 65000,
+     "weight": 1.35
+    },
+    {
+     "code": "3529",
+     "name": "力旺電子",
+     "shares": 49000,
+     "weight": 1.3
     },
     {
      "code": "3706",
      "name": "神達控股",
      "shares": 1853400,
-     "weight": 1.29
+     "weight": 1.25
     },
     {
      "code": "2887",
      "name": "台新新光金融控股",
      "shares": 3664360,
-     "weight": 1.28
+     "weight": 1.25
     },
     {
      "code": "2884",
      "name": "玉山金融控股",
      "shares": 3184000,
-     "weight": 1.24
-    },
-    {
-     "code": "2892",
-     "name": "第一金融控股",
-     "shares": 3651000,
-     "weight": 1.21
+     "weight": 1.2
     },
     {
      "code": "2618",
      "name": "長榮航空",
      "shares": 3309000,
-     "weight": 1.2
+     "weight": 1.16
     },
     {
-     "code": "2451",
-     "name": "創見資訊",
-     "shares": 454000,
-     "weight": 1.13
-    },
-    {
-     "code": "2880",
-     "name": "華南金融控股",
-     "shares": 2936388,
-     "weight": 1.13
-    },
-    {
-     "code": "2886",
-     "name": "兆豐金融控股",
-     "shares": 2700000,
-     "weight": 1.13
+     "code": "2892",
+     "name": "第一金融控股",
+     "shares": 3651000,
+     "weight": 1.16
     },
     {
      "code": "2885",
@@ -8591,142 +8836,148 @@
      "weight": 1.12
     },
     {
-     "code": "5534",
-     "name": "長虹建設",
-     "shares": 1783000,
-     "weight": 1.12
+     "code": "2886",
+     "name": "兆豐金融控股",
+     "shares": 2700000,
+     "weight": 1.1
     },
     {
-     "code": "9941",
-     "name": "裕融企業",
-     "shares": 1651480,
-     "weight": 1.09
+     "code": "2880",
+     "name": "華南金融控股",
+     "shares": 2936388,
+     "weight": 1.1
     },
     {
-     "code": "6121",
-     "name": "新普科技",
-     "shares": 316000,
-     "weight": 1.04
+     "code": "2451",
+     "name": "創見資訊",
+     "shares": 454000,
+     "weight": 1.1
     },
     {
      "code": "2890",
      "name": "永豐金融控股",
      "shares": 2734780,
-     "weight": 1.03
+     "weight": 1.01
     },
     {
-     "code": "3227",
-     "name": "原相科技",
-     "shares": 600000,
-     "weight": 0.97
-    },
-    {
-     "code": "2441",
-     "name": "超豐電子",
-     "shares": 890000,
-     "weight": 0.97
+     "code": "6121",
+     "name": "新普科技",
+     "shares": 316000,
+     "weight": 1.01
     },
     {
      "code": "5904",
      "name": "寶雅國際",
      "shares": 1646000,
-     "weight": 0.97
+     "weight": 0.95
+    },
+    {
+     "code": "3227",
+     "name": "原相科技",
+     "shares": 600000,
+     "weight": 0.95
+    },
+    {
+     "code": "2441",
+     "name": "超豐電子",
+     "shares": 890000,
+     "weight": 0.92
+    },
+    {
+     "code": "5534",
+     "name": "長虹建設",
+     "shares": 1516000,
+     "weight": 0.91
     },
     {
      "code": "4904",
      "name": "遠傳電信",
      "shares": 1008000,
-     "weight": 0.92
+     "weight": 0.89
     },
     {
      "code": "3090",
      "name": "日電貿",
      "shares": 599000,
-     "weight": 0.89
-    },
-    {
-     "code": "6138",
-     "name": "茂達電子",
-     "shares": 351000,
-     "weight": 0.86
-    },
-    {
-     "code": "9958",
-     "name": "世紀鋼鐵結構",
-     "shares": 1070000,
-     "weight": 0.84
+     "weight": 0.87
     },
     {
      "code": "6805",
      "name": "富世達",
      "shares": 42000,
-     "weight": 0.83
+     "weight": 0.86
+    },
+    {
+     "code": "6138",
+     "name": "茂達電子",
+     "shares": 351000,
+     "weight": 0.85
     },
     {
      "code": "5434",
      "name": "崇越科技",
      "shares": 160000,
-     "weight": 0.8
+     "weight": 0.83
+    },
+    {
+     "code": "9958",
+     "name": "世紀鋼鐵結構",
+     "shares": 1070000,
+     "weight": 0.81
     },
     {
      "code": "5439",
      "name": "高技企業",
      "shares": 364000,
-     "weight": 0.79
+     "weight": 0.8
     },
     {
-     "code": "4746",
-     "name": "台耀化學",
-     "shares": 1687000,
-     "weight": 0.7
+     "code": "9941",
+     "name": "裕融企業",
+     "shares": 1238480,
+     "weight": 0.79
     },
     {
      "code": "4551",
      "name": "智伸科技",
      "shares": 405000,
-     "weight": 0.65
+     "weight": 0.63
     },
     {
-     "code": "2393",
-     "name": "億光電子工業",
-     "shares": 256000,
-     "weight": 0.14
-    },
-    {
-     "code": "2727",
-     "name": "王品餐飲",
-     "shares": 49000,
-     "weight": 0.1
+     "code": "4746",
+     "name": "台耀化學",
+     "shares": 1518000,
+     "weight": 0.6
     }
    ],
    "issuer": "野村",
    "name": "主動野村臺灣高息",
-   "nav": 11.46,
-   "nav_date": "2026-10-02",
-   "premium_note": "NAV 2026-10-02 與收盤價 2026-10-05 非同日,不計折溢價",
+   "nav": 11.82,
+   "nav_date": "2026-10-05",
+   "premium_note": "NAV 2026-10-05 與收盤價 2026-10-06 非同日,不計折溢價",
    "premium_pct": null,
-   "quote_date": "2026-10-05",
-   "scale": 11653341599.0,
+   "quote_date": "2026-10-06",
+   "scale": 11930859173.0,
    "status": "ok"
   }
  },
  "schema_version": 2,
  "stocks": {
   "1101": {
-   "close": 25.0,
+   "close": 25.2,
    "etf_count": 1,
    "etfs": [
     {
      "etf": "00985A",
      "shares": 4878000,
-     "weight": 0.93
+     "weight": 0.82
     }
    ],
    "name": "臺灣水泥",
    "recent_events": [],
    "total_shares": 4878000,
-   "total_value": 121950000,
-   "total_weight": 0.93
+   "total_value": 122925600,
+   "total_weight": 0.82
   },
   "1215": {
    "close": 104.0,
@@ -8745,7 +8996,7 @@
    "total_weight": 0.07
   },
   "1216": {
-   "close": 72.7,
+   "close": 73.7,
    "etf_count": 4,
    "etfs": [
     {
@@ -8766,55 +9017,49 @@
     {
      "etf": "00985A",
      "shares": 1657000,
-     "weight": 0.91
+     "weight": 0.81
     }
    ],
    "name": "統一企業",
    "recent_events": [],
    "total_shares": 2222000,
-   "total_value": 161539400,
-   "total_weight": 1.54
+   "total_value": 163761400,
+   "total_weight": 1.44
   },
   "1229": {
-   "close": 39.65,
-   "etf_count": 1,
-   "etfs": [
-    {
-     "etf": "00984A",
-     "shares": 500,
-     "weight": 0.0
-    }
-   ],
+   "close": 39.45,
+   "etf_count": 0,
+   "etfs": [],
    "name": "聯華實業",
    "recent_events": [
     {
      "date": "2026-10-05",
      "etf": "00984A",
-     "type": "DECREASE"
+     "type": "REMOVE"
     }
    ],
-   "total_shares": 500,
-   "total_value": 19825,
+   "total_shares": 0,
+   "total_value": 0,
    "total_weight": 0.0
   },
   "1301": {
-   "close": 68.5,
+   "close": 68.6,
    "etf_count": 1,
    "etfs": [
     {
      "etf": "00985A",
      "shares": 1589000,
-     "weight": 0.82
+     "weight": 0.74
     }
    ],
    "name": "台灣塑膠工業",
    "recent_events": [],
    "total_shares": 1589000,
-   "total_value": 108846500,
-   "total_weight": 0.82
+   "total_value": 109005400,
+   "total_weight": 0.74
   },
   "1303": {
-   "close": 286.0,
+   "close": 293.0,
    "etf_count": 16,
    "etfs": [
     {
@@ -8865,12 +9110,12 @@
     {
      "etf": "00980A",
      "shares": 2416000,
-     "weight": 3.11
+     "weight": 3.3
     },
     {
      "etf": "00984A",
      "shares": 991000,
-     "weight": 2.6
+     "weight": 2.8
     },
     {
      "etf": "00991A",
@@ -8885,7 +9130,7 @@
     {
      "etf": "00993A",
      "shares": 553000,
-     "weight": 1.37
+     "weight": 1.47
     },
     {
      "etf": "00994A",
@@ -8899,13 +9144,19 @@
     }
    ],
    "name": "南亞",
-   "recent_events": [],
+   "recent_events": [
+    {
+     "date": "2026-10-05",
+     "etf": "00991A",
+     "type": "INCREASE"
+    }
+   ],
    "total_shares": 32995071,
-   "total_value": 9436590306,
-   "total_weight": 29.1343
+   "total_value": 9667555803,
+   "total_weight": 29.6243
   },
   "1326": {
-   "close": 71.6,
+   "close": 73.0,
    "etf_count": 3,
    "etfs": [
     {
@@ -8916,7 +9167,7 @@
     {
      "etf": "00984A",
      "shares": 1352000,
-     "weight": 0.98
+     "weight": 0.96
     },
     {
      "etf": "00995A",
@@ -8927,27 +9178,27 @@
    "name": "台灣化學纖維",
    "recent_events": [],
    "total_shares": 4252000,
-   "total_value": 304443200,
-   "total_weight": 1.82
+   "total_value": 310396000,
+   "total_weight": 1.8
   },
   "1409": {
-   "close": 25.3,
+   "close": 25.35,
    "etf_count": 1,
    "etfs": [
     {
      "etf": "00984A",
      "shares": 2566000,
-     "weight": 0.65
+     "weight": 0.64
     }
    ],
    "name": "新纖",
    "recent_events": [],
    "total_shares": 2566000,
-   "total_value": 64919800,
-   "total_weight": 0.65
+   "total_value": 65048100,
+   "total_weight": 0.64
   },
   "1477": {
-   "close": 197.5,
+   "close": 203.5,
    "etf_count": 1,
    "etfs": [
     {
@@ -8959,27 +9210,27 @@
    "name": "聚陽實業",
    "recent_events": [],
    "total_shares": 160000,
-   "total_value": 31600000,
+   "total_value": 32560000,
    "total_weight": 0.82
   },
   "1504": {
-   "close": 69.0,
+   "close": 71.1,
    "etf_count": 1,
    "etfs": [
     {
      "etf": "00985A",
      "shares": 2177000,
-     "weight": 1.15
+     "weight": 1.02
     }
    ],
    "name": "東元電機",
    "recent_events": [],
    "total_shares": 2177000,
-   "total_value": 150213000,
-   "total_weight": 1.15
+   "total_value": 154784700,
+   "total_weight": 1.02
   },
   "1519": {
-   "close": 691.0,
+   "close": 696.0,
    "etf_count": 2,
    "etfs": [
     {
@@ -8996,11 +9247,11 @@
    "name": "華城",
    "recent_events": [],
    "total_shares": 9660,
-   "total_value": 6675060,
+   "total_value": 6723360,
    "total_weight": 0.3108
   },
   "1560": {
-   "close": 1040.0,
+   "close": 1030.0,
    "etf_count": 9,
    "etfs": [
     {
@@ -9031,12 +9282,12 @@
     {
      "etf": "00984A",
      "shares": 136000,
-     "weight": 1.39
+     "weight": 1.4
     },
     {
      "etf": "00993A",
      "shares": 111000,
-     "weight": 1.08
+     "weight": 1.07
     },
     {
      "etf": "00994A",
@@ -9058,11 +9309,11 @@
     }
    ],
    "total_shares": 1223000,
-   "total_value": 1271920000,
+   "total_value": 1259690000,
    "total_weight": 9.48
   },
   "1590": {
-   "close": 1180.0,
+   "close": 1195.0,
    "etf_count": 3,
    "etfs": [
     {
@@ -9084,27 +9335,27 @@
    "name": "亞德客-KY",
    "recent_events": [],
    "total_shares": 15000,
-   "total_value": 17700000,
+   "total_value": 17925000,
    "total_weight": 0.0644
   },
   "1605": {
-   "close": 38.4,
+   "close": 38.75,
    "etf_count": 1,
    "etfs": [
     {
      "etf": "00985A",
      "shares": 3636000,
-     "weight": 1.06
+     "weight": 0.94
     }
    ],
    "name": "華新麗華",
    "recent_events": [],
    "total_shares": 3636000,
-   "total_value": 139622400,
-   "total_weight": 1.06
+   "total_value": 140895000,
+   "total_weight": 0.94
   },
   "1717": {
-   "close": 74.6,
+   "close": 74.9,
    "etf_count": 2,
    "etfs": [
     {
@@ -9121,11 +9372,11 @@
    "name": "長興",
    "recent_events": [],
    "total_shares": 1400000,
-   "total_value": 104440000,
+   "total_value": 104860000,
    "total_weight": 1.88
   },
   "1795": {
-   "close": 177.5,
+   "close": 176.0,
    "etf_count": 1,
    "etfs": [
     {
@@ -9137,11 +9388,11 @@
    "name": "美時製藥",
    "recent_events": [],
    "total_shares": 572,
-   "total_value": 101530,
+   "total_value": 100672,
    "total_weight": 0.0
   },
   "1802": {
-   "close": 59.3,
+   "close": 59.8,
    "etf_count": 1,
    "etfs": [
     {
@@ -9153,7 +9404,7 @@
    "name": "台玻",
    "recent_events": [],
    "total_shares": 90000,
-   "total_value": 5337000,
+   "total_value": 5382000,
    "total_weight": 0.13
   },
   "1815": {
@@ -9173,7 +9424,7 @@
    "total_weight": 3.2597
   },
   "1907": {
-   "close": 27.6,
+   "close": 27.75,
    "etf_count": 0,
    "etfs": [],
    "name": "永豐餘",
@@ -9189,7 +9440,7 @@
    "total_weight": 0.0
   },
   "2002": {
-   "close": 18.9,
+   "close": 18.95,
    "etf_count": 1,
    "etfs": [
     {
@@ -9201,32 +9452,32 @@
    "name": "中鋼",
    "recent_events": [],
    "total_shares": 5163000,
-   "total_value": 97580700,
+   "total_value": 97838850,
    "total_weight": 0.03
   },
   "2006": {
-   "close": 85.8,
+   "close": 86.6,
    "etf_count": 2,
    "etfs": [
     {
      "etf": "00984A",
      "shares": 368000,
-     "weight": 0.32
+     "weight": 0.31
     },
     {
      "etf": "00993A",
      "shares": 699000,
-     "weight": 0.58
+     "weight": 0.56
     }
    ],
    "name": "東和鋼鐵",
    "recent_events": [],
    "total_shares": 1067000,
-   "total_value": 91548600,
-   "total_weight": 0.9
+   "total_value": 92402200,
+   "total_weight": 0.87
   },
   "2027": {
-   "close": 47.9,
+   "close": 47.7,
    "etf_count": 3,
    "etfs": [
     {
@@ -9237,22 +9488,22 @@
     {
      "etf": "00985A",
      "shares": 2097000,
-     "weight": 0.76
+     "weight": 0.68
     },
     {
      "etf": "00993A",
      "shares": 459000,
-     "weight": 0.21
+     "weight": 0.2
     }
    ],
    "name": "大成不?鋼工業",
    "recent_events": [],
    "total_shares": 3979000,
-   "total_value": 190594100,
-   "total_weight": 2.5573
+   "total_value": 189798300,
+   "total_weight": 2.4673
   },
   "2049": {
-   "close": 345.5,
+   "close": 339.5,
    "etf_count": 1,
    "etfs": [
     {
@@ -9264,11 +9515,11 @@
    "name": "上銀",
    "recent_events": [],
    "total_shares": 1000,
-   "total_value": 345500,
+   "total_value": 339500,
    "total_weight": 0.0
   },
   "2059": {
-   "close": 13355.0,
+   "close": 13100.0,
    "etf_count": 19,
    "etfs": [
     {
@@ -9319,7 +9570,7 @@
     {
      "etf": "00980A",
      "shares": 79000,
-     "weight": 4.75
+     "weight": 5.04
     },
     {
      "etf": "00982A",
@@ -9329,12 +9580,12 @@
     {
      "etf": "00984A",
      "shares": 20000,
-     "weight": 2.45
+     "weight": 2.64
     },
     {
      "etf": "00985A",
-     "shares": 1000,
-     "weight": 0.09
+     "shares": 13000,
+     "weight": 1.17
     },
     {
      "etf": "00991A",
@@ -9349,7 +9600,7 @@
     {
      "etf": "00993A",
      "shares": 20000,
-     "weight": 2.32
+     "weight": 2.48
     },
     {
      "etf": "00994A",
@@ -9364,7 +9615,7 @@
     {
      "etf": "00999A",
      "shares": 49000,
-     "weight": 5.11
+     "weight": 5.48
     }
    ],
    "name": "川湖",
@@ -9381,16 +9632,21 @@
     },
     {
      "date": "2026-10-05",
+     "etf": "00985A",
+     "type": "INCREASE"
+    },
+    {
+     "date": "2026-10-05",
      "etf": "00999A",
      "type": "INCREASE"
     }
    ],
-   "total_shares": 1395622,
-   "total_value": 18638531810,
-   "total_weight": 54.8015
+   "total_shares": 1407622,
+   "total_value": 18439848200,
+   "total_weight": 56.8915
   },
   "2301": {
-   "close": 298.0,
+   "close": 299.0,
    "etf_count": 8,
    "etfs": [
     {
@@ -9421,7 +9677,7 @@
     {
      "etf": "00984A",
      "shares": 229000,
-     "weight": 0.65
+     "weight": 0.67
     },
     {
      "etf": "00992A",
@@ -9431,17 +9687,17 @@
     {
      "etf": "00993A",
      "shares": 89000,
-     "weight": 0.24
+     "weight": 0.25
     }
    ],
    "name": "光寶科",
    "recent_events": [],
    "total_shares": 5792000,
-   "total_value": 1726016000,
-   "total_weight": 6.3336
+   "total_value": 1731808000,
+   "total_weight": 6.3636
   },
   "2303": {
-   "close": 152.5,
+   "close": 147.5,
    "etf_count": 18,
    "etfs": [
     {
@@ -9487,7 +9743,7 @@
     {
      "etf": "00980A",
      "shares": 1474000,
-     "weight": 1.18
+     "weight": 1.07
     },
     {
      "etf": "00981A",
@@ -9502,12 +9758,12 @@
     {
      "etf": "00984A",
      "shares": 564000,
-     "weight": 0.92
+     "weight": 0.85
     },
     {
      "etf": "00985A",
-     "shares": 1648000,
-     "weight": 2.01
+     "shares": 2186000,
+     "weight": 2.25
     },
     {
      "etf": "00991A",
@@ -9517,7 +9773,7 @@
     {
      "etf": "00993A",
      "shares": 1938000,
-     "weight": 2.99
+     "weight": 2.74
     },
     {
      "etf": "00994A",
@@ -9556,14 +9812,19 @@
      "date": "2026-10-05",
      "etf": "00985A",
      "type": "INCREASE"
+    },
+    {
+     "date": "2026-10-05",
+     "etf": "00991A",
+     "type": "DECREASE"
     }
    ],
-   "total_shares": 157264546,
-   "total_value": 23982843265,
-   "total_weight": 35.2313
+   "total_shares": 157802546,
+   "total_value": 23275875535,
+   "total_weight": 35.0413
   },
   "2308": {
-   "close": 2005.0,
+   "close": 2050.0,
    "etf_count": 18,
    "etfs": [
     {
@@ -9609,7 +9870,7 @@
     {
      "etf": "00980A",
      "shares": 404000,
-     "weight": 3.77
+     "weight": 3.87
     },
     {
      "etf": "00981A",
@@ -9619,7 +9880,7 @@
     {
      "etf": "00985A",
      "shares": 120000,
-     "weight": 1.71
+     "weight": 1.63
     },
     {
      "etf": "00991A",
@@ -9634,7 +9895,7 @@
     {
      "etf": "00993A",
      "shares": 108000,
-     "weight": 1.94
+     "weight": 2.01
     },
     {
      "etf": "00994A",
@@ -9654,17 +9915,23 @@
     {
      "etf": "00999A",
      "shares": 185000,
-     "weight": 2.99
+     "weight": 3.11
     }
    ],
    "name": "台達電",
-   "recent_events": [],
+   "recent_events": [
+    {
+     "date": "2026-10-05",
+     "etf": "00991A",
+     "type": "DECREASE"
+    }
+   ],
    "total_shares": 14566500,
-   "total_value": 29205832500,
-   "total_weight": 52.6296
+   "total_value": 29861325000,
+   "total_weight": 52.8396
   },
   "2313": {
-   "close": 248.5,
+   "close": 252.0,
    "etf_count": 7,
    "etfs": [
     {
@@ -9685,7 +9952,7 @@
     {
      "etf": "00984A",
      "shares": 62000,
-     "weight": 0.14
+     "weight": 0.15
     },
     {
      "etf": "00991A",
@@ -9695,7 +9962,7 @@
     {
      "etf": "00993A",
      "shares": 110000,
-     "weight": 0.24
+     "weight": 0.25
     },
     {
      "etf": "00995A",
@@ -9706,11 +9973,11 @@
    "name": "華通",
    "recent_events": [],
    "total_shares": 2004358,
-   "total_value": 498082963,
-   "total_weight": 2.75
+   "total_value": 505098216,
+   "total_weight": 2.77
   },
   "2317": {
-   "close": 254.0,
+   "close": 256.0,
    "etf_count": 10,
    "etfs": [
     {
@@ -9741,7 +10008,7 @@
     {
      "etf": "00980A",
      "shares": 1616000,
-     "weight": 2.01
+     "weight": 1.96
     },
     {
      "etf": "00981A",
@@ -9751,7 +10018,7 @@
     {
      "etf": "00985A",
      "shares": 910000,
-     "weight": 1.73
+     "weight": 1.56
     },
     {
      "etf": "00991A",
@@ -9767,11 +10034,11 @@
    "name": "鴻海",
    "recent_events": [],
    "total_shares": 8299058,
-   "total_value": 2107960732,
-   "total_weight": 6.9014
+   "total_value": 2124558848,
+   "total_weight": 6.6814
   },
   "2327": {
-   "close": 626.0,
+   "close": 625.0,
    "etf_count": 13,
    "etfs": [
     {
@@ -9802,7 +10069,7 @@
     {
      "etf": "00980A",
      "shares": 485000,
-     "weight": 1.5
+     "weight": 1.45
     },
     {
      "etf": "00981A",
@@ -9811,8 +10078,8 @@
     },
     {
      "etf": "00985A",
-     "shares": 492000,
-     "weight": 2.33
+     "shares": 694000,
+     "weight": 2.94
     },
     {
      "etf": "00991A",
@@ -9822,7 +10089,7 @@
     {
      "etf": "00993A",
      "shares": 388000,
-     "weight": 2.32
+     "weight": 2.25
     },
     {
      "etf": "00994A",
@@ -9853,12 +10120,12 @@
      "type": "INCREASE"
     }
    ],
-   "total_shares": 43749000,
-   "total_value": 27386874000,
-   "total_weight": 33.596
+   "total_shares": 43951000,
+   "total_value": 27469375000,
+   "total_weight": 34.086
   },
   "2330": {
-   "close": 2575.0,
+   "close": 2585.0,
    "etf_count": 22,
    "etfs": [
     {
@@ -9909,7 +10176,7 @@
     {
      "etf": "00980A",
      "shares": 753000,
-     "weight": 9.31
+     "weight": 9.26
     },
     {
      "etf": "00981A",
@@ -9923,13 +10190,13 @@
     },
     {
      "etf": "00984A",
-     "shares": 167000,
-     "weight": 4.21
+     "shares": 176000,
+     "weight": 4.48
     },
     {
      "etf": "00985A",
-     "shares": 680000,
-     "weight": 12.84
+     "shares": 920000,
+     "weight": 16.01
     },
     {
      "etf": "00987A",
@@ -9949,7 +10216,7 @@
     {
      "etf": "00993A",
      "shares": 349000,
-     "weight": 8.32
+     "weight": 8.34
     },
     {
      "etf": "00994A",
@@ -9969,17 +10236,28 @@
     {
      "etf": "00999A",
      "shares": 288000,
-     "weight": 6.18
+     "weight": 6.22
     }
    ],
    "name": "台積電",
-   "recent_events": [],
-   "total_shares": 34379361,
-   "total_value": 88526854575,
-   "total_weight": 217.2117
+   "recent_events": [
+    {
+     "date": "2026-10-05",
+     "etf": "00984A",
+     "type": "INCREASE"
+    },
+    {
+     "date": "2026-10-05",
+     "etf": "00985A",
+     "type": "INCREASE"
+    }
+   ],
+   "total_shares": 34628361,
+   "total_value": 89514313185,
+   "total_weight": 220.6617
   },
   "2337": {
-   "close": 121.5,
+   "close": 119.5,
    "etf_count": 1,
    "etfs": [
     {
@@ -9991,11 +10269,11 @@
    "name": "旺宏",
    "recent_events": [],
    "total_shares": 1000,
-   "total_value": 121500,
+   "total_value": 119500,
    "total_weight": 0.0
   },
   "2344": {
-   "close": 181.0,
+   "close": 177.5,
    "etf_count": 10,
    "etfs": [
     {
@@ -10021,22 +10299,22 @@
     {
      "etf": "00980A",
      "shares": 2293000,
-     "weight": 2.03
+     "weight": 1.98
     },
     {
      "etf": "00984A",
      "shares": 421000,
-     "weight": 0.76
+     "weight": 0.75
     },
     {
      "etf": "00985A",
      "shares": 243000,
-     "weight": 0.33
+     "weight": 0.3
     },
     {
      "etf": "00993A",
      "shares": 1214000,
-     "weight": 2.07
+     "weight": 2.04
     },
     {
      "etf": "00995A",
@@ -10058,11 +10336,11 @@
     }
    ],
    "total_shares": 5903000,
-   "total_value": 1068443000,
-   "total_weight": 7.6
+   "total_value": 1047782500,
+   "total_weight": 7.48
   },
   "2345": {
-   "close": 2075.0,
+   "close": 2050.0,
    "etf_count": 18,
    "etfs": [
     {
@@ -10103,7 +10381,7 @@
     {
      "etf": "00980A",
      "shares": 142000,
-     "weight": 1.38
+     "weight": 1.41
     },
     {
      "etf": "00981A",
@@ -10117,8 +10395,8 @@
     },
     {
      "etf": "00985A",
-     "shares": 80000,
-     "weight": 1.19
+     "shares": 326000,
+     "weight": 4.57
     },
     {
      "etf": "00987A",
@@ -10138,7 +10416,7 @@
     {
      "etf": "00993A",
      "shares": 129000,
-     "weight": 2.42
+     "weight": 2.48
     },
     {
      "etf": "00994A",
@@ -10153,7 +10431,7 @@
     {
      "etf": "00999A",
      "shares": 101000,
-     "weight": 1.7
+     "weight": 1.76
     }
    ],
    "name": "智邦科技",
@@ -10167,14 +10445,24 @@
      "date": "2026-10-05",
      "etf": "00982A",
      "type": "DECREASE"
+    },
+    {
+     "date": "2026-10-05",
+     "etf": "00985A",
+     "type": "INCREASE"
+    },
+    {
+     "date": "2026-10-05",
+     "etf": "00991A",
+     "type": "DECREASE"
     }
    ],
-   "total_shares": 11604423,
-   "total_value": 24079177725,
-   "total_weight": 37.8485
+   "total_shares": 11850423,
+   "total_value": 24293367150,
+   "total_weight": 41.3785
   },
   "2347": {
-   "close": 97.0,
+   "close": 95.8,
    "etf_count": 2,
    "etfs": [
     {
@@ -10185,7 +10473,7 @@
     {
      "etf": "00993A",
      "shares": 474000,
-     "weight": 0.44
+     "weight": 0.43
     }
    ],
    "name": "聯強國際",
@@ -10197,11 +10485,11 @@
     }
    ],
    "total_shares": 1271000,
-   "total_value": 123287000,
-   "total_weight": 2.2404
+   "total_value": 121761800,
+   "total_weight": 2.2304
   },
   "2351": {
-   "close": 222.0,
+   "close": 218.5,
    "etf_count": 2,
    "etfs": [
     {
@@ -10212,17 +10500,17 @@
     {
      "etf": "00984A",
      "shares": 299000,
-     "weight": 0.64
+     "weight": 0.66
     }
    ],
    "name": "順德工業",
    "recent_events": [],
    "total_shares": 372000,
-   "total_value": 82584000,
-   "total_weight": 1.0174
+   "total_value": 81282000,
+   "total_weight": 1.0374
   },
   "2357": {
-   "close": 995.0,
+   "close": 1000.0,
    "etf_count": 7,
    "etfs": [
     {
@@ -10243,7 +10531,7 @@
     {
      "etf": "00984A",
      "shares": 68000,
-     "weight": 0.66
+     "weight": 0.67
     },
     {
      "etf": "00991A",
@@ -10258,17 +10546,17 @@
     {
      "etf": "00999A",
      "shares": 238000,
-     "weight": 1.96
+     "weight": 1.98
     }
    ],
    "name": "華碩電腦",
    "recent_events": [],
    "total_shares": 641000,
-   "total_value": 637795000,
-   "total_weight": 7.671
+   "total_value": 641000000,
+   "total_weight": 7.701
   },
   "2360": {
-   "close": 2325.0,
+   "close": 2350.0,
    "etf_count": 17,
    "etfs": [
     {
@@ -10309,7 +10597,7 @@
     {
      "etf": "00980A",
      "shares": 148000,
-     "weight": 1.6
+     "weight": 1.64
     },
     {
      "etf": "00981A",
@@ -10334,7 +10622,7 @@
     {
      "etf": "00993A",
      "shares": 15000,
-     "weight": 0.31
+     "weight": 0.32
     },
     {
      "etf": "00994A",
@@ -10354,7 +10642,7 @@
     {
      "etf": "00999A",
      "shares": 70000,
-     "weight": 1.32
+     "weight": 1.36
     }
    ],
    "name": "致茂",
@@ -10366,11 +10654,11 @@
     }
    ],
    "total_shares": 2276497,
-   "total_value": 5292855525,
-   "total_weight": 21.7999
+   "total_value": 5349767950,
+   "total_weight": 21.8899
   },
   "2368": {
-   "close": 1215.0,
+   "close": 1260.0,
    "etf_count": 12,
    "etfs": [
     {
@@ -10401,7 +10689,7 @@
     {
      "etf": "00980A",
      "shares": 337000,
-     "weight": 1.84
+     "weight": 1.96
     },
     {
      "etf": "00981A",
@@ -10431,7 +10719,7 @@
     {
      "etf": "00999A",
      "shares": 234000,
-     "weight": 2.22
+     "weight": 2.38
     }
    ],
    "name": "金像電",
@@ -10443,11 +10731,11 @@
     }
    ],
    "total_shares": 5098163,
-   "total_value": 6194268045,
-   "total_weight": 18.2192
+   "total_value": 6423685380,
+   "total_weight": 18.4992
   },
   "2376": {
-   "close": 388.5,
+   "close": 380.0,
    "etf_count": 5,
    "etfs": [
     {
@@ -10458,7 +10746,7 @@
     {
      "etf": "00980A",
      "shares": 484000,
-     "weight": 0.89
+     "weight": 0.9
     },
     {
      "etf": "00982A",
@@ -10467,8 +10755,8 @@
     },
     {
      "etf": "00985A",
-     "shares": 1414000,
-     "weight": 3.99
+     "shares": 1581000,
+     "weight": 4.15
     },
     {
      "etf": "00992A",
@@ -10484,9 +10772,9 @@
      "type": "INCREASE"
     }
    ],
-   "total_shares": 4198000,
-   "total_value": 1630923000,
-   "total_weight": 7.9564
+   "total_shares": 4365000,
+   "total_value": 1658700000,
+   "total_weight": 8.1264
   },
   "2377": {
    "close": 155.0,
@@ -10500,14 +10788,14 @@
     {
      "etf": "00985A",
      "shares": 1302000,
-     "weight": 1.52
+     "weight": 1.36
     }
    ],
    "name": "微星",
    "recent_events": [],
    "total_shares": 4646000,
    "total_value": 720130000,
-   "total_weight": 2.4863
+   "total_weight": 2.3263
   },
   "2379": {
    "close": 755.0,
@@ -10531,7 +10819,7 @@
     {
      "etf": "00984A",
      "shares": 42000,
-     "weight": 0.32
+     "weight": 0.31
     },
     {
      "etf": "00991A",
@@ -10543,10 +10831,10 @@
    "recent_events": [],
    "total_shares": 225000,
    "total_value": 169875000,
-   "total_weight": 2.6311
+   "total_weight": 2.6211
   },
   "2382": {
-   "close": 331.0,
+   "close": 333.5,
    "etf_count": 8,
    "etfs": [
     {
@@ -10567,7 +10855,7 @@
     {
      "etf": "00980A",
      "shares": 718000,
-     "weight": 1.18
+     "weight": 1.13
     },
     {
      "etf": "00981A",
@@ -10587,17 +10875,17 @@
     {
      "etf": "00999A",
      "shares": 702500,
-     "weight": 2.0
+     "weight": 1.95
     }
    ],
    "name": "廣達電腦",
    "recent_events": [],
    "total_shares": 1945500,
-   "total_value": 643960500,
-   "total_weight": 7.4944
+   "total_value": 648824250,
+   "total_weight": 7.3944
   },
   "2383": {
-   "close": 5700.0,
+   "close": 5995.0,
    "etf_count": 22,
    "etfs": [
     {
@@ -10648,7 +10936,7 @@
     {
      "etf": "00980A",
      "shares": 166000,
-     "weight": 4.26
+     "weight": 4.52
     },
     {
      "etf": "00981A",
@@ -10663,12 +10951,12 @@
     {
      "etf": "00984A",
      "shares": 26000,
-     "weight": 1.36
+     "weight": 1.46
     },
     {
      "etf": "00985A",
      "shares": 62000,
-     "weight": 2.43
+     "weight": 2.39
     },
     {
      "etf": "00987A",
@@ -10688,7 +10976,7 @@
     {
      "etf": "00993A",
      "shares": 101000,
-     "weight": 5.0
+     "weight": 5.34
     },
     {
      "etf": "00994A",
@@ -10708,7 +10996,7 @@
     {
      "etf": "00999A",
      "shares": 93000,
-     "weight": 4.14
+     "weight": 4.44
     }
    ],
    "name": "台光電",
@@ -10725,33 +11013,27 @@
     }
    ],
    "total_shares": 10263535,
-   "total_value": 58502149500,
-   "total_weight": 107.6313
+   "total_value": 61529892325,
+   "total_weight": 108.5913
   },
   "2393": {
-   "close": 67.0,
-   "etf_count": 1,
-   "etfs": [
-    {
-     "etf": "00999A",
-     "shares": 256000,
-     "weight": 0.14
-    }
-   ],
+   "close": 67.2,
+   "etf_count": 0,
+   "etfs": [],
    "name": "億光電子工業",
    "recent_events": [
     {
      "date": "2026-10-05",
      "etf": "00999A",
-     "type": "DECREASE"
+     "type": "REMOVE"
     }
    ],
-   "total_shares": 256000,
-   "total_value": 17152000,
-   "total_weight": 0.14
+   "total_shares": 0,
+   "total_value": 0,
+   "total_weight": 0.0
   },
   "2395": {
-   "close": 740.0,
+   "close": 738.0,
    "etf_count": 8,
    "etfs": [
     {
@@ -10782,17 +11064,17 @@
     {
      "etf": "00984A",
      "shares": 361000,
-     "weight": 2.6
+     "weight": 2.64
     },
     {
      "etf": "00985A",
-     "shares": 517000,
-     "weight": 2.8
+     "shares": 598000,
+     "weight": 2.99
     },
     {
      "etf": "00993A",
      "shares": 90000,
-     "weight": 0.61
+     "weight": 0.62
     }
    ],
    "name": "研華",
@@ -10808,12 +11090,12 @@
      "type": "REMOVE"
     }
    ],
-   "total_shares": 2169000,
-   "total_value": 1605060000,
-   "total_weight": 10.4509
+   "total_shares": 2250000,
+   "total_value": 1660500000,
+   "total_weight": 10.6909
   },
   "2404": {
-   "close": 1310.0,
+   "close": 1335.0,
    "etf_count": 3,
    "etfs": [
     {
@@ -10823,8 +11105,8 @@
     },
     {
      "etf": "00984A",
-     "shares": 32000,
-     "weight": 0.41
+     "shares": 34000,
+     "weight": 0.44
     },
     {
      "etf": "00992A",
@@ -10834,12 +11116,12 @@
    ],
    "name": "漢唐",
    "recent_events": [],
-   "total_shares": 188000,
-   "total_value": 246280000,
-   "total_weight": 0.861
+   "total_shares": 190000,
+   "total_value": 253650000,
+   "total_weight": 0.891
   },
   "2408": {
-   "close": 530.0,
+   "close": 525.0,
    "etf_count": 14,
    "etfs": [
     {
@@ -10865,7 +11147,7 @@
     {
      "etf": "00980A",
      "shares": 1096000,
-     "weight": 2.85
+     "weight": 2.77
     },
     {
      "etf": "00981A",
@@ -10875,12 +11157,12 @@
     {
      "etf": "00984A",
      "shares": 441000,
-     "weight": 2.34
+     "weight": 2.31
     },
     {
      "etf": "00985A",
      "shares": 310000,
-     "weight": 1.23
+     "weight": 1.11
     },
     {
      "etf": "00987A",
@@ -10895,7 +11177,7 @@
     {
      "etf": "00993A",
      "shares": 626000,
-     "weight": 3.14
+     "weight": 3.08
     },
     {
      "etf": "00994A",
@@ -10910,23 +11192,29 @@
     {
      "etf": "00999A",
      "shares": 479000,
-     "weight": 2.16
+     "weight": 2.13
     }
    ],
    "name": "南亞科",
-   "recent_events": [],
+   "recent_events": [
+    {
+     "date": "2026-10-05",
+     "etf": "00991A",
+     "type": "DECREASE"
+    }
+   ],
    "total_shares": 18712000,
-   "total_value": 9917360000,
-   "total_weight": 31.3847
+   "total_value": 9823800000,
+   "total_weight": 31.0647
   },
   "2409": {
-   "close": 39.05,
+   "close": 37.45,
    "etf_count": 1,
    "etfs": [
     {
      "etf": "00984A",
      "shares": 3320000,
-     "weight": 1.35
+     "weight": 1.28
     }
    ],
    "name": "友達",
@@ -10938,8 +11226,8 @@
     }
    ],
    "total_shares": 3320000,
-   "total_value": 129646000,
-   "total_weight": 1.35
+   "total_value": 124334000,
+   "total_weight": 1.28
   },
   "2412": {
    "close": 145.5,
@@ -10957,8 +11245,8 @@
     },
     {
      "etf": "00985A",
-     "shares": 3734000,
-     "weight": 4.12
+     "shares": 1888000,
+     "weight": 1.86
     },
     {
      "etf": "00991A",
@@ -10968,17 +11256,23 @@
     {
      "etf": "00993A",
      "shares": 357000,
-     "weight": 0.5
+     "weight": 0.48
     }
    ],
    "name": "中華電信",
-   "recent_events": [],
-   "total_shares": 4358000,
-   "total_value": 634089000,
-   "total_weight": 5.42
+   "recent_events": [
+    {
+     "date": "2026-10-05",
+     "etf": "00985A",
+     "type": "DECREASE"
+    }
+   ],
+   "total_shares": 2512000,
+   "total_value": 365496000,
+   "total_weight": 3.14
   },
   "2428": {
-   "close": 262.0,
+   "close": 262.5,
    "etf_count": 1,
    "etfs": [
     {
@@ -10990,11 +11284,11 @@
    "name": "興勤",
    "recent_events": [],
    "total_shares": 2268000,
-   "total_value": 594216000,
+   "total_value": 595350000,
    "total_weight": 1.1078
   },
   "2436": {
-   "close": 73.2,
+   "close": 74.1,
    "etf_count": 1,
    "etfs": [
     {
@@ -11006,11 +11300,11 @@
    "name": "偉詮電子",
    "recent_events": [],
    "total_shares": 691000,
-   "total_value": 50581200,
+   "total_value": 51203100,
    "total_weight": 1.1779
   },
   "2439": {
-   "close": 75.3,
+   "close": 75.2,
    "etf_count": 1,
    "etfs": [
     {
@@ -11022,27 +11316,27 @@
    "name": "美律",
    "recent_events": [],
    "total_shares": 1000,
-   "total_value": 75300,
+   "total_value": 75200,
    "total_weight": 0.0
   },
   "2441": {
-   "close": 124.0,
+   "close": 126.5,
    "etf_count": 1,
    "etfs": [
     {
      "etf": "00999A",
      "shares": 890000,
-     "weight": 0.97
+     "weight": 0.92
     }
    ],
    "name": "超豐電子",
    "recent_events": [],
    "total_shares": 890000,
-   "total_value": 110360000,
-   "total_weight": 0.97
+   "total_value": 112585000,
+   "total_weight": 0.92
   },
   "2449": {
-   "close": 294.0,
+   "close": 298.0,
    "etf_count": 10,
    "etfs": [
     {
@@ -11099,11 +11393,11 @@
    "name": "京元電子",
    "recent_events": [],
    "total_shares": 19724648,
-   "total_value": 5799046512,
+   "total_value": 5877945104,
    "total_weight": 7.2287
   },
   "2451": {
-   "close": 289.5,
+   "close": 279.0,
    "etf_count": 2,
    "etfs": [
     {
@@ -11114,17 +11408,17 @@
     {
      "etf": "00999A",
      "shares": 454000,
-     "weight": 1.13
+     "weight": 1.1
     }
    ],
    "name": "創見",
    "recent_events": [],
    "total_shares": 706000,
-   "total_value": 204387000,
-   "total_weight": 1.43
+   "total_value": 196974000,
+   "total_weight": 1.4
   },
   "2454": {
-   "close": 5165.0,
+   "close": 4920.0,
    "etf_count": 22,
    "etfs": [
     {
@@ -11175,7 +11469,7 @@
     {
      "etf": "00980A",
      "shares": 249000,
-     "weight": 6.1
+     "weight": 6.14
     },
     {
      "etf": "00981A",
@@ -11189,13 +11483,13 @@
     },
     {
      "etf": "00984A",
-     "shares": 17000,
-     "weight": 0.85
+     "shares": 19000,
+     "weight": 0.97
     },
     {
      "etf": "00985A",
      "shares": 67000,
-     "weight": 2.5
+     "weight": 2.34
     },
     {
      "etf": "00987A",
@@ -11215,7 +11509,7 @@
     {
      "etf": "00993A",
      "shares": 131000,
-     "weight": 6.19
+     "weight": 6.27
     },
     {
      "etf": "00994A",
@@ -11235,23 +11529,28 @@
     {
      "etf": "00999A",
      "shares": 111000,
-     "weight": 4.71
+     "weight": 4.81
     }
    ],
    "name": "聯發科",
    "recent_events": [
     {
      "date": "2026-10-05",
+     "etf": "00984A",
+     "type": "INCREASE"
+    },
+    {
+     "date": "2026-10-05",
      "etf": "00999A",
      "type": "INCREASE"
     }
    ],
-   "total_shares": 12097328,
-   "total_value": 62482699120,
-   "total_weight": 127.8853
+   "total_shares": 12099328,
+   "total_value": 59528693760,
+   "total_weight": 128.0653
   },
   "2455": {
-   "close": 606.0,
+   "close": 567.0,
    "etf_count": 9,
    "etfs": [
     {
@@ -11292,7 +11591,7 @@
     {
      "etf": "00993A",
      "shares": 348000,
-     "weight": 1.93
+     "weight": 1.96
     },
     {
      "etf": "00995A",
@@ -11309,27 +11608,27 @@
     }
    ],
    "total_shares": 3946000,
-   "total_value": 2391276000,
-   "total_weight": 18.4837
+   "total_value": 2237382000,
+   "total_weight": 18.5137
   },
   "2464": {
-   "close": 191.0,
+   "close": 182.5,
    "etf_count": 1,
    "etfs": [
     {
      "etf": "00984A",
      "shares": 651000,
-     "weight": 1.28
+     "weight": 1.23
     }
    ],
    "name": "盟立",
    "recent_events": [],
    "total_shares": 651000,
-   "total_value": 124341000,
-   "total_weight": 1.28
+   "total_value": 118807500,
+   "total_weight": 1.23
   },
   "2467": {
-   "close": 577.0,
+   "close": 576.0,
    "etf_count": 3,
    "etfs": [
     {
@@ -11351,11 +11650,11 @@
    "name": "志聖",
    "recent_events": [],
    "total_shares": 1052000,
-   "total_value": 607004000,
+   "total_value": 605952000,
    "total_weight": 1.7157
   },
   "2472": {
-   "close": 227.0,
+   "close": 228.0,
    "etf_count": 2,
    "etfs": [
     {
@@ -11372,11 +11671,11 @@
    "name": "立隆電子工業",
    "recent_events": [],
    "total_shares": 427000,
-   "total_value": 96929000,
+   "total_value": 97356000,
    "total_weight": 2.29
   },
   "2476": {
-   "close": 128.5,
+   "close": 131.5,
    "etf_count": 1,
    "etfs": [
     {
@@ -11388,11 +11687,11 @@
    "name": "鉅祥",
    "recent_events": [],
    "total_shares": 1281000,
-   "total_value": 164608500,
+   "total_value": 168451500,
    "total_weight": 0.3069
   },
   "2478": {
-   "close": 126.5,
+   "close": 128.5,
    "etf_count": 1,
    "etfs": [
     {
@@ -11404,11 +11703,11 @@
    "name": "大毅",
    "recent_events": [],
    "total_shares": 4331000,
-   "total_value": 547871500,
+   "total_value": 556533500,
    "total_weight": 1.0214
   },
   "2481": {
-   "close": 180.5,
+   "close": 176.0,
    "etf_count": 5,
    "etfs": [
     {
@@ -11440,11 +11739,11 @@
    "name": "強茂",
    "recent_events": [],
    "total_shares": 2751000,
-   "total_value": 496555500,
+   "total_value": 484176000,
    "total_weight": 2.67
   },
   "2486": {
-   "close": 247.0,
+   "close": 241.0,
    "etf_count": 4,
    "etfs": [
     {
@@ -11477,7 +11776,7 @@
     }
    ],
    "total_shares": 2554000,
-   "total_value": 630838000,
+   "total_value": 615514000,
    "total_weight": 2.32
   },
   "2520": {
@@ -11497,7 +11796,7 @@
    "total_weight": 0.0
   },
   "2542": {
-   "close": 38.05,
+   "close": 38.2,
    "etf_count": 2,
    "etfs": [
     {
@@ -11520,11 +11819,11 @@
     }
    ],
    "total_shares": 3390000,
-   "total_value": 128989500,
+   "total_value": 129498000,
    "total_weight": 5.1276
   },
   "2603": {
-   "close": 234.5,
+   "close": 236.5,
    "etf_count": 6,
    "etfs": [
     {
@@ -11540,12 +11839,12 @@
     {
      "etf": "00984A",
      "shares": 726000,
-     "weight": 1.76
+     "weight": 1.68
     },
     {
      "etf": "00985A",
      "shares": 787000,
-     "weight": 1.43
+     "weight": 1.25
     },
     {
      "etf": "00991A",
@@ -11555,30 +11854,30 @@
     {
      "etf": "00993A",
      "shares": 135000,
-     "weight": 0.31
+     "weight": 0.29
     }
    ],
    "name": "長榮",
    "recent_events": [],
    "total_shares": 2979226,
-   "total_value": 698628497,
-   "total_weight": 5.333
+   "total_value": 704586949,
+   "total_weight": 5.053
   },
   "2606": {
-   "close": 74.3,
+   "close": 75.3,
    "etf_count": 1,
    "etfs": [
     {
      "etf": "00993A",
      "shares": 498000,
-     "weight": 0.36
+     "weight": 0.34
     }
    ],
    "name": "裕民",
    "recent_events": [],
    "total_shares": 498000,
-   "total_value": 37001400,
-   "total_weight": 0.36
+   "total_value": 37499400,
+   "total_weight": 0.34
   },
   "2610": {
    "close": 20.1,
@@ -11587,17 +11886,17 @@
     {
      "etf": "00985A",
      "shares": 8783000,
-     "weight": 1.35
+     "weight": 1.19
     }
    ],
    "name": "中華航空",
    "recent_events": [],
    "total_shares": 8783000,
    "total_value": 176538300,
-   "total_weight": 1.35
+   "total_weight": 1.19
   },
   "2615": {
-   "close": 110.5,
+   "close": 111.5,
    "etf_count": 2,
    "etfs": [
     {
@@ -11608,81 +11907,75 @@
     {
      "etf": "00984A",
      "shares": 826000,
-     "weight": 0.94
+     "weight": 0.9
     }
    ],
    "name": "萬海",
    "recent_events": [],
    "total_shares": 2176000,
-   "total_value": 240448000,
-   "total_weight": 1.56
+   "total_value": 242624000,
+   "total_weight": 1.52
   },
   "2618": {
-   "close": 41.9,
+   "close": 41.55,
    "etf_count": 3,
    "etfs": [
     {
      "etf": "00984A",
      "shares": 734000,
-     "weight": 0.31
+     "weight": 0.3
     },
     {
      "etf": "00993A",
      "shares": 487000,
-     "weight": 0.2
+     "weight": 0.19
     },
     {
      "etf": "00999A",
      "shares": 3309000,
-     "weight": 1.2
+     "weight": 1.16
     }
    ],
    "name": "長榮航",
    "recent_events": [],
    "total_shares": 4530000,
-   "total_value": 189807000,
-   "total_weight": 1.71
+   "total_value": 188221500,
+   "total_weight": 1.65
   },
   "2633": {
    "close": 25.65,
-   "etf_count": 1,
-   "etfs": [
-    {
-     "etf": "00984A",
-     "shares": 500,
-     "weight": 0.0
-    }
-   ],
+   "etf_count": 0,
+   "etfs": [],
    "name": "台灣高鐵",
    "recent_events": [
     {
      "date": "2026-10-05",
      "etf": "00984A",
-     "type": "DECREASE"
+     "type": "REMOVE"
     }
    ],
-   "total_shares": 500,
-   "total_value": 12825,
+   "total_shares": 0,
+   "total_value": 0,
    "total_weight": 0.0
   },
   "2634": {
-   "close": 64.6,
+   "close": 64.1,
    "etf_count": 1,
    "etfs": [
     {
      "etf": "00984A",
      "shares": 483000,
-     "weight": 0.32
+     "weight": 0.31
     }
    ],
    "name": "漢翔公司",
    "recent_events": [],
    "total_shares": 483000,
-   "total_value": 31201800,
-   "total_weight": 0.32
+   "total_value": 30960300,
+   "total_weight": 0.31
   },
   "2637": {
-   "close": 97.7,
+   "close": 100.0,
    "etf_count": 4,
    "etfs": [
     {
@@ -11703,39 +11996,33 @@
     {
      "etf": "00984A",
      "shares": 319000,
-     "weight": 0.32
+     "weight": 0.31
     }
    ],
    "name": "慧洋-KY",
    "recent_events": [],
    "total_shares": 1642671,
-   "total_value": 160488957,
-   "total_weight": 1.7049
+   "total_value": 164267100,
+   "total_weight": 1.6949
   },
   "2727": {
-   "close": 233.5,
-   "etf_count": 1,
-   "etfs": [
-    {
-     "etf": "00999A",
-     "shares": 49000,
-     "weight": 0.1
-    }
-   ],
+   "close": 234.0,
+   "etf_count": 0,
+   "etfs": [],
    "name": "王品餐飲",
    "recent_events": [
     {
      "date": "2026-10-05",
      "etf": "00999A",
-     "type": "DECREASE"
+     "type": "REMOVE"
     }
    ],
-   "total_shares": 49000,
-   "total_value": 11441500,
-   "total_weight": 0.1
+   "total_shares": 0,
+   "total_value": 0,
+   "total_weight": 0.0
   },
   "2801": {
-   "close": 27.2,
+   "close": 27.4,
    "etf_count": 3,
    "etfs": [
     {
@@ -11746,7 +12033,7 @@
     {
      "etf": "00984A",
      "shares": 1122000,
-     "weight": 0.31
+     "weight": 0.3
     },
     {
      "etf": "00994A",
@@ -11757,19 +12044,13 @@
    "name": "彰銀",
    "recent_events": [],
    "total_shares": 2338000,
-   "total_value": 63593600,
-   "total_weight": 2.39
+   "total_value": 64061200,
+   "total_weight": 2.38
   },
   "2845": {
-   "close": 12.8,
-   "etf_count": 1,
-   "etfs": [
-    {
-     "etf": "00984A",
-     "shares": 547,
-     "weight": 0.0
-    }
-   ],
+   "close": 12.85,
+   "etf_count": 0,
+   "etfs": [],
    "name": "遠東國際商業銀行股份有限公司",
    "recent_events": [
     {
@@ -11780,15 +12061,15 @@
     {
      "date": "2026-10-05",
      "etf": "00984A",
-     "type": "DECREASE"
+     "type": "REMOVE"
     }
    ],
-   "total_shares": 547,
-   "total_value": 7002,
+   "total_shares": 0,
+   "total_value": 0,
    "total_weight": 0.0
   },
   "2851": {
-   "close": 45.6,
+   "close": 46.2,
    "etf_count": 2,
    "etfs": [
     {
@@ -11799,39 +12080,39 @@
     {
      "etf": "00984A",
      "shares": 1400000,
-     "weight": 0.65
+     "weight": 0.63
     }
    ],
    "name": "中央再保險股份有限公司",
    "recent_events": [],
    "total_shares": 1492000,
-   "total_value": 68035200,
-   "total_weight": 0.7477
+   "total_value": 68930400,
+   "total_weight": 0.7277
   },
   "2855": {
-   "close": 58.2,
+   "close": 58.5,
    "etf_count": 1,
    "etfs": [
     {
      "etf": "00984A",
      "shares": 1167000,
-     "weight": 0.68
+     "weight": 0.67
     }
    ],
    "name": "統一證券",
    "recent_events": [],
    "total_shares": 1167000,
-   "total_value": 67919400,
-   "total_weight": 0.68
+   "total_value": 68269500,
+   "total_weight": 0.67
   },
   "2880": {
-   "close": 44.6,
+   "close": 45.45,
    "etf_count": 3,
    "etfs": [
     {
      "etf": "00984A",
      "shares": 3307000,
-     "weight": 1.49
+     "weight": 1.46
     },
     {
      "etf": "00991A",
@@ -11841,7 +12122,7 @@
     {
      "etf": "00999A",
      "shares": 2936388,
-     "weight": 1.13
+     "weight": 1.1
     }
    ],
    "name": "華南金控",
@@ -11853,11 +12134,11 @@
     }
    ],
    "total_shares": 6252478,
-   "total_value": 278860519,
-   "total_weight": 2.62
+   "total_value": 284175125,
+   "total_weight": 2.56
   },
   "2881": {
-   "close": 152.0,
+   "close": 154.5,
    "etf_count": 7,
    "etfs": [
     {
@@ -11878,12 +12159,12 @@
     {
      "etf": "00984A",
      "shares": 2668000,
-     "weight": 4.05
+     "weight": 4.01
     },
     {
      "etf": "00985A",
      "shares": 139000,
-     "weight": 0.16
+     "weight": 0.14
     },
     {
      "etf": "00991A",
@@ -11905,11 +12186,11 @@
     }
    ],
    "total_shares": 6416179,
-   "total_value": 975259208,
-   "total_weight": 7.702
+   "total_value": 991299656,
+   "total_weight": 7.642
   },
   "2882": {
-   "close": 111.5,
+   "close": 112.0,
    "etf_count": 5,
    "etfs": [
     {
@@ -11925,7 +12206,7 @@
     {
      "etf": "00984A",
      "shares": 2846000,
-     "weight": 3.2
+     "weight": 3.14
     },
     {
      "etf": "00991A",
@@ -11947,11 +12228,11 @@
     }
    ],
    "total_shares": 7215000,
-   "total_value": 804472500,
-   "total_weight": 4.541
+   "total_value": 808080000,
+   "total_weight": 4.481
   },
   "2883": {
-   "close": 37.3,
+   "close": 37.65,
    "etf_count": 4,
    "etfs": [
     {
@@ -11967,7 +12248,7 @@
     {
      "etf": "00984A",
      "shares": 6257000,
-     "weight": 2.35
+     "weight": 2.31
     },
     {
      "etf": "00991A",
@@ -11984,11 +12265,11 @@
     }
    ],
    "total_shares": 9126000,
-   "total_value": 340399800,
-   "total_weight": 4.9866
+   "total_value": 343593900,
+   "total_weight": 4.9466
   },
   "2884": {
-   "close": 44.8,
+   "close": 45.45,
    "etf_count": 5,
    "etfs": [
     {
@@ -11999,12 +12280,12 @@
     {
      "etf": "00980A",
      "shares": 2962622,
-     "weight": 0.66
+     "weight": 0.63
     },
     {
      "etf": "00984A",
      "shares": 4816000,
-     "weight": 2.2
+     "weight": 2.13
     },
     {
      "etf": "00991A",
@@ -12014,7 +12295,7 @@
     {
      "etf": "00999A",
      "shares": 3184000,
-     "weight": 1.24
+     "weight": 1.2
     }
    ],
    "name": "玉山金融控股",
@@ -12031,11 +12312,11 @@
     }
    ],
    "total_shares": 12507622,
-   "total_value": 560341466,
-   "total_weight": 5.89
+   "total_value": 568471420,
+   "total_weight": 5.75
   },
   "2885": {
-   "close": 68.2,
+   "close": 69.3,
    "etf_count": 9,
    "etfs": [
     {
@@ -12066,7 +12347,7 @@
     {
      "etf": "00984A",
      "shares": 4665880,
-     "weight": 3.14
+     "weight": 3.15
     },
     {
      "etf": "00991A",
@@ -12093,11 +12374,11 @@
     }
    ],
    "total_shares": 19338179,
-   "total_value": 1318863808,
-   "total_weight": 8.0658
+   "total_value": 1340135805,
+   "total_weight": 8.0758
   },
   "2886": {
-   "close": 48.55,
+   "close": 49.3,
    "etf_count": 6,
    "etfs": [
     {
@@ -12118,7 +12399,7 @@
     {
      "etf": "00984A",
      "shares": 4036000,
-     "weight": 1.99
+     "weight": 1.94
     },
     {
      "etf": "00991A",
@@ -12128,7 +12409,7 @@
     {
      "etf": "00999A",
      "shares": 2700000,
-     "weight": 1.13
+     "weight": 1.1
     }
    ],
    "name": "兆豐金融控股",
@@ -12140,11 +12421,11 @@
     }
    ],
    "total_shares": 10208000,
-   "total_value": 495598400,
-   "total_weight": 4.521
+   "total_value": 503254400,
+   "total_weight": 4.441
   },
   "2887": {
-   "close": 40.85,
+   "close": 41.45,
    "etf_count": 5,
    "etfs": [
     {
@@ -12160,7 +12441,7 @@
     {
      "etf": "00984A",
      "shares": 8082000,
-     "weight": 3.3
+     "weight": 3.26
     },
     {
      "etf": "00991A",
@@ -12170,7 +12451,7 @@
     {
      "etf": "00999A",
      "shares": 3664360,
-     "weight": 1.28
+     "weight": 1.25
     }
    ],
    "name": "台新新光金",
@@ -12182,11 +12463,11 @@
     }
    ],
    "total_shares": 14091670,
-   "total_value": 575644720,
-   "total_weight": 6.9015
+   "total_value": 584099722,
+   "total_weight": 6.8315
   },
   "2890": {
-   "close": 44.05,
+   "close": 45.4,
    "etf_count": 5,
    "etfs": [
     {
@@ -12202,7 +12483,7 @@
     {
      "etf": "00984A",
      "shares": 5219000,
-     "weight": 2.32
+     "weight": 2.27
     },
     {
      "etf": "00991A",
@@ -12212,7 +12493,7 @@
     {
      "etf": "00999A",
      "shares": 2734780,
-     "weight": 1.03
+     "weight": 1.01
     }
    ],
    "name": "永豐金融控股",
@@ -12224,11 +12505,11 @@
     }
    ],
    "total_shares": 9590200,
-   "total_value": 422448310,
-   "total_weight": 5.0433
+   "total_value": 435395080,
+   "total_weight": 4.9733
   },
   "2891": {
-   "close": 67.4,
+   "close": 68.4,
    "etf_count": 3,
    "etfs": [
     {
@@ -12239,7 +12520,7 @@
     {
      "etf": "00980A",
      "shares": 2781000,
-     "weight": 0.93
+     "weight": 0.9
     },
     {
      "etf": "00991A",
@@ -12250,11 +12531,11 @@
    "name": "中國信託金融控股",
    "recent_events": [],
    "total_shares": 3591000,
-   "total_value": 242033400,
-   "total_weight": 2.331
+   "total_value": 245624400,
+   "total_weight": 2.301
   },
   "2892": {
-   "close": 38.05,
+   "close": 38.55,
    "etf_count": 3,
    "etfs": [
     {
@@ -12265,12 +12546,12 @@
     {
      "etf": "00984A",
      "shares": 3143000,
-     "weight": 1.22
+     "weight": 1.18
     },
     {
      "etf": "00999A",
      "shares": 3651000,
-     "weight": 1.21
+     "weight": 1.16
     }
    ],
    "name": "第一金融控股",
@@ -12282,33 +12563,27 @@
     }
    ],
    "total_shares": 8834000,
-   "total_value": 336133700,
-   "total_weight": 4.2376
+   "total_value": 340550700,
+   "total_weight": 4.1476
   },
   "2903": {
    "close": 21.75,
-   "etf_count": 1,
-   "etfs": [
-    {
-     "etf": "00984A",
-     "shares": 500,
-     "weight": 0.0
-    }
-   ],
+   "etf_count": 0,
+   "etfs": [],
    "name": "遠百",
    "recent_events": [
     {
      "date": "2026-10-05",
      "etf": "00984A",
-     "type": "DECREASE"
+     "type": "REMOVE"
     }
    ],
-   "total_shares": 500,
-   "total_value": 10875,
+   "total_shares": 0,
+   "total_value": 0,
    "total_weight": 0.0
   },
   "2912": {
-   "close": 211.0,
+   "close": 210.5,
    "etf_count": 1,
    "etfs": [
     {
@@ -12320,27 +12595,27 @@
    "name": "統一超商",
    "recent_events": [],
    "total_shares": 42000,
-   "total_value": 8862000,
+   "total_value": 8841000,
    "total_weight": 0.23
   },
   "3006": {
-   "close": 282.0,
+   "close": 273.5,
    "etf_count": 1,
    "etfs": [
     {
      "etf": "00984A",
      "shares": 235000,
-     "weight": 0.68
+     "weight": 0.66
     }
    ],
    "name": "晶豪",
    "recent_events": [],
    "total_shares": 235000,
-   "total_value": 66270000,
-   "total_weight": 0.68
+   "total_value": 64272500,
+   "total_weight": 0.66
   },
   "3008": {
-   "close": 6730.0,
+   "close": 6855.0,
    "etf_count": 18,
    "etfs": [
     {
@@ -12386,7 +12661,7 @@
     {
      "etf": "00980A",
      "shares": 38000,
-     "weight": 1.18
+     "weight": 1.22
     },
     {
      "etf": "00981A",
@@ -12401,12 +12676,12 @@
     {
      "etf": "00984A",
      "shares": 25000,
-     "weight": 1.58
+     "weight": 1.66
     },
     {
      "etf": "00985A",
-     "shares": 34000,
-     "weight": 1.62
+     "shares": 50000,
+     "weight": 2.27
     },
     {
      "etf": "00991A",
@@ -12421,7 +12696,7 @@
     {
      "etf": "00993A",
      "shares": 26000,
-     "weight": 1.56
+     "weight": 1.62
     },
     {
      "etf": "00994A",
@@ -12431,7 +12706,7 @@
     {
      "etf": "00999A",
      "shares": 31000,
-     "weight": 1.67
+     "weight": 1.75
     }
    ],
    "name": "大立光",
@@ -12457,12 +12732,12 @@
      "type": "INCREASE"
     }
    ],
-   "total_shares": 1058281,
-   "total_value": 7122231130,
-   "total_weight": 25.6728
+   "total_shares": 1074281,
+   "total_value": 7364196255,
+   "total_weight": 26.5828
   },
   "3017": {
-   "close": 3585.0,
+   "close": 3685.0,
    "etf_count": 21,
    "etfs": [
     {
@@ -12508,7 +12783,7 @@
     {
      "etf": "00980A",
      "shares": 134000,
-     "weight": 2.28
+     "weight": 2.29
     },
     {
      "etf": "00981A",
@@ -12523,12 +12798,12 @@
     {
      "etf": "00984A",
      "shares": 129000,
-     "weight": 4.46
+     "weight": 4.6
     },
     {
      "etf": "00985A",
-     "shares": 71000,
-     "weight": 1.84
+     "shares": 99000,
+     "weight": 2.4
     },
     {
      "etf": "00987A",
@@ -12548,7 +12823,7 @@
     {
      "etf": "00993A",
      "shares": 169000,
-     "weight": 5.55
+     "weight": 5.62
     },
     {
      "etf": "00994A",
@@ -12568,7 +12843,7 @@
     {
      "etf": "00999A",
      "shares": 67000,
-     "weight": 1.98
+     "weight": 2.01
     }
    ],
    "name": "奇鋐",
@@ -12577,14 +12852,19 @@
      "date": "2026-10-05",
      "etf": "00984A",
      "type": "INCREASE"
+    },
+    {
+     "date": "2026-10-05",
+     "etf": "00985A",
+     "type": "INCREASE"
     }
    ],
-   "total_shares": 13597845,
-   "total_value": 48748274325,
-   "total_weight": 93.5549
+   "total_shares": 13625845,
+   "total_value": 50211238825,
+   "total_weight": 94.3649
   },
   "3023": {
-   "close": 322.5,
+   "close": 317.0,
    "etf_count": 1,
    "etfs": [
     {
@@ -12596,11 +12876,11 @@
    "name": "信邦電子",
    "recent_events": [],
    "total_shares": 1000,
-   "total_value": 322500,
+   "total_value": 317000,
    "total_weight": 0.01
   },
   "3026": {
-   "close": 817.0,
+   "close": 796.0,
    "etf_count": 6,
    "etfs": [
     {
@@ -12611,7 +12891,7 @@
     {
      "etf": "00980A",
      "shares": 286000,
-     "weight": 1.18
+     "weight": 1.12
     },
     {
      "etf": "00991A",
@@ -12631,7 +12911,7 @@
     {
      "etf": "00999A",
      "shares": 246000,
-     "weight": 1.76
+     "weight": 1.68
     }
    ],
    "name": "禾伸堂",
@@ -12643,11 +12923,11 @@
     }
    ],
    "total_shares": 3516000,
-   "total_value": 2872572000,
-   "total_weight": 6.6986
+   "total_value": 2798736000,
+   "total_weight": 6.5586
   },
   "3034": {
-   "close": 543.0,
+   "close": 537.0,
    "etf_count": 4,
    "etfs": [
     {
@@ -12667,18 +12947,18 @@
     },
     {
      "etf": "00984A",
-     "shares": 55000,
-     "weight": 0.3
+     "shares": 58000,
+     "weight": 0.31
     }
    ],
    "name": "聯詠科技",
    "recent_events": [],
-   "total_shares": 531000,
-   "total_value": 288333000,
-   "total_weight": 3.2032
+   "total_shares": 534000,
+   "total_value": 286758000,
+   "total_weight": 3.2132
   },
   "3036": {
-   "close": 213.5,
+   "close": 215.0,
    "etf_count": 3,
    "etfs": [
     {
@@ -12689,7 +12969,7 @@
     {
      "etf": "00980A",
      "shares": 906000,
-     "weight": 0.96
+     "weight": 0.92
     },
     {
      "etf": "00991A",
@@ -12706,11 +12986,11 @@
     }
    ],
    "total_shares": 3115064,
-   "total_value": 665066164,
-   "total_weight": 2.49
+   "total_value": 669738760,
+   "total_weight": 2.45
   },
   "3037": {
-   "close": 1325.0,
+   "close": 1310.0,
    "etf_count": 21,
    "etfs": [
     {
@@ -12761,7 +13041,7 @@
     {
      "etf": "00980A",
      "shares": 625000,
-     "weight": 4.04
+     "weight": 3.95
     },
     {
      "etf": "00981A",
@@ -12770,13 +13050,13 @@
     },
     {
      "etf": "00984A",
-     "shares": 150000,
-     "weight": 1.97
+     "shares": 154000,
+     "weight": 2.02
     },
     {
      "etf": "00985A",
-     "shares": 153000,
-     "weight": 1.51
+     "shares": 268000,
+     "weight": 2.4
     },
     {
      "etf": "00987A",
@@ -12796,7 +13076,7 @@
     {
      "etf": "00993A",
      "shares": 531000,
-     "weight": 6.61
+     "weight": 6.52
     },
     {
      "etf": "00994A",
@@ -12816,7 +13096,7 @@
     {
      "etf": "00999A",
      "shares": 334000,
-     "weight": 3.74
+     "weight": 3.71
     }
    ],
    "name": "欣興",
@@ -12828,16 +13108,21 @@
     },
     {
      "date": "2026-10-05",
+     "etf": "00985A",
+     "type": "INCREASE"
+    },
+    {
+     "date": "2026-10-05",
      "etf": "00995A",
      "type": "INCREASE"
     }
    ],
-   "total_shares": 45638117,
-   "total_value": 60470505025,
-   "total_weight": 104.8433
+   "total_shares": 45757117,
+   "total_value": 59941823270,
+   "total_weight": 105.5733
   },
   "3042": {
-   "close": 222.0,
+   "close": 204.5,
    "etf_count": 1,
    "etfs": [
     {
@@ -12849,11 +13134,11 @@
    "name": "晶技",
    "recent_events": [],
    "total_shares": 79000,
-   "total_value": 17538000,
+   "total_value": 16155500,
    "total_weight": 0.36
   },
   "3044": {
-   "close": 557.0,
+   "close": 579.0,
    "etf_count": 5,
    "etfs": [
     {
@@ -12885,24 +13170,24 @@
    "name": "健鼎",
    "recent_events": [],
    "total_shares": 1293404,
-   "total_value": 720426028,
+   "total_value": 748880916,
    "total_weight": 2.791
   },
   "3045": {
-   "close": 122.5,
+   "close": 123.0,
    "etf_count": 1,
    "etfs": [
     {
      "etf": "00984A",
      "shares": 1349000,
-     "weight": 1.66
+     "weight": 1.63
     }
    ],
    "name": "台灣大",
    "recent_events": [],
    "total_shares": 1349000,
-   "total_value": 165252500,
-   "total_weight": 1.66
+   "total_value": 165927000,
+   "total_weight": 1.63
   },
   "3081": {
    "close": 3000.0,
@@ -12936,12 +13221,12 @@
     {
      "etf": "00980A",
      "shares": 161600,
-     "weight": 2.34
+     "weight": 2.32
     },
     {
      "etf": "00985A",
      "shares": 54000,
-     "weight": 1.19
+     "weight": 1.09
     },
     {
      "etf": "00987A",
@@ -12971,14 +13256,14 @@
     {
      "etf": "00999A",
      "shares": 101700,
-     "weight": 2.55
+     "weight": 2.56
     }
    ],
    "name": "聯  亞",
    "recent_events": [],
    "total_shares": 1575380,
    "total_value": 4726140000,
-   "total_weight": 22.2955
+   "total_weight": 22.1855
   },
   "3090": {
    "close": 173.0,
@@ -12997,14 +13282,14 @@
     {
      "etf": "00999A",
      "shares": 599000,
-     "weight": 0.89
+     "weight": 0.87
     }
    ],
    "name": "日電貿",
    "recent_events": [],
    "total_shares": 4470048,
    "total_value": 773318304,
-   "total_weight": 2.2779
+   "total_weight": 2.2579
   },
   "3105": {
    "close": 615.0,
@@ -13027,8 +13312,8 @@
     },
     {
      "etf": "00985A",
-     "shares": 217000,
-     "weight": 0.97
+     "shares": 357000,
+     "weight": 1.48
     },
     {
      "etf": "00994A",
@@ -13037,10 +13322,16 @@
     }
    ],
    "name": "穩懋半導體",
-   "recent_events": [],
-   "total_shares": 6196000,
-   "total_value": 3810540000,
-   "total_weight": 8.7961
+   "recent_events": [
+    {
+     "date": "2026-10-05",
+     "etf": "00985A",
+     "type": "INCREASE"
+    }
+   ],
+   "total_shares": 6336000,
+   "total_value": 3896640000,
+   "total_weight": 9.3061
   },
   "3131": {
    "close": 2530.0,
@@ -13084,7 +13375,7 @@
    "total_weight": 2.3956
   },
   "3167": {
-   "close": 996.0,
+   "close": 1020.0,
    "etf_count": 2,
    "etfs": [
     {
@@ -13101,11 +13392,11 @@
    "name": "大  量",
    "recent_events": [],
    "total_shares": 565236,
-   "total_value": 562975056,
+   "total_value": 576540720,
    "total_weight": 1.07
   },
   "3189": {
-   "close": 1095.0,
+   "close": 1070.0,
    "etf_count": 13,
    "etfs": [
     {
@@ -13131,17 +13422,17 @@
     {
      "etf": "00980A",
      "shares": 266000,
-     "weight": 1.38
+     "weight": 1.39
     },
     {
      "etf": "00984A",
      "shares": 156000,
-     "weight": 1.65
+     "weight": 1.69
     },
     {
      "etf": "00985A",
-     "shares": 118000,
-     "weight": 0.94
+     "shares": 189000,
+     "weight": 1.4
     },
     {
      "etf": "00991A",
@@ -13156,7 +13447,7 @@
     {
      "etf": "00993A",
      "shares": 440000,
-     "weight": 4.41
+     "weight": 4.47
     },
     {
      "etf": "00994A",
@@ -13175,10 +13466,16 @@
     }
    ],
    "name": "景碩",
-   "recent_events": [],
-   "total_shares": 12043013,
-   "total_value": 13187099235,
-   "total_weight": 29.5969
+   "recent_events": [
+    {
+     "date": "2026-10-05",
+     "etf": "00985A",
+     "type": "INCREASE"
+    }
+   ],
+   "total_shares": 12114013,
+   "total_value": 12961993910,
+   "total_weight": 30.1669
   },
   "3211": {
    "close": 399.0,
@@ -13208,14 +13505,14 @@
     {
      "etf": "00999A",
      "shares": 600000,
-     "weight": 0.97
+     "weight": 0.95
     }
    ],
    "name": "原相科技",
    "recent_events": [],
    "total_shares": 600000,
    "total_value": 113100000,
-   "total_weight": 0.97
+   "total_weight": 0.95
   },
   "3231": {
    "close": 189.5,
@@ -13239,7 +13536,7 @@
     {
      "etf": "00980A",
      "shares": 948000,
-     "weight": 0.87
+     "weight": 0.86
     },
     {
      "etf": "00982A",
@@ -13277,7 +13574,7 @@
    ],
    "total_shares": 13411000,
    "total_value": 2541384500,
-   "total_weight": 8.4967
+   "total_weight": 8.4867
   },
   "3260": {
    "close": 378.0,
@@ -13337,7 +13634,7 @@
     {
      "etf": "00980A",
      "shares": 650000,
-     "weight": 0.79
+     "weight": 0.75
     },
     {
      "etf": "00981A",
@@ -13347,7 +13644,7 @@
     {
      "etf": "00984A",
      "shares": 717000,
-     "weight": 1.77
+     "weight": 1.71
     },
     {
      "etf": "00994A",
@@ -13366,16 +13663,11 @@
      "date": "2026-10-05",
      "etf": "00981A",
      "type": "DECREASE"
-    },
-    {
-     "date": "2026-10-05",
-     "etf": "00984A",
-     "type": "INCREASE"
     }
    ],
    "total_shares": 3056000,
    "total_value": 738024000,
-   "total_weight": 5.1293
+   "total_weight": 5.0293
   },
   "3265": {
    "close": 188.0,
@@ -13415,12 +13707,12 @@
     {
      "etf": "00980A",
      "shares": 204000,
-     "weight": 0.8
+     "weight": 0.77
     },
     {
      "etf": "00999A",
      "shares": 206000,
-     "weight": 1.4
+     "weight": 1.37
     }
    ],
    "name": "鈊  象",
@@ -13433,7 +13725,7 @@
    ],
    "total_shares": 742822,
    "total_value": 589800668,
-   "total_weight": 3.6177
+   "total_weight": 3.5577
   },
   "3324": {
    "close": 1550.0,
@@ -13442,7 +13734,7 @@
     {
      "etf": "00985A",
      "shares": 18000,
-     "weight": 0.2
+     "weight": 0.19
     },
     {
      "etf": "00993A",
@@ -13454,7 +13746,7 @@
    "recent_events": [],
    "total_shares": 59000,
    "total_value": 91450000,
-   "total_weight": 0.79
+   "total_weight": 0.78
   },
   "3363": {
    "close": 664.0,
@@ -13520,7 +13812,7 @@
    "total_weight": 0.1
   },
   "3406": {
-   "close": 1055.0,
+   "close": 1045.0,
    "etf_count": 2,
    "etfs": [
     {
@@ -13531,17 +13823,17 @@
     {
      "etf": "00993A",
      "shares": 33000,
-     "weight": 0.3
+     "weight": 0.32
     }
    ],
    "name": "玉晶光",
    "recent_events": [],
    "total_shares": 78000,
-   "total_value": 82290000,
-   "total_weight": 2.63
+   "total_value": 81510000,
+   "total_weight": 2.65
   },
   "3443": {
-   "close": 8600.0,
+   "close": 8375.0,
    "etf_count": 17,
    "etfs": [
     {
@@ -13582,7 +13874,7 @@
     {
      "etf": "00980A",
      "shares": 59000,
-     "weight": 2.31
+     "weight": 2.42
     },
     {
      "etf": "00981A",
@@ -13597,7 +13889,7 @@
     {
      "etf": "00984A",
      "shares": 14000,
-     "weight": 1.11
+     "weight": 1.19
     },
     {
      "etf": "00987A",
@@ -13612,7 +13904,7 @@
     {
      "etf": "00993A",
      "shares": 66000,
-     "weight": 4.98
+     "weight": 5.26
     },
     {
      "etf": "00994A",
@@ -13639,11 +13931,11 @@
     }
    ],
    "total_shares": 1979176,
-   "total_value": 17020913600,
-   "total_weight": 48.7686
+   "total_value": 16575599000,
+   "total_weight": 49.2386
   },
   "3450": {
-   "close": 548.0,
+   "close": 531.0,
    "etf_count": 5,
    "etfs": [
     {
@@ -13664,7 +13956,7 @@
     {
      "etf": "00984A",
      "shares": 144000,
-     "weight": 0.79
+     "weight": 0.78
     },
     {
      "etf": "00995A",
@@ -13681,8 +13973,8 @@
     }
    ],
    "total_shares": 2004000,
-   "total_value": 1098192000,
-   "total_weight": 2.0504
+   "total_value": 1064124000,
+   "total_weight": 2.0404
   },
   "3455": {
    "close": 283.5,
@@ -13747,8 +14039,8 @@
     },
     {
      "etf": "00985A",
-     "shares": 177000,
-     "weight": 1.99
+     "shares": 301000,
+     "weight": 3.32
     },
     {
      "etf": "00987A",
@@ -13758,7 +14050,7 @@
     {
      "etf": "00993A",
      "shares": 11000,
-     "weight": 0.16
+     "weight": 0.17
     },
     {
      "etf": "00994A",
@@ -13767,10 +14059,16 @@
     }
    ],
    "name": "昇達科技",
-   "recent_events": [],
-   "total_shares": 2027660,
-   "total_value": 3305085800,
-   "total_weight": 19.3118
+   "recent_events": [
+    {
+     "date": "2026-10-05",
+     "etf": "00985A",
+     "type": "INCREASE"
+    }
+   ],
+   "total_shares": 2151660,
+   "total_value": 3507205800,
+   "total_weight": 20.6518
   },
   "3529": {
    "close": 3155.0,
@@ -13799,7 +14097,7 @@
     {
      "etf": "00980A",
      "shares": 44000,
-     "weight": 0.69
+     "weight": 0.66
     },
     {
      "etf": "00982A",
@@ -13819,33 +14117,33 @@
     {
      "etf": "00999A",
      "shares": 49000,
-     "weight": 1.33
+     "weight": 1.3
     }
    ],
    "name": "力旺",
    "recent_events": [],
    "total_shares": 493822,
    "total_value": 1558008410,
-   "total_weight": 11.7826
+   "total_weight": 11.7226
   },
   "3532": {
-   "close": 469.5,
+   "close": 467.0,
    "etf_count": 1,
    "etfs": [
     {
      "etf": "00993A",
      "shares": 80000,
-     "weight": 0.36
+     "weight": 0.35
     }
    ],
    "name": "台勝科",
    "recent_events": [],
    "total_shares": 80000,
-   "total_value": 37560000,
-   "total_weight": 0.36
+   "total_value": 37360000,
+   "total_weight": 0.35
   },
   "3533": {
-   "close": 1875.0,
+   "close": 1865.0,
    "etf_count": 3,
    "etfs": [
     {
@@ -13873,11 +14171,11 @@
     }
    ],
    "total_shares": 83063,
-   "total_value": 155743125,
+   "total_value": 154912495,
    "total_weight": 0.6371
   },
   "3583": {
-   "close": 744.0,
+   "close": 762.0,
    "etf_count": 3,
    "etfs": [
     {
@@ -13899,11 +14197,11 @@
    "name": "辛耘",
    "recent_events": [],
    "total_shares": 1668000,
-   "total_value": 1240992000,
+   "total_value": 1271016000,
    "total_weight": 1.5858
   },
   "3605": {
-   "close": 168.0,
+   "close": 172.0,
    "etf_count": 2,
    "etfs": [
     {
@@ -13913,18 +14211,24 @@
     },
     {
      "etf": "00984A",
-     "shares": 380000,
-     "weight": 0.65
+     "shares": 402000,
+     "weight": 0.67
     }
    ],
    "name": "宏致",
-   "recent_events": [],
-   "total_shares": 390000,
-   "total_value": 65520000,
-   "total_weight": 0.6563
+   "recent_events": [
+    {
+     "date": "2026-10-05",
+     "etf": "00984A",
+     "type": "INCREASE"
+    }
+   ],
+   "total_shares": 412000,
+   "total_value": 70864000,
+   "total_weight": 0.6763
   },
   "3617": {
-   "close": 241.5,
+   "close": 245.0,
    "etf_count": 1,
    "etfs": [
     {
@@ -13936,11 +14240,11 @@
    "name": "碩天",
    "recent_events": [],
    "total_shares": 627000,
-   "total_value": 151420500,
+   "total_value": 153615000,
    "total_weight": 0.2823
   },
   "3653": {
-   "close": 7205.0,
+   "close": 7080.0,
    "etf_count": 19,
    "etfs": [
     {
@@ -13981,7 +14285,7 @@
     {
      "etf": "00980A",
      "shares": 104000,
-     "weight": 3.5
+     "weight": 3.58
     },
     {
      "etf": "00981A",
@@ -13990,13 +14294,13 @@
     },
     {
      "etf": "00984A",
-     "shares": 26000,
-     "weight": 1.78
+     "shares": 27000,
+     "weight": 1.92
     },
     {
      "etf": "00985A",
-     "shares": 34000,
-     "weight": 1.75
+     "shares": 56000,
+     "weight": 2.73
     },
     {
      "etf": "00987A",
@@ -14016,7 +14320,7 @@
     {
      "etf": "00993A",
      "shares": 41000,
-     "weight": 2.66
+     "weight": 2.74
     },
     {
      "etf": "00994A",
@@ -14036,7 +14340,7 @@
     {
      "etf": "00999A",
      "shares": 77000,
-     "weight": 4.49
+     "weight": 4.65
     }
    ],
    "name": "健策",
@@ -14048,16 +14352,21 @@
     },
     {
      "date": "2026-10-05",
+     "etf": "00984A",
+     "type": "INCREASE"
+    },
+    {
+     "date": "2026-10-05",
      "etf": "00985A",
      "type": "INCREASE"
     }
    ],
-   "total_shares": 5292320,
-   "total_value": 38131165600,
-   "total_weight": 72.5544
+   "total_shares": 5315320,
+   "total_value": 37632465600,
+   "total_weight": 73.9944
   },
   "3661": {
-   "close": 3950.0,
+   "close": 4180.0,
    "etf_count": 5,
    "etfs": [
     {
@@ -14083,7 +14392,7 @@
     {
      "etf": "00985A",
      "shares": 29000,
-     "weight": 0.83
+     "weight": 0.77
     }
    ],
    "name": "世芯-KY",
@@ -14095,11 +14404,11 @@
     }
    ],
    "total_shares": 74173,
-   "total_value": 292983350,
-   "total_weight": 1.535
+   "total_value": 310043140,
+   "total_weight": 1.475
   },
   "3665": {
-   "close": 2485.0,
+   "close": 2325.0,
    "etf_count": 19,
    "etfs": [
     {
@@ -14140,7 +14449,7 @@
     {
      "etf": "00980A",
      "shares": 48336,
-     "weight": 0.61
+     "weight": 0.57
     },
     {
      "etf": "00981A",
@@ -14150,12 +14459,12 @@
     {
      "etf": "00984A",
      "shares": 28000,
-     "weight": 0.72
+     "weight": 0.69
     },
     {
      "etf": "00985A",
      "shares": 74000,
-     "weight": 1.42
+     "weight": 1.24
     },
     {
      "etf": "00987A",
@@ -14175,7 +14484,7 @@
     {
      "etf": "00993A",
      "shares": 83000,
-     "weight": 2.01
+     "weight": 1.91
     },
     {
      "etf": "00994A",
@@ -14195,14 +14504,14 @@
     {
      "etf": "00999A",
      "shares": 65000,
-     "weight": 1.42
+     "weight": 1.35
     }
    ],
    "name": "貿聯-KY",
    "recent_events": [],
    "total_shares": 9004849,
-   "total_value": 22377049765,
-   "total_weight": 48.0454
+   "total_value": 20936273925,
+   "total_weight": 47.6254
   },
   "3680": {
    "close": 561.0,
@@ -14243,33 +14552,33 @@
     {
      "etf": "00999A",
      "shares": 1497000,
-     "weight": 1.53
+     "weight": 1.49
     }
    ],
    "name": "大聯大控股",
    "recent_events": [],
    "total_shares": 1497000,
    "total_value": 178143000,
-   "total_weight": 1.53
+   "total_weight": 1.49
   },
   "3706": {
-   "close": 80.4,
+   "close": 80.3,
    "etf_count": 1,
    "etfs": [
     {
      "etf": "00999A",
      "shares": 1853400,
-     "weight": 1.29
+     "weight": 1.25
     }
    ],
    "name": "神達控股",
    "recent_events": [],
    "total_shares": 1853400,
-   "total_value": 149013360,
-   "total_weight": 1.29
+   "total_value": 148828020,
+   "total_weight": 1.25
   },
   "3711": {
-   "close": 742.0,
+   "close": 744.0,
    "etf_count": 20,
    "etfs": [
     {
@@ -14320,7 +14629,7 @@
     {
      "etf": "00980A",
      "shares": 621000,
-     "weight": 2.19
+     "weight": 2.2
     },
     {
      "etf": "00981A",
@@ -14335,12 +14644,12 @@
     {
      "etf": "00984A",
      "shares": 85000,
-     "weight": 0.61
+     "weight": 0.62
     },
     {
      "etf": "00985A",
-     "shares": 706000,
-     "weight": 3.8
+     "shares": 734000,
+     "weight": 3.68
     },
     {
      "etf": "00991A",
@@ -14355,7 +14664,7 @@
     {
      "etf": "00993A",
      "shares": 90000,
-     "weight": 0.61
+     "weight": 0.62
     },
     {
      "etf": "00994A",
@@ -14381,18 +14690,18 @@
      "type": "DECREASE"
     }
    ],
-   "total_shares": 18017662,
-   "total_value": 13369105204,
-   "total_weight": 34.5927
+   "total_shares": 18045662,
+   "total_value": 13425972528,
+   "total_weight": 34.5027
   },
   "3714": {
-   "close": 68.2,
+   "close": 67.0,
    "etf_count": 1,
    "etfs": [
     {
      "etf": "00984A",
      "shares": 900000,
-     "weight": 0.64
+     "weight": 0.61
     }
    ],
    "name": "富采",
@@ -14404,8 +14713,8 @@
     }
    ],
    "total_shares": 900000,
-   "total_value": 61380000,
-   "total_weight": 0.64
+   "total_value": 60300000,
+   "total_weight": 0.61
   },
   "4441": {
    "close": 169.5,
@@ -14424,23 +14733,23 @@
    "total_weight": 0.0012
   },
   "4551": {
-   "close": 186.0,
+   "close": 181.5,
    "etf_count": 1,
    "etfs": [
     {
      "etf": "00999A",
      "shares": 405000,
-     "weight": 0.65
+     "weight": 0.63
     }
    ],
    "name": "智伸科技",
    "recent_events": [],
    "total_shares": 405000,
-   "total_value": 75330000,
-   "total_weight": 0.65
+   "total_value": 73507500,
+   "total_weight": 0.63
   },
   "4576": {
-   "close": 235.0,
+   "close": 232.0,
    "etf_count": 1,
    "etfs": [
     {
@@ -14452,24 +14761,30 @@
    "name": "大銀微系統",
    "recent_events": [],
    "total_shares": 2000,
-   "total_value": 470000,
+   "total_value": 464000,
    "total_weight": 0.0017
   },
   "4746": {
-   "close": 47.35,
+   "close": 48.3,
    "etf_count": 1,
    "etfs": [
     {
      "etf": "00999A",
-     "shares": 1687000,
-     "weight": 0.7
+     "shares": 1518000,
+     "weight": 0.6
     }
    ],
    "name": "台耀化學",
-   "recent_events": [],
-   "total_shares": 1687000,
-   "total_value": 79879450,
-   "total_weight": 0.7
+   "recent_events": [
+    {
+     "date": "2026-10-05",
+     "etf": "00999A",
+     "type": "DECREASE"
+    }
+   ],
+   "total_shares": 1518000,
+   "total_value": 73319400,
+   "total_weight": 0.6
   },
   "4749": {
    "close": 806.0,
@@ -14493,7 +14808,7 @@
    "total_weight": 1.87
   },
   "4763": {
-   "close": 46.35,
+   "close": 46.8,
    "etf_count": 1,
    "etfs": [
     {
@@ -14505,11 +14820,11 @@
    "name": "濟南大自然新材料股份有限公司",
    "recent_events": [],
    "total_shares": 1478000,
-   "total_value": 68505300,
+   "total_value": 69170400,
    "total_weight": 1.5953
   },
   "4904": {
-   "close": 105.5,
+   "close": 104.5,
    "etf_count": 4,
    "etfs": [
     {
@@ -14519,28 +14834,34 @@
     },
     {
      "etf": "00985A",
-     "shares": 5127000,
-     "weight": 4.1
+     "shares": 3926000,
+     "weight": 2.8
     },
     {
      "etf": "00993A",
      "shares": 266000,
-     "weight": 0.27
+     "weight": 0.26
     },
     {
      "etf": "00999A",
      "shares": 1008000,
-     "weight": 0.92
+     "weight": 0.89
     }
    ],
    "name": "遠傳電信",
-   "recent_events": [],
-   "total_shares": 6656000,
-   "total_value": 702208000,
-   "total_weight": 5.99
+   "recent_events": [
+    {
+     "date": "2026-10-05",
+     "etf": "00985A",
+     "type": "DECREASE"
+    }
+   ],
+   "total_shares": 5455000,
+   "total_value": 570047500,
+   "total_weight": 4.65
   },
   "4938": {
-   "close": 88.7,
+   "close": 90.0,
    "etf_count": 1,
    "etfs": [
     {
@@ -14552,11 +14873,11 @@
    "name": "和碩聯合科技",
    "recent_events": [],
    "total_shares": 119000,
-   "total_value": 10555300,
+   "total_value": 10710000,
    "total_weight": 0.27
   },
   "4958": {
-   "close": 576.0,
+   "close": 574.0,
    "etf_count": 12,
    "etfs": [
     {
@@ -14592,7 +14913,7 @@
     {
      "etf": "00984A",
      "shares": 107000,
-     "weight": 0.6
+     "weight": 0.61
     },
     {
      "etf": "00987A",
@@ -14607,7 +14928,7 @@
     {
      "etf": "00993A",
      "shares": 246000,
-     "weight": 1.32
+     "weight": 1.31
     },
     {
      "etf": "00995A",
@@ -14629,7 +14950,7 @@
     }
    ],
    "total_shares": 9896000,
-   "total_value": 5700096000,
+   "total_value": 5680304000,
    "total_weight": 22.3251
   },
   "4966": {
@@ -14692,7 +15013,7 @@
    "total_weight": 3.4032
   },
   "5269": {
-   "close": 1475.0,
+   "close": 1470.0,
    "etf_count": 1,
    "etfs": [
     {
@@ -14704,7 +15025,7 @@
    "name": "祥碩科技",
    "recent_events": [],
    "total_shares": 22000,
-   "total_value": 32450000,
+   "total_value": 32340000,
    "total_weight": 0.82
   },
   "5274": {
@@ -14764,7 +15085,7 @@
     {
      "etf": "00984A",
      "shares": 5200,
-     "weight": 0.99
+     "weight": 1.0
     },
     {
      "etf": "00987A",
@@ -14784,7 +15105,7 @@
     {
      "etf": "00993A",
      "shares": 20600,
-     "weight": 3.7
+     "weight": 3.73
     },
     {
      "etf": "00994A",
@@ -14799,7 +15120,7 @@
     {
      "etf": "00999A",
      "shares": 9000,
-     "weight": 1.46
+     "weight": 1.47
     }
    ],
    "name": "信  驊",
@@ -14817,21 +15138,16 @@
    ],
    "total_shares": 750351,
    "total_value": 14646851520,
-   "total_weight": 38.2803
+   "total_weight": 38.3303
   },
   "5289": {
    "close": 1295.0,
-   "etf_count": 5,
+   "etf_count": 4,
    "etfs": [
     {
      "etf": "00407A",
      "shares": 55294,
      "weight": 0.3
-    },
-    {
-     "etf": "00984A",
-     "shares": 1354,
-     "weight": 0.02
     },
     {
      "etf": "00992A",
@@ -14855,26 +15171,31 @@
      "date": "2026-10-05",
      "etf": "00406A",
      "type": "REMOVE"
+    },
+    {
+     "date": "2026-10-05",
+     "etf": "00984A",
+     "type": "REMOVE"
     }
    ],
-   "total_shares": 158911,
-   "total_value": 205789745,
-   "total_weight": 0.6375
+   "total_shares": 157557,
+   "total_value": 204036315,
+   "total_weight": 0.6175
   },
   "5306": {
-   "close": 87.6,
-   "etf_count": 1,
-   "etfs": [
+   "close": 87.4,
+   "etf_count": 0,
+   "etfs": [],
+   "name": "桂盟",
+   "recent_events": [
     {
+     "date": "2026-10-05",
      "etf": "00984A",
-     "shares": 500,
-     "weight": 0.0
+     "type": "REMOVE"
     }
    ],
-   "name": "桂盟",
-   "recent_events": [],
-   "total_shares": 500,
-   "total_value": 43800,
+   "total_shares": 0,
+   "total_value": 0,
    "total_weight": 0.0
   },
   "5347": {
@@ -14920,14 +15241,14 @@
     {
      "etf": "00984A",
      "shares": 585000,
-     "weight": 0.68
+     "weight": 0.66
     }
    ],
    "name": "鈺創",
    "recent_events": [],
    "total_shares": 585000,
    "total_value": 66690000,
-   "total_weight": 0.68
+   "total_weight": 0.66
   },
   "5425": {
    "close": 105.5,
@@ -14946,7 +15267,7 @@
    "total_weight": 1.2553
   },
   "5434": {
-   "close": 620.0,
+   "close": 619.0,
    "etf_count": 6,
    "etfs": [
     {
@@ -14972,19 +15293,19 @@
     {
      "etf": "00984A",
      "shares": 54000,
-     "weight": 0.32
+     "weight": 0.33
     },
     {
      "etf": "00999A",
      "shares": 160000,
-     "weight": 0.8
+     "weight": 0.83
     }
    ],
    "name": "崇越",
    "recent_events": [],
    "total_shares": 681733,
-   "total_value": 422674460,
-   "total_weight": 5.8692
+   "total_value": 421992727,
+   "total_weight": 5.9092
   },
   "5439": {
    "close": 261.0,
@@ -14993,14 +15314,14 @@
     {
      "etf": "00999A",
      "shares": 364000,
-     "weight": 0.79
+     "weight": 0.8
     }
    ],
    "name": "高技企業",
    "recent_events": [],
    "total_shares": 364000,
    "total_value": 95004000,
-   "total_weight": 0.79
+   "total_weight": 0.8
   },
   "5483": {
    "close": 214.5,
@@ -15019,18 +15340,13 @@
    "total_weight": 1.3657
   },
   "5534": {
-   "close": 71.8,
-   "etf_count": 2,
+   "close": 71.1,
+   "etf_count": 1,
    "etfs": [
     {
-     "etf": "00984A",
-     "shares": 500,
-     "weight": 0.0
-    },
-    {
      "etf": "00999A",
-     "shares": 1783000,
-     "weight": 1.12
+     "shares": 1516000,
+     "weight": 0.91
     }
    ],
    "name": "長虹",
@@ -15038,7 +15354,7 @@
     {
      "date": "2026-10-05",
      "etf": "00984A",
-     "type": "DECREASE"
+     "type": "REMOVE"
     },
     {
      "date": "2026-10-05",
@@ -15046,9 +15362,9 @@
      "type": "DECREASE"
     }
    ],
-   "total_shares": 1783500,
-   "total_value": 128055300,
-   "total_weight": 1.12
+   "total_shares": 1516000,
+   "total_value": 107787600,
+   "total_weight": 0.91
   },
   "5536": {
    "close": 954.0,
@@ -15067,7 +15383,7 @@
    "total_weight": 0.8092
   },
   "5871": {
-   "close": 105.5,
+   "close": 105.0,
    "etf_count": 2,
    "etfs": [
     {
@@ -15084,24 +15400,24 @@
    "name": "中租-KY",
    "recent_events": [],
    "total_shares": 338760,
-   "total_value": 35739180,
+   "total_value": 35569800,
    "total_weight": 0.43
   },
   "5876": {
-   "close": 48.65,
+   "close": 48.8,
    "etf_count": 1,
    "etfs": [
     {
      "etf": "00984A",
      "shares": 641000,
-     "weight": 0.32
+     "weight": 0.31
     }
    ],
    "name": "上海商銀",
    "recent_events": [],
    "total_shares": 641000,
-   "total_value": 31184650,
-   "total_weight": 0.32
+   "total_value": 31280800,
+   "total_weight": 0.31
   },
   "5904": {
    "close": 68.8,
@@ -15120,24 +15436,24 @@
     {
      "etf": "00980A",
      "shares": 2255500,
-     "weight": 0.76
+     "weight": 0.74
     },
     {
      "etf": "00984A",
      "shares": 1352000,
-     "weight": 0.93
+     "weight": 0.92
     },
     {
      "etf": "00999A",
      "shares": 1646000,
-     "weight": 0.97
+     "weight": 0.95
     }
    ],
    "name": "寶雅國際",
    "recent_events": [],
    "total_shares": 5802500,
    "total_value": 399212000,
-   "total_weight": 3.5854
+   "total_weight": 3.5354
   },
   "6121": {
    "close": 382.0,
@@ -15151,14 +15467,14 @@
     {
      "etf": "00999A",
      "shares": 316000,
-     "weight": 1.04
+     "weight": 1.01
     }
    ],
    "name": "新  普",
    "recent_events": [],
    "total_shares": 494429,
    "total_value": 188871878,
-   "total_weight": 1.26
+   "total_weight": 1.23
   },
   "6138": {
    "close": 287.5,
@@ -15167,17 +15483,17 @@
     {
      "etf": "00999A",
      "shares": 351000,
-     "weight": 0.86
+     "weight": 0.85
     }
    ],
    "name": "茂達電子",
    "recent_events": [],
    "total_shares": 351000,
    "total_value": 100912500,
-   "total_weight": 0.86
+   "total_weight": 0.85
   },
   "6139": {
-   "close": 790.0,
+   "close": 795.0,
    "etf_count": 4,
    "etfs": [
     {
@@ -15204,7 +15520,7 @@
    "name": "亞翔工程",
    "recent_events": [],
    "total_shares": 4068000,
-   "total_value": 3213720000,
+   "total_value": 3234060000,
    "total_weight": 6.0646
   },
   "6147": {
@@ -15224,12 +15540,12 @@
     {
      "etf": "00985A",
      "shares": 141000,
-     "weight": 0.24
+     "weight": 0.21
     },
     {
      "etf": "00993A",
      "shares": 113000,
-     "weight": 0.24
+     "weight": 0.23
     },
     {
      "etf": "00995A",
@@ -15241,10 +15557,10 @@
    "recent_events": [],
    "total_shares": 2410000,
    "total_value": 520560000,
-   "total_weight": 2.79
+   "total_weight": 2.75
   },
   "6177": {
-   "close": 45.3,
+   "close": 45.15,
    "etf_count": 1,
    "etfs": [
     {
@@ -15256,7 +15572,7 @@
    "name": "達麗",
    "recent_events": [],
    "total_shares": 194350,
-   "total_value": 8804055,
+   "total_value": 8774902,
    "total_weight": 0.0164
   },
   "6187": {
@@ -15301,12 +15617,12 @@
     {
      "etf": "00984A",
      "shares": 157000,
-     "weight": 2.14
+     "weight": 2.31
     },
     {
      "etf": "00985A",
      "shares": 60000,
-     "weight": 0.61
+     "weight": 0.6
     },
     {
      "etf": "00992A",
@@ -15334,10 +15650,10 @@
    ],
    "total_shares": 1691830,
    "total_value": 2520826700,
-   "total_weight": 11.4223
+   "total_weight": 11.5823
   },
   "6191": {
-   "close": 85.9,
+   "close": 86.8,
    "etf_count": 1,
    "etfs": [
     {
@@ -15349,11 +15665,11 @@
    "name": "精成科",
    "recent_events": [],
    "total_shares": 3921000,
-   "total_value": 336813900,
+   "total_value": 340342800,
    "total_weight": 0.11
   },
   "6196": {
-   "close": 679.0,
+   "close": 663.0,
    "etf_count": 3,
    "etfs": [
     {
@@ -15381,11 +15697,11 @@
     }
    ],
    "total_shares": 419000,
-   "total_value": 284501000,
+   "total_value": 277797000,
    "total_weight": 2.1874
   },
   "6197": {
-   "close": 345.0,
+   "close": 365.0,
    "etf_count": 1,
    "etfs": [
     {
@@ -15403,11 +15719,11 @@
     }
    ],
    "total_shares": 191000,
-   "total_value": 65895000,
+   "total_value": 69715000,
    "total_weight": 0.65
   },
   "6206": {
-   "close": 137.5,
+   "close": 135.5,
    "etf_count": 1,
    "etfs": [
     {
@@ -15419,11 +15735,11 @@
    "name": "飛捷科技股份有限公司",
    "recent_events": [],
    "total_shares": 314000,
-   "total_value": 43175000,
+   "total_value": 42547000,
    "total_weight": 1.0055
   },
   "6213": {
-   "close": 751.0,
+   "close": 787.0,
    "etf_count": 8,
    "etfs": [
     {
@@ -15434,7 +15750,7 @@
     {
      "etf": "00980A",
      "shares": 252000,
-     "weight": 0.85
+     "weight": 0.9
     },
     {
      "etf": "00982A",
@@ -15444,7 +15760,7 @@
     {
      "etf": "00984A",
      "shares": 209000,
-     "weight": 1.44
+     "weight": 1.55
     },
     {
      "etf": "00992A",
@@ -15454,7 +15770,7 @@
     {
      "etf": "00993A",
      "shares": 105000,
-     "weight": 0.68
+     "weight": 0.73
     },
     {
      "etf": "00995A",
@@ -15476,8 +15792,8 @@
     }
    ],
    "total_shares": 2436000,
-   "total_value": 1829436000,
-   "total_weight": 6.3082
+   "total_value": 1917132000,
+   "total_weight": 6.5182
   },
   "6214": {
    "close": 188.5,
@@ -15491,14 +15807,14 @@
     {
      "etf": "00984A",
      "shares": 349000,
-     "weight": 0.66
+     "weight": 0.65
     }
    ],
    "name": "精誠",
    "recent_events": [],
    "total_shares": 3787000,
    "total_value": 713849500,
-   "total_weight": 1.8682
+   "total_weight": 1.8582
   },
   "6223": {
    "close": 5520.0,
@@ -15552,7 +15868,7 @@
     {
      "etf": "00980A",
      "shares": 74000,
-     "weight": 1.94
+     "weight": 1.95
     },
     {
      "etf": "00981A",
@@ -15587,7 +15903,7 @@
     {
      "etf": "00993A",
      "shares": 82000,
-     "weight": 4.16
+     "weight": 4.2
     },
     {
      "etf": "00994A",
@@ -15607,17 +15923,17 @@
     {
      "etf": "00999A",
      "shares": 48000,
-     "weight": 2.19
+     "weight": 2.22
     }
    ],
    "name": "旺矽",
    "recent_events": [],
    "total_shares": 5430452,
    "total_value": 29976095040,
-   "total_weight": 58.9484
+   "total_weight": 59.0284
   },
   "6239": {
-   "close": 297.5,
+   "close": 310.5,
    "etf_count": 5,
    "etfs": [
     {
@@ -15649,11 +15965,11 @@
    "name": "力成",
    "recent_events": [],
    "total_shares": 2255000,
-   "total_value": 670862500,
+   "total_value": 700177500,
    "total_weight": 4.1494
   },
   "6257": {
-   "close": 260.0,
+   "close": 286.0,
    "etf_count": 1,
    "etfs": [
     {
@@ -15665,7 +15981,7 @@
    "name": "矽格股份有限公司",
    "recent_events": [],
    "total_shares": 306000,
-   "total_value": 79560000,
+   "total_value": 87516000,
    "total_weight": 1.8528
   },
   "6271": {
@@ -15721,7 +16037,7 @@
     {
      "etf": "00980A",
      "shares": 143000,
-     "weight": 1.15
+     "weight": 1.22
     },
     {
      "etf": "00981A",
@@ -15756,7 +16072,7 @@
     {
      "etf": "00993A",
      "shares": 159000,
-     "weight": 2.46
+     "weight": 2.62
     },
     {
      "etf": "00994A",
@@ -15776,7 +16092,7 @@
     {
      "etf": "00999A",
      "shares": 104000,
-     "weight": 1.45
+     "weight": 1.55
     }
    ],
    "name": "台燿",
@@ -15789,10 +16105,10 @@
    ],
    "total_shares": 10872001,
    "total_value": 19352161780,
-   "total_weight": 37.8575
+   "total_weight": 38.1875
   },
   "6278": {
-   "close": 220.0,
+   "close": 234.0,
    "etf_count": 4,
    "etfs": [
     {
@@ -15830,11 +16146,11 @@
     }
    ],
    "total_shares": 1792110,
-   "total_value": 394264200,
+   "total_value": 419353740,
    "total_weight": 3.7583
   },
   "6285": {
-   "close": 249.5,
+   "close": 256.0,
    "etf_count": 4,
    "etfs": [
     {
@@ -15861,11 +16177,11 @@
    "name": "啟碁科技",
    "recent_events": [],
    "total_shares": 977000,
-   "total_value": 243761500,
+   "total_value": 250112000,
    "total_weight": 1.6049
   },
   "6415": {
-   "close": 442.0,
+   "close": 449.5,
    "etf_count": 1,
    "etfs": [
     {
@@ -15877,7 +16193,7 @@
    "name": "矽力-KY",
    "recent_events": [],
    "total_shares": 156000,
-   "total_value": 68952000,
+   "total_value": 70122000,
    "total_weight": 1.7
   },
   "6438": {
@@ -15897,7 +16213,7 @@
    "total_weight": 0.01
   },
   "6442": {
-   "close": 1705.0,
+   "close": 1650.0,
    "etf_count": 3,
    "etfs": [
     {
@@ -15913,7 +16229,7 @@
     {
      "etf": "00985A",
      "shares": 135000,
-     "weight": 1.66
+     "weight": 1.56
     }
    ],
    "name": "光聖",
@@ -15925,11 +16241,11 @@
     }
    ],
    "total_shares": 523000,
-   "total_value": 891715000,
-   "total_weight": 2.37
+   "total_value": 862950000,
+   "total_weight": 2.27
   },
   "6446": {
-   "close": 1190.0,
+   "close": 1175.0,
    "etf_count": 5,
    "etfs": [
     {
@@ -15955,7 +16271,7 @@
     {
      "etf": "00985A",
      "shares": 138000,
-     "weight": 1.21
+     "weight": 1.11
     }
    ],
    "name": "藥華藥",
@@ -15967,11 +16283,11 @@
     }
    ],
    "total_shares": 368424,
-   "total_value": 438424560,
-   "total_weight": 3.1021
+   "total_value": 432898200,
+   "total_weight": 3.0021
   },
   "6472": {
-   "close": 420.5,
+   "close": 416.5,
    "etf_count": 1,
    "etfs": [
     {
@@ -15983,7 +16299,7 @@
    "name": "保瑞",
    "recent_events": [],
    "total_shares": 1032000,
-   "total_value": 433956000,
+   "total_value": 429828000,
    "total_weight": 0.809
   },
   "6488": {
@@ -16023,7 +16339,7 @@
     {
      "etf": "00985A",
      "shares": 187000,
-     "weight": 1.68
+     "weight": 1.49
     },
     {
      "etf": "00994A",
@@ -16046,10 +16362,10 @@
    ],
    "total_shares": 5429713,
    "total_value": 6407061340,
-   "total_weight": 12.9804
+   "total_weight": 12.7904
   },
   "6505": {
-   "close": 98.6,
+   "close": 101.5,
    "etf_count": 4,
    "etfs": [
     {
@@ -16060,7 +16376,7 @@
     {
      "etf": "00984A",
      "shares": 3078000,
-     "weight": 3.1
+     "weight": 3.0
     },
     {
      "etf": "00991A",
@@ -16070,7 +16386,7 @@
     {
      "etf": "00993A",
      "shares": 378000,
-     "weight": 0.36
+     "weight": 0.35
     }
    ],
    "name": "台塑化",
@@ -16082,8 +16398,8 @@
     }
    ],
    "total_shares": 18104381,
-   "total_value": 1785091967,
-   "total_weight": 6.447
+   "total_value": 1837594672,
+   "total_weight": 6.337
   },
   "6510": {
    "close": 3105.0,
@@ -16138,7 +16454,7 @@
    "total_weight": 10.6393
   },
   "6515": {
-   "close": 6205.0,
+   "close": 6130.0,
    "etf_count": 10,
    "etfs": [
     {
@@ -16164,7 +16480,7 @@
     {
      "etf": "00980A",
      "shares": 61000,
-     "weight": 1.83
+     "weight": 1.81
     },
     {
      "etf": "00981A",
@@ -16189,17 +16505,17 @@
     {
      "etf": "00999A",
      "shares": 41000,
-     "weight": 2.14
+     "weight": 2.13
     }
    ],
    "name": "穎崴",
    "recent_events": [],
    "total_shares": 354932,
-   "total_value": 2202353060,
-   "total_weight": 11.0941
+   "total_value": 2175733160,
+   "total_weight": 11.0641
   },
   "6526": {
-   "close": 841.0,
+   "close": 842.0,
    "etf_count": 3,
    "etfs": [
     {
@@ -16210,7 +16526,7 @@
     {
      "etf": "00985A",
      "shares": 102000,
-     "weight": 0.64
+     "weight": 0.58
     },
     {
      "etf": "00996A",
@@ -16221,11 +16537,11 @@
    "name": "達發",
    "recent_events": [],
    "total_shares": 260000,
-   "total_value": 218660000,
-   "total_weight": 1.3171
+   "total_value": 218920000,
+   "total_weight": 1.2571
   },
   "6531": {
-   "close": 1055.0,
+   "close": 1045.0,
    "etf_count": 9,
    "etfs": [
     {
@@ -16260,8 +16576,8 @@
     },
     {
      "etf": "00985A",
-     "shares": 241000,
-     "weight": 1.82
+     "shares": 336000,
+     "weight": 2.4
     },
     {
      "etf": "00995A",
@@ -16282,9 +16598,9 @@
      "type": "INCREASE"
     }
    ],
-   "total_shares": 3627000,
-   "total_value": 3826485000,
-   "total_weight": 12.4985
+   "total_shares": 3722000,
+   "total_value": 3889490000,
+   "total_weight": 13.0785
   },
   "6584": {
    "close": 541.0,
@@ -16309,25 +16625,19 @@
    "total_weight": 2.2891
   },
   "6592": {
-   "close": 55.4,
-   "etf_count": 1,
-   "etfs": [
-    {
-     "etf": "00984A",
-     "shares": 500,
-     "weight": 0.0
-    }
-   ],
+   "close": 55.7,
+   "etf_count": 0,
+   "etfs": [],
    "name": "和潤企業",
    "recent_events": [
     {
      "date": "2026-10-05",
      "etf": "00984A",
-     "type": "DECREASE"
+     "type": "REMOVE"
     }
    ],
-   "total_shares": 500,
-   "total_value": 27700,
+   "total_shares": 0,
+   "total_value": 0,
    "total_weight": 0.0
   },
   "6640": {
@@ -16347,7 +16657,7 @@
    "total_weight": 0.3106
   },
   "6669": {
-   "close": 2150.0,
+   "close": 2290.0,
    "etf_count": 19,
    "etfs": [
     {
@@ -16393,7 +16703,7 @@
     {
      "etf": "00980A",
      "shares": 155105,
-     "weight": 1.6
+     "weight": 1.59
     },
     {
      "etf": "00981A",
@@ -16408,12 +16718,12 @@
     {
      "etf": "00984A",
      "shares": 40741,
-     "weight": 0.86
+     "weight": 0.87
     },
     {
      "etf": "00985A",
      "shares": 114036,
-     "weight": 1.8
+     "weight": 1.66
     },
     {
      "etf": "00991A",
@@ -16428,7 +16738,7 @@
     {
      "etf": "00993A",
      "shares": 195191,
-     "weight": 3.88
+     "weight": 3.89
     },
     {
      "etf": "00994A",
@@ -16443,7 +16753,7 @@
     {
      "etf": "00999A",
      "shares": 189225,
-     "weight": 3.39
+     "weight": 3.41
     }
    ],
    "name": "緯穎",
@@ -16455,8 +16765,8 @@
     }
    ],
    "total_shares": 11196273,
-   "total_value": 24071986950,
-   "total_weight": 50.4952
+   "total_value": 25639465170,
+   "total_weight": 50.3852
   },
   "6670": {
    "close": 270.0,
@@ -16465,17 +16775,17 @@
     {
      "etf": "00984A",
      "shares": 116000,
-     "weight": 0.32
+     "weight": 0.31
     }
    ],
    "name": "復盛應用",
    "recent_events": [],
    "total_shares": 116000,
    "total_value": 31320000,
-   "total_weight": 0.32
+   "total_weight": 0.31
   },
   "6672": {
-   "close": 451.0,
+   "close": 459.5,
    "etf_count": 1,
    "etfs": [
     {
@@ -16487,7 +16797,7 @@
    "name": "騰輝電子-KY",
    "recent_events": [],
    "total_shares": 527000,
-   "total_value": 237677000,
+   "total_value": 242156500,
    "total_weight": 0.4431
   },
   "6683": {
@@ -16513,7 +16823,7 @@
    "total_weight": 3.2
   },
   "6691": {
-   "close": 794.0,
+   "close": 787.0,
    "etf_count": 3,
    "etfs": [
     {
@@ -16524,7 +16834,7 @@
     {
      "etf": "00984A",
      "shares": 86000,
-     "weight": 0.64
+     "weight": 0.68
     },
     {
      "etf": "00994A",
@@ -16541,11 +16851,11 @@
     }
    ],
    "total_shares": 113000,
-   "total_value": 89722000,
-   "total_weight": 1.33
+   "total_value": 88931000,
+   "total_weight": 1.37
   },
   "6715": {
-   "close": 480.5,
+   "close": 482.5,
    "etf_count": 2,
    "etfs": [
     {
@@ -16573,7 +16883,7 @@
     }
    ],
    "total_shares": 140000,
-   "total_value": 67270000,
+   "total_value": 67550000,
    "total_weight": 0.63
   },
   "6739": {
@@ -16593,7 +16903,7 @@
    "total_weight": 0.0
   },
   "6770": {
-   "close": 75.8,
+   "close": 74.3,
    "etf_count": 1,
    "etfs": [
     {
@@ -16605,11 +16915,11 @@
    "name": "力積電",
    "recent_events": [],
    "total_shares": 127000,
-   "total_value": 9626600,
+   "total_value": 9436100,
    "total_weight": 0.23
   },
   "6805": {
-   "close": 2450.0,
+   "close": 2415.0,
    "etf_count": 12,
    "etfs": [
     {
@@ -16640,7 +16950,7 @@
     {
      "etf": "00980A",
      "shares": 54000,
-     "weight": 0.62
+     "weight": 0.63
     },
     {
      "etf": "00981A",
@@ -16655,7 +16965,7 @@
     {
      "etf": "00993A",
      "shares": 22000,
-     "weight": 0.48
+     "weight": 0.5
     },
     {
      "etf": "00994A",
@@ -16670,7 +16980,7 @@
     {
      "etf": "00999A",
      "shares": 42000,
-     "weight": 0.83
+     "weight": 0.86
     }
    ],
    "name": "富世達",
@@ -16687,11 +16997,11 @@
     }
    ],
    "total_shares": 2290000,
-   "total_value": 5610500000,
-   "total_weight": 15.3274
+   "total_value": 5530350000,
+   "total_weight": 15.3874
   },
   "6830": {
-   "close": 550.0,
+   "close": 527.0,
    "etf_count": 1,
    "etfs": [
     {
@@ -16703,17 +17013,17 @@
    "name": "汎銓",
    "recent_events": [],
    "total_shares": 79000,
-   "total_value": 43450000,
+   "total_value": 41633000,
    "total_weight": 1.11
   },
   "6831": {
-   "close": 489.0,
+   "close": 497.5,
    "etf_count": 2,
    "etfs": [
     {
      "etf": "00980A",
      "shares": 182000,
-     "weight": 0.43
+     "weight": 0.42
     },
     {
      "etf": "00996A",
@@ -16724,11 +17034,11 @@
    "name": "邁科科技",
    "recent_events": [],
    "total_shares": 353000,
-   "total_value": 172617000,
-   "total_weight": 2.71
+   "total_value": 175617500,
+   "total_weight": 2.7
   },
   "7750": {
-   "close": 2070.0,
+   "close": 1980.0,
    "etf_count": 3,
    "etfs": [
     {
@@ -16739,25 +17049,30 @@
     {
      "etf": "00984A",
      "shares": 32000,
-     "weight": 0.61
+     "weight": 0.65
     },
     {
      "etf": "00985A",
-     "shares": 54000,
-     "weight": 0.77
+     "shares": 97000,
+     "weight": 1.36
     }
    ],
    "name": "新  代",
    "recent_events": [
     {
      "date": "2026-10-05",
+     "etf": "00985A",
+     "type": "INCREASE"
+    },
+    {
+     "date": "2026-10-05",
      "etf": "00995A",
      "type": "REMOVE"
     }
    ],
-   "total_shares": 208670,
-   "total_value": 431946900,
-   "total_weight": 2.2
+   "total_shares": 251670,
+   "total_value": 498306600,
+   "total_weight": 2.83
   },
   "7751": {
    "close": 1605.0,
@@ -16766,7 +17081,7 @@
     {
      "etf": "00980A",
      "shares": 91000,
-     "weight": 0.72
+     "weight": 0.7
     },
     {
      "etf": "00996A",
@@ -16784,10 +17099,10 @@
    ],
    "total_shares": 144000,
    "total_value": 231120000,
-   "total_weight": 2.68
+   "total_weight": 2.66
   },
   "7769": {
-   "close": 5815.0,
+   "close": 5905.0,
    "etf_count": 13,
    "etfs": [
     {
@@ -16828,12 +17143,12 @@
     {
      "etf": "00980A",
      "shares": 103000,
-     "weight": 2.84
+     "weight": 2.86
     },
     {
      "etf": "00985A",
-     "shares": 18000,
-     "weight": 0.76
+     "shares": 25000,
+     "weight": 0.98
     },
     {
      "etf": "00991A",
@@ -16853,7 +17168,7 @@
     {
      "etf": "00999A",
      "shares": 64000,
-     "weight": 3.06
+     "weight": 3.12
     }
    ],
    "name": "鴻  勁",
@@ -16862,26 +17177,31 @@
      "date": "2026-10-05",
      "etf": "00980A",
      "type": "INCREASE"
+    },
+    {
+     "date": "2026-10-05",
+     "etf": "00985A",
+     "type": "INCREASE"
     }
    ],
-   "total_shares": 389532,
-   "total_value": 2265128580,
-   "total_weight": 14.6404
+   "total_shares": 396532,
+   "total_value": 2341521460,
+   "total_weight": 14.9404
   },
   "7780": {
-   "close": 15.8,
-   "etf_count": 1,
-   "etfs": [
+   "close": 15.85,
+   "etf_count": 0,
+   "etfs": [],
+   "name": "大研生醫*",
+   "recent_events": [
     {
+     "date": "2026-10-05",
      "etf": "00984A",
-     "shares": 500,
-     "weight": 0.0
+     "type": "REMOVE"
     }
    ],
-   "name": "大研生醫*",
-   "recent_events": [],
-   "total_shares": 500,
-   "total_value": 7900,
+   "total_shares": 0,
+   "total_value": 0,
    "total_weight": 0.0
   },
   "7828": {
@@ -16917,7 +17237,7 @@
    "total_weight": 0.85
   },
   "8016": {
-   "close": 293.5,
+   "close": 296.0,
    "etf_count": 1,
    "etfs": [
     {
@@ -16929,11 +17249,11 @@
    "name": "矽創電子",
    "recent_events": [],
    "total_shares": 179000,
-   "total_value": 52536500,
+   "total_value": 52984000,
    "total_weight": 1.2235
   },
   "8021": {
-   "close": 560.0,
+   "close": 561.0,
    "etf_count": 3,
    "etfs": [
     {
@@ -16961,11 +17281,11 @@
     }
    ],
    "total_shares": 2836000,
-   "total_value": 1588160000,
+   "total_value": 1590996000,
    "total_weight": 5.0072
   },
   "8028": {
-   "close": 281.5,
+   "close": 280.0,
    "etf_count": 1,
    "etfs": [
     {
@@ -16977,11 +17297,11 @@
    "name": "昇陽半導體",
    "recent_events": [],
    "total_shares": 1000,
-   "total_value": 281500,
+   "total_value": 280000,
    "total_weight": 0.001
   },
   "8039": {
-   "close": 303.5,
+   "close": 295.5,
    "etf_count": 1,
    "etfs": [
     {
@@ -16993,11 +17313,11 @@
    "name": "台虹科技",
    "recent_events": [],
    "total_shares": 211000,
-   "total_value": 64038500,
+   "total_value": 62350500,
    "total_weight": 0.63
   },
   "8046": {
-   "close": 1495.0,
+   "close": 1505.0,
    "etf_count": 17,
    "etfs": [
     {
@@ -17033,7 +17353,7 @@
     {
      "etf": "00980A",
      "shares": 251000,
-     "weight": 1.81
+     "weight": 1.79
     },
     {
      "etf": "00981A",
@@ -17048,7 +17368,7 @@
     {
      "etf": "00985A",
      "shares": 128000,
-     "weight": 1.41
+     "weight": 1.29
     },
     {
      "etf": "00987A",
@@ -17068,7 +17388,7 @@
     {
      "etf": "00993A",
      "shares": 254000,
-     "weight": 3.54
+     "weight": 3.52
     },
     {
      "etf": "00994A",
@@ -17095,11 +17415,11 @@
     }
    ],
    "total_shares": 20312000,
-   "total_value": 30366440000,
-   "total_weight": 54.8332
+   "total_value": 30569560000,
+   "total_weight": 54.6732
   },
   "8070": {
-   "close": 51.7,
+   "close": 51.0,
    "etf_count": 1,
    "etfs": [
     {
@@ -17111,11 +17431,11 @@
    "name": "長華*",
    "recent_events": [],
    "total_shares": 3712000,
-   "total_value": 191910400,
+   "total_value": 189312000,
    "total_weight": 0.3578
   },
   "8081": {
-   "close": 259.0,
+   "close": 262.5,
    "etf_count": 1,
    "etfs": [
     {
@@ -17127,11 +17447,11 @@
    "name": "致新科技",
    "recent_events": [],
    "total_shares": 139000,
-   "total_value": 36001000,
+   "total_value": 36487500,
    "total_weight": 0.8384
   },
   "8150": {
-   "close": 124.0,
+   "close": 127.5,
    "etf_count": 5,
    "etfs": [
     {
@@ -17169,11 +17489,11 @@
     }
    ],
    "total_shares": 2723000,
-   "total_value": 337652000,
+   "total_value": 347182500,
    "total_weight": 1.3637
   },
   "8210": {
-   "close": 890.0,
+   "close": 885.0,
    "etf_count": 5,
    "etfs": [
     {
@@ -17205,7 +17525,7 @@
    "name": "勤誠興業",
    "recent_events": [],
    "total_shares": 887000,
-   "total_value": 789430000,
+   "total_value": 784995000,
    "total_weight": 2.17
   },
   "8299": {
@@ -17230,7 +17550,7 @@
     {
      "etf": "00980A",
      "shares": 168000,
-     "weight": 1.74
+     "weight": 1.68
     },
     {
      "etf": "00991A",
@@ -17240,14 +17560,14 @@
     {
      "etf": "00993A",
      "shares": 10000,
-     "weight": 0.2
+     "weight": 0.19
     }
    ],
    "name": "群聯",
    "recent_events": [],
    "total_shares": 237000,
    "total_value": 497700000,
-   "total_weight": 3.3678
+   "total_weight": 3.2978
   },
   "8358": {
    "close": 570.0,
@@ -17302,7 +17622,7 @@
    "total_weight": 7.7043
   },
   "8464": {
-   "close": 362.5,
+   "close": 364.0,
    "etf_count": 1,
    "etfs": [
     {
@@ -17314,11 +17634,11 @@
    "name": "億豐綜合工業",
    "recent_events": [],
    "total_shares": 98000,
-   "total_value": 35525000,
+   "total_value": 35672000,
    "total_weight": 0.92
   },
   "8996": {
-   "close": 1595.0,
+   "close": 1600.0,
    "etf_count": 15,
    "etfs": [
     {
@@ -17354,7 +17674,7 @@
     {
      "etf": "00980A",
      "shares": 58000,
-     "weight": 0.43
+     "weight": 0.44
     },
     {
      "etf": "00981A",
@@ -17369,7 +17689,7 @@
     {
      "etf": "00985A",
      "shares": 55000,
-     "weight": 0.63
+     "weight": 0.59
     },
     {
      "etf": "00987A",
@@ -17406,11 +17726,11 @@
     }
    ],
    "total_shares": 5401000,
-   "total_value": 8614595000,
-   "total_weight": 27.469
+   "total_value": 8641600000,
+   "total_weight": 27.439
   },
   "9802": {
-   "close": 64.2,
+   "close": 64.5,
    "etf_count": 1,
    "etfs": [
     {
@@ -17428,11 +17748,11 @@
     }
    ],
    "total_shares": 192000,
-   "total_value": 12326400,
+   "total_value": 12384000,
    "total_weight": 0.8
   },
   "9933": {
-   "close": 46.35,
+   "close": 45.25,
    "etf_count": 1,
    "etfs": [
     {
@@ -17444,7 +17764,7 @@
    "name": "中鼎",
    "recent_events": [],
    "total_shares": 18619,
-   "total_value": 862991,
+   "total_value": 842510,
    "total_weight": 0.01
   },
   "9939": {
@@ -17464,18 +17784,13 @@
    "total_weight": 0.07
   },
   "9941": {
-   "close": 75.9,
-   "etf_count": 2,
+   "close": 75.4,
+   "etf_count": 1,
    "etfs": [
     {
-     "etf": "00984A",
-     "shares": 500,
-     "weight": 0.0
-    },
-    {
      "etf": "00999A",
-     "shares": 1651480,
-     "weight": 1.09
+     "shares": 1238480,
+     "weight": 0.79
     }
    ],
    "name": "裕融",
@@ -17483,7 +17798,7 @@
     {
      "date": "2026-10-05",
      "etf": "00984A",
-     "type": "DECREASE"
+     "type": "REMOVE"
     },
     {
      "date": "2026-10-05",
@@ -17491,25 +17806,25 @@
      "type": "DECREASE"
     }
    ],
-   "total_shares": 1651980,
-   "total_value": 125385282,
-   "total_weight": 1.09
+   "total_shares": 1238480,
+   "total_value": 93381392,
+   "total_weight": 0.79
   },
   "9958": {
-   "close": 89.8,
+   "close": 89.3,
    "etf_count": 1,
    "etfs": [
     {
      "etf": "00999A",
      "shares": 1070000,
-     "weight": 0.84
+     "weight": 0.81
     }
    ],
    "name": "世紀鋼鐵結構",
    "recent_events": [],
    "total_shares": 1070000,
-   "total_value": 96086000,
-   "total_weight": 0.84
+   "total_value": 95551000,
+   "total_weight": 0.81
   }
  },
  "updated": "2026-10-05"
