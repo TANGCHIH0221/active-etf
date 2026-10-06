@@ -41,6 +41,8 @@ MULTI_ETF_MAX = 10
 # 反之 status == "ok" 但資料日較舊,是投信自己公布得慢(野村/安聯常態),
 # 用日曆天數當判準會天天誤報,變成狼來了。
 STALE_MAX_LIST = 6      # 提醒最多列幾檔
+CAL_ETF_ITEMS = 6       # 「連續買賣中」單一 ETF 列幾筆
+CAL_STK_ITEMS = 5       # 「連續買賣中」全部合併列幾筆
 
 MARK = {"INCREASE": "🔴", "DECREASE": "🟢", "ADD": "✨", "REMOVE": "❌"}
 VERB = {"INCREASE": "加碼", "DECREASE": "減碼", "ADD": "新增", "REMOVE": "剔除"}
@@ -323,6 +325,51 @@ def render_report(records, processed, active, skipped=None):
     return "\n".join(lines)
 
 
+def render_calendar(path):
+    """calendar/summary.json(build_calendar.py 產生)→「連續買賣中」段落。
+
+    這段只是附加資訊:檔案不在或格式不對就整段省略,不影響主要推播。
+    """
+    try:
+        with open(path, encoding="utf-8") as f:
+            s = json.load(f)
+    except (OSError, ValueError):
+        return ""
+    url = s.get("url") or ""
+
+    def links(code, mkt):
+        yahoo = "https://tw.stock.yahoo.com/quote/%s%s" % (code, ".TW" if mkt == "twse" else ".TWO")
+        return '<a href="%s">走勢</a>｜<a href="%s?c=%s">明細</a>' % (yahoo, url, code)
+
+    def p_text(x):
+        ok, n = x["p_cont"]
+        return "歷史隔天續%s %d%%" % ("買" if x["sig"] > 0 else "賣", round(100 * ok / n)) if n else ""
+
+    lines = []
+    for x in s.get("runs_etf", [])[:CAL_ETF_ITEMS]:
+        lines.append(" %s <b>%s</b> <code>%s</code> 連%d天%s %s" % (
+            "🔴" if x["sig"] > 0 else "🟢", esc(x["name"]), esc(x["code"]), x["run"],
+            "買" if x["sig"] > 0 else "賣", fmt_amount(x["cum"])))
+        lines.append("　%s%s・%s・%s" % (
+            esc(x["etf_name"].replace("主動", "", 1)),
+            "(資料日 %s)" % x["date"][5:] if x["date"] != s.get("last_day") else "",
+            p_text(x), links(x["code"], x["mkt"])))
+    stk = s.get("runs_stk", [])[:CAL_STK_ITEMS]
+    if stk:
+        lines.append(" <i>全部主動 ETF 合併：</i>")
+    for x in stk:
+        lines.append(" %s <b>%s</b> <code>%s</code> 連%d天%s %s" % (
+            "🔴" if x["sig"] > 0 else "🟢", esc(x["name"]), esc(x["code"]), x["run"],
+            "買" if x["sig"] > 0 else "賣", fmt_amount(x["cum"])))
+        who = "、".join(t for t in ("%d 檔買" % x["nb"] if x["nb"] else "",
+                                    "%d 檔賣" % x["ns"] if x["ns"] else "") if t)
+        lines.append("　最後一天 %s・%s・%s" % (who, p_text(x), links(x["code"], x["mkt"])))
+    if not lines:
+        return ""
+    head = "<b>📅 連續買賣中</b>(≥2 天) <a href=\"%s\">完整日曆</a>" % url
+    return "\n".join([head] + lines)
+
+
 # ------------------------------------------------------------------ 主流程
 
 def main():
@@ -361,6 +408,9 @@ def main():
 
     if records:
         body = render_report(records, processed, active, skipped)
+        cal = render_calendar(ROOT / "calendar" / "summary.json")
+        if cal:
+            body += "\n\n" + cal
         if first_run:
             body = ("<b>✅ 主動式 ETF 推播已啟動</b>\n"
                     "之後每個交易日晚間自動推送。以下是最新一天的異動。\n\n") + body

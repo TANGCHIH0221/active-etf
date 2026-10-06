@@ -57,6 +57,13 @@ jobs:
       - name: Pull latest active.json
         run: git pull --rebase --autostash origin main
 
+      # 主動 ETF 買賣日曆(GitHub Pages:/calendar/)+ 推播裡的「連續買賣中」段落。
+      # 日曆只是附加資訊,壞掉不能擋住主推播 → continue-on-error,
+      # tg_report.py 讀不到 summary.json 時會自動省略該段。
+      - name: Build calendar
+        continue-on-error: true
+        run: python calendar/build_calendar.py
+
       - name: Decide mode
         id: mode
         run: |
@@ -83,14 +90,14 @@ jobs:
       # 在當兵期間維持排程不被停用的保險。
       - name: Commit state
         run: |
-          if git diff --quiet -- tg_state/ && [ -z "$(git status --porcelain tg_state/)" ]; then
+          if [ -z "$(git status --porcelain tg_state/ calendar/)" ]; then
             echo "狀態無變化,不需 commit"
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add tg_state/
-          git commit -m "chore(tg): 更新推播狀態 $(TZ=Asia/Taipei date '+%Y/%m/%d %H:%M')"
+          git add tg_state/ calendar/
+          git commit -m "chore(tg): 更新推播狀態與日曆 $(TZ=Asia/Taipei date '+%Y/%m/%d %H:%M')"
           # 原作者的 workflow 也會 push 到同一個 branch,一定會撞 —— 重試到成功。
           for i in 1 2 3 4 5; do
             if git push origin HEAD:main; then

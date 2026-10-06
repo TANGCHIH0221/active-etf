@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>主動 ETF 買賣日曆</title>
+<style>
+:root{--bg:#f6f7f9;--panel:#fff;--panel2:#f0f2f5;--line:#dfe3e8;--ink:#14181f;--dim:#5b6573;--mute:#8a94a3;
+  --buy:#d92d3a;--buy-bg:217,45,58;--sell:#1a8f4f;--sell-bg:26,143,79;--acc:#2f6fdc}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1117;--panel:#161b22;--panel2:#1f2630;
+  --line:#2a323d;--ink:#e6eaf0;--dim:#a2adbb;--mute:#6f7b8b;--buy:#ff6b74;--buy-bg:255,90,100;--sell:#3ccf7f;--sell-bg:50,200,120;--acc:#6aa3ff}}
+:root[data-theme="dark"]{--bg:#0d1117;--panel:#161b22;--panel2:#1f2630;--line:#2a323d;--ink:#e6eaf0;--dim:#a2adbb;
+  --mute:#6f7b8b;--buy:#ff6b74;--buy-bg:255,90,100;--sell:#3ccf7f;--sell-bg:50,200,120;--acc:#6aa3ff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 -apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif;
+  font-feature-settings:"tnum" 1;-webkit-text-size-adjust:100%}
+.wrap{max-width:60rem;margin:0 auto;padding:0 16px 80px}
+header{padding:16px 0 8px}
+h1{font-size:1.2rem;margin:0}
+.sub{color:var(--dim);font-size:.8rem;margin-top:4px}
+.legend{display:flex;gap:10px;align-items:center;font-size:.75rem;color:var(--dim);margin-top:6px;flex-wrap:wrap}
+.sw{display:inline-block;width:12px;height:12px;border-radius:3px;vertical-align:-2px;margin-right:3px}
+nav{position:sticky;top:0;z-index:5;background:var(--bg);display:flex;gap:4px;border-bottom:1px solid var(--line);margin:8px -16px 12px;padding:0 16px}
+nav button{flex:1;background:none;border:0;border-bottom:2px solid transparent;color:var(--dim);font:inherit;padding:10px 0;cursor:pointer}
+nav button.on{color:var(--ink);border-bottom-color:var(--acc);font-weight:600}
+.bar{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.seg button{background:var(--panel);border:0;color:var(--dim);font:inherit;font-size:.82rem;padding:6px 10px;cursor:pointer}
+.seg button.on{background:var(--acc);color:#fff}
+select{font:inherit;font-size:.85rem;padding:6px 8px;border-radius:8px;border:1px solid var(--line);background:var(--panel);color:var(--ink);max-width:100%}
+.card{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--c);border-radius:10px;padding:10px 12px;margin-bottom:8px;cursor:pointer}
+.card .top{display:flex;justify-content:space-between;gap:8px;align-items:baseline}
+.card .nm{font-weight:600;font-size:1rem}
+.card .code{color:var(--mute);font-size:.8rem;margin-left:4px}
+.card .run{color:var(--c);font-weight:700;white-space:nowrap}
+.card .meta{color:var(--dim);font-size:.8rem;margin-top:2px}
+.card .nums{font-size:.85rem;margin-top:4px}
+.card .p{font-size:.78rem;color:var(--dim);margin-top:2px}
+.amt-b{color:var(--buy)}.amt-s{color:var(--sell)}
+.empty{color:var(--mute);text-align:center;padding:30px 0}
+.gridwrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--panel)}
+table.cal{border-collapse:separate;border-spacing:0;font-size:.72rem}
+.cal th,.cal td{padding:0;height:30px;text-align:center;border-bottom:1px solid var(--line)}
+.cal thead th{position:sticky;top:0;background:var(--panel2);color:var(--dim);font-weight:500;min-width:42px;padding:0 2px;z-index:2}
+.cal .stk{position:sticky;left:0;background:var(--panel);text-align:left;padding:0 8px;min-width:96px;max-width:110px;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;z-index:1;border-right:1px solid var(--line);cursor:pointer;font-size:.78rem}
+.cal thead .stk{z-index:3;background:var(--panel2)}
+.cal .stk small{color:var(--mute)}
+.cal tr.grp td{background:var(--panel2);height:24px}
+.cal tr.grp td.stk{color:var(--dim);font-weight:600}
+.cal td.c{min-width:42px;font-variant-numeric:tabular-nums}
+.cal td.c>span{display:block;position:relative;margin:2px;border-radius:4px;line-height:26px;white-space:nowrap}
+.cal td.c .r{position:absolute;top:-1px;right:2px;font-size:.55rem;line-height:1;opacity:.85}
+.note{font-size:.75rem;color:var(--mute);margin:10px 2px}
+#sheet{position:fixed;inset:0;background:rgba(0,0,0,.45);display:none;z-index:20}
+#sheet.open{display:block}
+#sheet .box{position:absolute;left:0;right:0;bottom:0;max-height:85vh;overflow:auto;background:var(--panel);border-radius:14px 14px 0 0;padding:16px 16px 28px}
+#sheet .box{max-width:60rem;margin:0 auto}
+.links{display:flex;gap:8px;margin:10px 0}
+.links a{flex:1;text-align:center;text-decoration:none;background:var(--acc);color:#fff;border-radius:8px;padding:10px 0;font-weight:600}
+.links a.alt{background:var(--panel2);color:var(--ink);border:1px solid var(--line)}
+table.det{width:100%;border-collapse:collapse;font-size:.82rem}
+.det td,.det th{padding:6px 4px;border-bottom:1px solid var(--line);text-align:left}
+.det th{color:var(--dim);font-weight:500}
+.det td.n{text-align:right;font-variant-numeric:tabular-nums}
+.x{float:right;background:none;border:0;color:var(--dim);font-size:1.4rem;line-height:1;cursor:pointer}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>主動 ETF 買賣日曆</h1>
+  <div class="sub" id="sub"></div>
+  <div class="legend">
+    <span><i class="sw" style="background:var(--buy)"></i>主動買</span>
+    <span><i class="sw" style="background:var(--sell)"></i>主動賣</span>
+    <span>數字 = 億元（扣掉申贖）・ 右上小字 = 連第幾天</span>
+  </div>
+</header>
+<nav>
+  <button data-tab="runs" class="on">連續中</button>
+  <button data-tab="cal">日曆</button>
+  <button data-tab="ind">產業</button>
+</nav>
+
+<section id="tab-runs">
+  <div class="bar">
+    <div class="seg" id="r-level"><button data-v="etf" class="on">單一 ETF</button><button data-v="stk">全部合併</button></div>
+    <div class="seg" id="r-dir"><button data-v="0" class="on">全部</button><button data-v="1">買</button><button data-v="-1">賣</button></div>
+    <div class="seg" id="r-min"><button data-v="1">≥1天</button><button data-v="2" class="on">≥2天</button><button data-v="3">≥3天</button></div>
+  </div>
+  <div id="runs"></div>
+  <div class="note" id="runs-note"></div>
+</section>
+
+<section id="tab-cal" hidden>
+  <div class="bar"><select id="c-etf"></select><select id="c-ind"></select></div>
+  <div class="gridwrap" id="calwrap"></div>
+  <div class="note">點股票名稱看明細和今日走勢。只列出最近這段期間有訊號的股票。</div>
+</section>
+
+<section id="tab-ind" hidden>
+  <div class="gridwrap" id="indwrap"></div>
+  <div class="note">所有主動 ETF 合併、依產業加總的淨主動金額（億）。點產業名稱 → 日曆只看這個產業。</div>
+</section>
+</div>
+
+<div id="sheet"><div class="box" id="sheetbox"></div></div>
+
+<script>
+const D = /*__DATA__*/null;
+const $ = s => document.querySelector(s);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const md = d => d.slice(5).replace("-", "/");
+const fmt = x => { if (x == null) return "?"; const a = Math.abs(x);
+  const s = a >= 10 ? a.toFixed(0) : a >= 1 ? a.toFixed(1) : a >= 0.01 ? a.toFixed(2).replace(/^0/, "") : "<.01";
+  return (x < 0 ? "−" : "+") + s; };
+const fmtYi = x => { const a = Math.abs(x);
+  return (x < 0 ? "−" : "+") + (a >= 1e8 ? (a / 1e8).toFixed(2) + " 億" : (a / 1e4).toFixed(0) + " 萬"); };
+const sfx = m => m === "twse" ? ".TW" : ".TWO";
+const yahoo = c => "https://tw.stock.yahoo.com/quote/" + c + sfx((D.stocks[c] || {}).mkt);
+const etfName = e => (D.etfs[e] || {}).name || e;
+const st = c => D.stocks[c] || {n: c, ind: "未分類", mkt: ""};
+
+function bg(x, sig) {
+  const a = Math.abs(x || 0);
+  const al = a >= 3 ? .95 : a >= 1 ? .75 : a >= .5 ? .55 : a >= .1 ? .38 : .2;
+  return `background:rgba(var(${sig > 0 ? "--buy-bg" : "--sell-bg"}),${al});color:${al >= .55 ? "#fff" : "var(--ink)"}`;
+}
+function pText(p, sig, run) {
+  const [ok, n] = p; if (!n) return "歷史樣本不足";
+  const k = run >= 4 ? "≥4" : run;
+  return `歷史：連 ${k} 天${sig > 0 ? "買" : "賣"}後，隔天繼續 ${(100 * ok / n).toFixed(0)}%（${ok}/${n}）`;
+}
+
+$("#sub").textContent = `最新交易日 ${D.last_day}（持股於隔個交易日早上公布）・ 資料 ${D.first_day} 起 ${D.n_days} 天 ・ 更新 ${D.built}`;
+
+// ---------------- tabs
+document.querySelectorAll("nav button").forEach(b => b.onclick = () => showTab(b.dataset.tab));
+function showTab(t) {
+  document.querySelectorAll("nav button").forEach(x => x.classList.toggle("on", x.dataset.tab === t));
+  ["runs", "cal", "ind"].forEach(x => $("#tab-" + x).hidden = x !== t);
+  if (t === "cal") renderCal(); if (t === "ind") renderInd();
+}
+function seg(id, cb) {
+  const el = $(id);
+  el.querySelectorAll("button").forEach(b => b.onclick = () => {
+    el.querySelectorAll("button").forEach(x => x.classList.toggle("on", x === b)); cb(); });
+  return () => el.querySelector(".on").dataset.v;
+}
+
+// ---------------- 連續中
+const rLevel = seg("#r-level", renderRuns), rDir = seg("#r-dir", renderRuns), rMin = seg("#r-min", renderRuns);
+function renderRuns() {
+  const lvl = rLevel(), dir = +rDir(), mn = +rMin();
+  const src = lvl === "etf" ? D.runs_etf : D.runs_stk;
+  const xs = src.filter(x => x.run >= mn && (!dir || x.sig === dir));
+  $("#runs").innerHTML = xs.length ? xs.map(x => {
+    const s = st(x.c), col = x.sig > 0 ? "var(--buy)" : "var(--sell)", cls = x.sig > 0 ? "amt-b" : "amt-s";
+    const who = lvl === "etf" ? `${esc(etfName(x.etf))} <span class="code">${x.etf}</span>${x.date !== D.last_day ? ` ・ 資料日 ${md(x.date)}` : ""}`
+                              : `${x.nb} 檔買 / ${x.ns} 檔賣`;
+    const tag = x.kind === "entry" && x.run === 1 ? "（新建倉）" : "";
+    return `<div class="card" style="--c:${col}" data-c="${x.c}">
+      <div class="top"><div><span class="nm">${esc(s.n)}</span><span class="code">${x.c}</span></div>
+      <div class="run">連 ${x.run} 天${x.sig > 0 ? "買" : "賣"}${tag}</div></div>
+      <div class="meta">${esc(s.ind)} ・ ${who}</div>
+      <div class="nums">累計 <b class="${cls}">${fmtYi(x.cum)}</b> ・ 最後一天 <span class="${cls}">${fmtYi(x.last)}</span> ・ 自 ${md(x.start)}</div>
+      <div class="p">${pText(x.p, x.sig, x.run)}</div></div>`;
+  }).join("") : `<div class="empty">目前沒有符合條件的連續買賣</div>`;
+  $("#runs").querySelectorAll(".card").forEach(el => el.onclick = () => openSheet(el.dataset.c));
+  $("#runs-note").textContent = lvl === "etf"
+    ? "單一 ETF：同一檔 ETF 對同一支股票連續幾個交易日同方向調整（缺一天資料就斷）。各投信公布時間不同，慢的會標資料日。"
+      + (D.stale.length ? ` 資料落後太久、不列入：${D.stale.map(e => e + " " + etfName(e) + "（停在 " + md(D.etfs[e].latest) + "）").join("、")}。` : "")
+    : "全部合併：所有主動 ETF 對同一支股票的淨主動金額，連續幾個交易日同方向。";
+}
+
+// ---------------- 日曆
+const cEtf = $("#c-etf"), cInd = $("#c-ind");
+cEtf.innerHTML = `<option value="">全部合併</option>` + Object.entries(D.etfs)
+  .map(([e, m]) => `<option value="${e}">${e} ${esc(m.name)}</option>`).join("");
+const inds = [...new Set(Object.values(D.stocks).map(s => s.ind))].sort();
+cInd.innerHTML = `<option value="">所有產業</option>` + inds.map(i => `<option>${esc(i)}</option>`).join("");
+cEtf.onchange = cInd.onchange = renderCal;
+
+function head(first) {
+  return `<thead><tr><th class="stk">${first}</th>${D.days.map(d => `<th>${md(d)}</th>`).join("")}</tr></thead>`;
+}
+function renderCal() {
+  const etf = cEtf.value, ind = cInd.value;
+  const by = {};  // code -> {dayIdx: [amt, sig, run]}
+  if (etf) for (const [e, c, i, a, s, k, lots, run] of D.cells_etf) { if (e !== etf) continue; (by[c] ||= {})[i] = [a, s, run]; }
+  else for (const [c, i, a, nb, ns, run] of D.cells_stk) (by[c] ||= {})[i] = [a, a > 0 ? 1 : -1, run];
+  let codes = Object.keys(by).filter(c => !ind || st(c).ind === ind);
+  const last = D.days.length - 1;
+  const score = c => { const r = by[c]; let s = 0; for (const i in r) s += Math.abs(r[i][0]) * (1 + i / last); return s; };
+  const groups = {};
+  codes.forEach(c => (groups[st(c).ind] ||= []).push(c));
+  const gs = Object.entries(groups).map(([g, cs]) => [g, cs.sort((a, b) => score(b) - score(a)), cs.reduce((t, c) => t + score(c), 0)])
+    .sort((a, b) => b[2] - a[2]);
+  let h = `<table class="cal">${head("股票")}<tbody>`;
+  for (const [g, cs] of gs) {
+    h += `<tr class="grp"><td class="stk">${esc(g)}</td><td colspan="${D.days.length}"></td></tr>`;
+    for (const c of cs) {
+      h += `<tr><td class="stk" data-c="${c}">${esc(st(c).n)} <small>${c}</small></td>`;
+      for (let i = 0; i <= last; i++) {
+        const v = by[c][i];
+        h += v ? `<td class="c"><span style="${bg(v[0], v[1])}">${fmt(v[0])}${v[2] >= 2 ? `<span class="r">${v[2]}</span>` : ""}</span></td>` : `<td class="c"></td>`;
+      }
+      h += `</tr>`;
+    }
+  }
+  h += `</tbody></table>`;
+  $("#calwrap").innerHTML = codes.length ? h : `<div class="empty">這段期間沒有訊號</div>`;
+  $("#calwrap").querySelectorAll("td.stk[data-c]").forEach(el => el.onclick = () => openSheet(el.dataset.c));
+  $("#calwrap").scrollLeft = 1e6;  // 最新日在最右邊
+}
+
+// ---------------- 產業
+function renderInd() {
+  const by = {};
+  for (const [c, i, a] of D.cells_stk) { const g = st(c).ind; (by[g] ||= {})[i] = ((by[g] || {})[i] || 0) + a; }
+  const gs = Object.keys(by).sort((a, b) => {
+    const t = g => Object.values(by[g]).reduce((s, x) => s + Math.abs(x), 0); return t(b) - t(a); });
+  let h = `<table class="cal">${head("產業")}<tbody>`;
+  for (const g of gs) {
+    h += `<tr><td class="stk" data-g="${esc(g)}">${esc(g)}</td>`;
+    for (let i = 0; i < D.days.length; i++) {
+      const v = by[g][i];
+      h += v ? `<td class="c"><span style="${bg(v, v > 0 ? 1 : -1)}">${fmt(v)}</span></td>` : `<td class="c"></td>`;
+    }
+    h += `</tr>`;
+  }
+  $("#indwrap").innerHTML = h + `</tbody></table>`;
+  $("#indwrap").querySelectorAll("td.stk").forEach(el => el.onclick = () => {
+    cEtf.value = ""; cInd.value = el.dataset.g; showTab("cal"); });
+  $("#indwrap").scrollLeft = 1e6;
+}
+
+// ---------------- 明細
+function openSheet(c) {
+  const s = st(c);
+  const rows = D.cells_etf.filter(x => x[1] === c).sort((a, b) => b[2] - a[2] || Math.abs(b[3]) - Math.abs(a[3]));
+  const kind = k => k === "entry" ? "新建倉" : k === "exit" ? "清倉" : "";
+  const runs = D.runs_etf.filter(x => x.c === c);
+  $("#sheetbox").innerHTML = `<button class="x" onclick="closeSheet()">×</button>
+    <div style="font-size:1.1rem;font-weight:700">${esc(s.n)} <span class="code" style="color:var(--mute);font-weight:400">${c}</span></div>
+    <div class="sub">${esc(s.ind)} ・ ${s.mkt === "twse" ? "上市" : s.mkt === "tpex" ? "上櫃" : s.mkt}</div>
+    <div class="links"><a href="${yahoo(c)}" target="_blank" rel="noopener">今日走勢</a>
+      <a class="alt" href="${yahoo(c)}/technical-analysis" target="_blank" rel="noopener">日K</a></div>
+    ${runs.length ? `<div class="sub" style="margin-bottom:8px">${runs.map(x => `${esc(etfName(x.etf))} 連 ${x.run} 天${x.sig > 0 ? "買" : "賣"}`).join(" ・ ")}</div>` : ""}
+    <table class="det"><tr><th>日期</th><th>ETF</th><th style="text-align:right">億</th><th style="text-align:right">張</th><th></th></tr>
+    ${rows.map(([e, , i, a, sg, k, lots, run]) => `<tr><td>${md(D.days[i])}</td><td>${esc(etfName(e))}</td>
+      <td class="n ${sg > 0 ? "amt-b" : "amt-s"}">${fmt(a)}</td><td class="n">${lots > 0 ? "+" : ""}${lots.toLocaleString()}</td>
+      <td style="color:var(--mute);font-size:.75rem">${[kind(k), run >= 2 ? "連" + run : ""].filter(Boolean).join(" ")}</td></tr>`).join("")}
+    </table>`;
+  $("#sheet").classList.add("open");
+}
+function closeSheet() { $("#sheet").classList.remove("open"); }
+$("#sheet").onclick = e => { if (e.target.id === "sheet") closeSheet(); };
+
+renderRuns();
+// 從 TG 連結帶 ?c=2330 直接打開該股明細
+const q = new URLSearchParams(location.search).get("c");
+if (q && D.stocks[q]) openSheet(q);
+</script>
+</body>
+</html>
