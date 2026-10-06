@@ -51,7 +51,7 @@ jobs:
           # 抓完整歷史的成本可以忽略。
           fetch-depth: 0
 
-      # 資料更新 workflow 失敗時,這裡是唯一會告訴你的地方(那支是原作者的,不改它)
+      # 資料更新 workflow 失敗時由這裡通知(通知不加在 update.yml,減少跟上游同步時的衝突)
       - name: Alert if data update failed
         if: github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'failure'
         env:
