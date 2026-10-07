@@ -1809,10 +1809,10 @@
     }
    ],
    "meta": {
-    "holders": 138367.0,
-    "nav_per_unit": 9.69,
-    "scale": 25000300879.0,
-    "units": 2579745000.0
+    "holders": null,
+    "nav_per_unit": null,
+    "scale": null,
+    "units": null
    },
    "status": "ok"
   },

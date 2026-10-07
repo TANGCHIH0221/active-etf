@@ -1,5 +1,5 @@
 {
- "build_id": "9675dd0f2f28",
+ "build_id": "aaaf847c49f4",
  "consensus": {
   "decrease": [
    {
@@ -1751,7 +1751,7 @@
      "weight_delta": -0.3571
     }
    ],
-   "holders": 138367.0,
+   "holders": null,
    "holdings": [
     {
      "code": "3037",
@@ -2038,12 +2038,12 @@
    ],
    "issuer": "富邦",
    "name": "主動富邦台灣龍耀",
-   "nav": 9.69,
+   "nav": null,
    "nav_date": "2026-10-07",
    "premium_note": null,
-   "premium_pct": -0.31,
+   "premium_pct": null,
    "quote_date": "2026-10-07",
-   "scale": 25000300879.0,
+   "scale": null,
    "status": "ok"
   },
   "00406A": {
