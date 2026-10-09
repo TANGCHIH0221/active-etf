@@ -23885,6 +23885,20 @@
    "type": "DECREASE"
   },
   {
+   "close": 1270.0,
+   "code": "3037",
+   "date": "2026-10-08",
+   "etf": "00987A",
+   "type": "DECREASE"
+  },
+  {
+   "close": 3320.0,
+   "code": "6510",
+   "date": "2026-10-08",
+   "etf": "00987A",
+   "type": "INCREASE"
+  },
+  {
    "close": 310.0,
    "code": "1303",
    "date": "2026-10-08",
