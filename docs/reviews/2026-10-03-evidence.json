@@ -1,0 +1,150 @@
+{
+  "new_etf_crash": "AttributeError(\"'NoneType' object has no attribute 'get'\")",
+  "same_day_regression": {
+    "retained_date": "2026-10-01",
+    "retained_shares": 100,
+    "existing_latest_date": "2026-10-02",
+    "existing_latest_shares": 200
+  },
+  "nav_change_skips": true,
+  "global_date_rollback": {
+    "return": 0,
+    "quote_fetch_calls": 1,
+    "active_updated": "2026-10-01",
+    "log": "抓取持股:\n資料日:2026-10-01\n異動事件合計 0 筆\n收盤價:2026-10-02 共 2 檔\n交叉連結:處置中 0 檔、研究筆記 0 篇\n完成:1 檔 ETF、1 檔個股反向索引\n"
+  },
+  "quote_recovery_skipped": {
+    "return": 0,
+    "quote_fetch_calls": 0,
+    "active_updated": "2026-10-02",
+    "log": "抓取持股:\n資料日:2026-10-02\n跳過更新:逐檔資料與上次完全相同(資料日 2026-10-02)\n"
+  },
+  "ui_hash_unchanged": {
+    "html_changed": true,
+    "old_id": "c377df014b00",
+    "new_id": "c377df014b00"
+  },
+  "remove_uses_raw_delta": {
+    "scale": 1.2,
+    "events": [
+      {
+        "code": "0",
+        "name": "x",
+        "type": "REMOVE",
+        "prev_weight": 20,
+        "prev_shares": 1000,
+        "shares_delta": -1000
+      }
+    ],
+    "expected_adjusted_remove": -1200
+  },
+  "mixed_quote_dates": [
+    "2026-10-02",
+    {
+      "2330": 100,
+      "6488": 50
+    },
+    []
+  ],
+  "actual_mixed_consensus": [
+    {
+      "side": "decrease",
+      "stock": "2344",
+      "members": [
+        [
+          "00984A",
+          "2026-10-01"
+        ],
+        [
+          "00995A",
+          "2026-10-02"
+        ]
+      ]
+    },
+    {
+      "side": "decrease",
+      "stock": "6669",
+      "members": [
+        [
+          "00981A",
+          "2026-10-02"
+        ],
+        [
+          "00984A",
+          "2026-10-01"
+        ],
+        [
+          "00993A",
+          "2026-10-01"
+        ],
+        [
+          "00995A",
+          "2026-10-02"
+        ]
+      ]
+    },
+    {
+      "side": "increase",
+      "stock": "2454",
+      "members": [
+        [
+          "00406A",
+          "2026-10-02"
+        ],
+        [
+          "00984A",
+          "2026-10-01"
+        ]
+      ]
+    }
+  ],
+  "history": {
+    "file_count": 41,
+    "from": "2026-08-05",
+    "to": "2026-10-02",
+    "meta_records": 330,
+    "units_records": 330,
+    "incr_decr_with_adjusted": 713,
+    "incr_decr_without_adjusted": 1690,
+    "event_records_differ_from_file_date": 84,
+    "conflicting_same_etf_data_date": [
+      [
+        "00987A",
+        "2026-09-10",
+        2
+      ]
+    ],
+    "distinct_ok_dates_per_etf": {
+      "00403A": 41,
+      "00405A": 41,
+      "00406A": 39,
+      "00407A": 39,
+      "00410A": 40,
+      "00980A": 37,
+      "00981A": 40,
+      "00982A": 40,
+      "00984A": 37,
+      "00985A": 37,
+      "00987A": 38,
+      "00991A": 40,
+      "00992A": 40,
+      "00993A": 37,
+      "00995A": 39,
+      "00999A": 37,
+      "00400A": 39,
+      "00401A": 39,
+      "00404A": 37,
+      "00408A": 39,
+      "00994A": 39,
+      "00996A": 31
+    }
+  },
+  "current_stale": [
+    {
+      "etf": "00996A",
+      "date": "2026-09-18"
+    }
+  ],
+  "inline_json_not_script_safe": true,
+  "current_html_matches_renderer": true
+}

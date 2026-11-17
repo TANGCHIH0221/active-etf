@@ -1,0 +1,22 @@
+<div class="panel" id="trendPanel">
+  <h2>個股累積加減碼趨勢 <span class="hint">完整持股差異估算，包含未達重大異動門檻的調整</span></h2>
+  <div class="trend-controls">
+    <label for="trendStock">股票代號或名稱</label><input id="trendStock" autocomplete="off" placeholder="2330 台積電；也可查已出清股票">
+    <label for="trendWindow">比較期間</label><select id="trendWindow"><option value="5">近 5 日</option><option value="20" selected>近 20 日</option><option value="60">近 60 日</option><option value="all">全部可用歷史</option></select>
+    <button type="button" id="trendExport">匯出區間明細 CSV</button>
+  </div>
+  <div id="trendCandidates" aria-live="polite"></div>
+  <h3 id="trendStockName"></h3><p class="note" id="trendPeriod"></p>
+  <div id="trendEmpty" class="empty" hidden></div>
+  <div id="trendBody">
+    <div id="trendMetrics"></div><p class="note" id="trendCoverage"></p>
+    <figure class="trend-figure"><figcaption>每日淨調整估算｜綠 ▲ 增持、紅 ▼ 減持</figcaption><div id="trendDaily"></div></figure>
+    <figure class="trend-figure"><figcaption>期間累積淨調整估算｜區間起點歸零</figcaption><div id="trendCumulative"></div></figure>
+    <figure class="trend-figure"><figcaption>固定可比樣本的持股總量｜含申購贖回規模變化</figcaption><div id="trendHoldings"></div></figure>
+    <details><summary>每日數據與持有 ETF 家數</summary><div id="trendDailyData"></div></details>
+    <h3>逐 ETF 的區間貢獻</h3><div id="trendContributions"></div>
+    <div class="trend-controls" style="margin-top:1rem"><label for="trendDay">點圖表或選日期查看明細</label><select id="trendDay"></select></div>
+    <div id="trendBreakdown"></div>
+  </div>
+  <p class="note">校正採共同持股股數比率的中位數，屬持股端點的變化分解，不是實際成交紀錄。缺資料不補零；疑似公司行動的區間會排除，尚未接完整公司行動調整資料。歷史不足時不提供完整區間估算。</p>
+</div>

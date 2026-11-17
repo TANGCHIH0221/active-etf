@@ -5,104 +5,32 @@
    "data_date": "2026-10-01",
    "events": [
     {
-     "adjusted_shares_delta": 539006,
-     "code": "1303",
-     "name": "南亞",
-     "prev_shares": 3626113,
-     "prev_weight": 3.12,
-     "scale": 1.000538,
-     "shares": 4167071,
-     "shares_delta": 540958,
-     "shares_delta_pct": 14.86,
-     "type": "INCREASE",
-     "weight": 3.65,
-     "weight_delta": 0.53
-    },
-    {
-     "adjusted_shares_delta": 70628,
-     "code": "2308",
-     "name": "台達電",
-     "prev_shares": 598160,
-     "prev_weight": 3.82,
-     "scale": 1.000538,
-     "shares": 669110,
-     "shares_delta": 70950,
-     "shares_delta_pct": 11.8,
-     "type": "INCREASE",
-     "weight": 4.39,
-     "weight_delta": 0.57
-    },
-    {
-     "adjusted_shares_delta": 55759,
-     "code": "2383",
-     "name": "台光電",
-     "prev_shares": 226632,
-     "prev_weight": 3.89,
-     "scale": 1.000538,
-     "shares": 282513,
-     "shares_delta": 55881,
-     "shares_delta_pct": 24.59,
-     "type": "INCREASE",
-     "weight": 4.84,
-     "weight_delta": 0.95
-    },
-    {
-     "adjusted_shares_delta": 52042,
-     "code": "3665",
-     "name": "貿聯-KY",
-     "prev_shares": 241493,
-     "prev_weight": 2.05,
-     "scale": 1.000538,
-     "shares": 293665,
-     "shares_delta": 52172,
-     "shares_delta_pct": 21.54,
-     "type": "INCREASE",
-     "weight": 2.6,
-     "weight_delta": 0.55
-    },
-    {
      "adjusted_shares_delta": -55759,
      "code": "6223",
      "name": "旺矽",
      "prev_shares": 237778,
-     "prev_weight": 4.29,
+     "prev_weight": 4.23,
      "scale": 1.000538,
      "shares": 182147,
      "shares_delta": -55631,
      "shares_delta_pct": -23.44,
      "type": "DECREASE",
      "weight": 3.14,
-     "weight_delta": -1.15
+     "weight_delta": -1.09
     },
     {
      "adjusted_shares_delta": 263927,
      "code": "6488",
      "name": "環球晶",
      "prev_shares": 620452,
-     "prev_weight": 2.05,
+     "prev_weight": 2.23,
      "scale": 1.000538,
      "shares": 884713,
      "shares_delta": 264261,
      "shares_delta_pct": 42.51,
      "type": "INCREASE",
      "weight": 3.31,
-     "weight_delta": 1.26
-    },
-    {
-     "code": "2345",
-     "name": "智邦",
-     "prev_shares": 226632,
-     "prev_weight": 1.43,
-     "shares_delta": -226632,
-     "type": "REMOVE"
-    },
-    {
-     "code": "6442",
-     "name": "光  聖",
-     "prev_shares": 59444,
-     "prev_weight": 0.3,
-     "shares_delta": -59444,
-     "type": "REMOVE"
+     "weight_delta": 1.08
     }
    ],
    "holdings": [
@@ -387,36 +315,7 @@
   },
   "00401A": {
    "data_date": "2026-10-01",
-   "events": [
-    {
-     "adjusted_shares_delta": 2000,
-     "code": "7856",
-     "name": "漢測",
-     "prev_shares": 4000,
-     "prev_weight": 0.47,
-     "scale": 1.0,
-     "shares": 6000,
-     "shares_delta": 2000,
-     "shares_delta_pct": 50.0,
-     "type": "INCREASE",
-     "weight": 0.69,
-     "weight_delta": 0.22
-    },
-    {
-     "adjusted_shares_delta": -6000,
-     "code": "2345",
-     "name": "智邦科技",
-     "prev_shares": 16423,
-     "prev_weight": 0.8,
-     "scale": 1.0,
-     "shares": 10423,
-     "shares_delta": -6000,
-     "shares_delta_pct": -36.53,
-     "type": "DECREASE",
-     "weight": 0.53,
-     "weight_delta": -0.27
-    }
-   ],
+   "events": [],
    "holdings": [
     {
      "code": "2330",
@@ -767,87 +666,45 @@
    "data_date": "2026-10-01",
    "events": [
     {
-     "adjusted_shares_delta": -170000,
+     "adjusted_shares_delta": -70000,
      "code": "6223",
      "name": "旺矽",
-     "prev_shares": 1100000,
-     "prev_weight": 3.92,
+     "prev_shares": 1000000,
+     "prev_weight": 3.51,
      "scale": 1.0,
      "shares": 930000,
-     "shares_delta": -170000,
-     "shares_delta_pct": -15.45,
+     "shares_delta": -70000,
+     "shares_delta_pct": -7.0,
      "type": "DECREASE",
      "weight": 3.17,
-     "weight_delta": -0.75
+     "weight_delta": -0.34
     },
     {
      "adjusted_shares_delta": -40000,
      "code": "3443",
      "name": "創意",
      "prev_shares": 610000,
-     "prev_weight": 3.32,
+     "prev_weight": 3.36,
      "scale": 1.0,
      "shares": 570000,
      "shares_delta": -40000,
      "shares_delta_pct": -6.56,
      "type": "DECREASE",
      "weight": 3.05,
-     "weight_delta": -0.27
+     "weight_delta": -0.31
     },
     {
-     "adjusted_shares_delta": 167000,
-     "code": "3665",
-     "name": "貿聯-KY",
-     "prev_shares": 1293000,
-     "prev_weight": 2.17,
-     "scale": 1.0,
-     "shares": 1460000,
-     "shares_delta": 167000,
-     "shares_delta_pct": 12.92,
-     "type": "INCREASE",
-     "weight": 2.53,
-     "weight_delta": 0.36
-    },
-    {
-     "adjusted_shares_delta": -200000,
-     "code": "2345",
-     "name": "智邦",
-     "prev_shares": 1800000,
-     "prev_weight": 2.24,
-     "scale": 1.0,
-     "shares": 1600000,
-     "shares_delta": -200000,
-     "shares_delta_pct": -11.11,
-     "type": "DECREASE",
-     "weight": 2.06,
-     "weight_delta": -0.18
-    },
-    {
-     "adjusted_shares_delta": -310000,
+     "adjusted_shares_delta": -170000,
      "code": "6805",
      "name": "富世達",
-     "prev_shares": 840000,
-     "prev_weight": 1.45,
+     "prev_shares": 700000,
+     "prev_weight": 1.18,
      "scale": 1.0,
      "shares": 530000,
-     "shares_delta": -310000,
-     "shares_delta_pct": -36.9,
+     "shares_delta": -170000,
+     "shares_delta_pct": -24.29,
      "type": "DECREASE",
      "weight": 0.86,
-     "weight_delta": -0.59
-    },
-    {
-     "adjusted_shares_delta": -80000,
-     "code": "3008",
-     "name": "大立光",
-     "prev_shares": 280000,
-     "prev_weight": 1.16,
-     "scale": 1.0,
-     "shares": 200000,
-     "shares_delta": -80000,
-     "shares_delta_pct": -28.57,
-     "type": "DECREASE",
-     "weight": 0.84,
      "weight_delta": -0.32
     }
    ],
@@ -1168,7 +1025,7 @@
      "code": "3135",
      "name": "凌航科技股份有限公司",
      "prev_shares": 13733,
-     "prev_weight": 0.050599,
+     "prev_weight": 0.050747,
      "shares_delta": -13733,
      "type": "REMOVE"
     }
@@ -1497,56 +1354,42 @@
      "code": "3037",
      "name": "欣興",
      "prev_shares": 1720000,
-     "prev_weight": 7.7545,
+     "prev_weight": 7.7985,
      "scale": 1.0,
      "shares": 1920000,
      "shares_delta": 200000,
      "shares_delta_pct": 11.63,
      "type": "INCREASE",
      "weight": 8.9828,
-     "weight_delta": 1.2283
+     "weight_delta": 1.1843
     },
     {
      "adjusted_shares_delta": 120000,
      "code": "8046",
      "name": "南電",
      "prev_shares": 739000,
-     "prev_weight": 3.632,
+     "prev_weight": 3.8211,
      "scale": 1.0,
      "shares": 859000,
      "shares_delta": 120000,
      "shares_delta_pct": 16.24,
      "type": "INCREASE",
      "weight": 4.6969,
-     "weight_delta": 1.0649
-    },
-    {
-     "adjusted_shares_delta": -100000,
-     "code": "3017",
-     "name": "奇鋐",
-     "prev_shares": 378000,
-     "prev_weight": 4.9736,
-     "scale": 1.0,
-     "shares": 278000,
-     "shares_delta": -100000,
-     "shares_delta_pct": -26.46,
-     "type": "DECREASE",
-     "weight": 3.7573,
-     "weight_delta": -1.2163
+     "weight_delta": 0.8758
     },
     {
      "adjusted_shares_delta": -90000,
      "code": "6510",
      "name": "精測",
      "prev_shares": 245000,
-     "prev_weight": 2.9771,
+     "prev_weight": 2.8976,
      "scale": 1.0,
      "shares": 155000,
      "shares_delta": -90000,
      "shares_delta_pct": -36.73,
      "type": "DECREASE",
      "weight": 1.7905,
-     "weight_delta": -1.1866
+     "weight_delta": -1.1071
     },
     {
      "code": "1303",
@@ -1561,28 +1404,28 @@
      "code": "3450",
      "name": "聯鈞",
      "prev_shares": 650000,
-     "prev_weight": 1.3206,
+     "prev_weight": 1.3117,
      "scale": 1.0,
      "shares": 250000,
      "shares_delta": -400000,
      "shares_delta_pct": -61.54,
      "type": "DECREASE",
      "weight": 0.4957,
-     "weight_delta": -0.8249
+     "weight_delta": -0.816
     },
     {
-     "adjusted_shares_delta": -80000,
+     "adjusted_shares_delta": -50000,
      "code": "7734",
      "name": "印能科技",
-     "prev_shares": 110000,
-     "prev_weight": 1.1408,
+     "prev_shares": 80000,
+     "prev_weight": 0.8226,
      "scale": 1.0,
      "shares": 30000,
-     "shares_delta": -80000,
-     "shares_delta_pct": -72.73,
+     "shares_delta": -50000,
+     "shares_delta_pct": -62.5,
      "type": "DECREASE",
      "weight": 0.3228,
-     "weight_delta": -0.818
+     "weight_delta": -0.4998
     },
     {
      "code": "3189",
@@ -1595,17 +1438,9 @@
     {
      "code": "6831",
      "name": "邁科",
-     "prev_shares": 250000,
-     "prev_weight": 0.476,
-     "shares_delta": -250000,
-     "type": "REMOVE"
-    },
-    {
-     "code": "6488",
-     "name": "環球晶",
-     "prev_shares": 110000,
-     "prev_weight": 0.4022,
-     "shares_delta": -110000,
+     "prev_shares": 100000,
+     "prev_weight": 0.1819,
+     "shares_delta": -100000,
      "type": "REMOVE"
     }
    ],
@@ -1899,130 +1734,130 @@
    "data_date": "2026-10-01",
    "events": [
     {
-     "adjusted_shares_delta": 130000,
+     "adjusted_shares_delta": 70000,
      "code": "2454",
      "name": "聯發科技",
-     "prev_shares": 617000,
-     "prev_weight": 5.52,
+     "prev_shares": 677000,
+     "prev_weight": 5.77,
      "scale": 1.0,
      "shares": 747000,
-     "shares_delta": 130000,
-     "shares_delta_pct": 21.07,
+     "shares_delta": 70000,
+     "shares_delta_pct": 10.34,
      "type": "INCREASE",
      "weight": 6.09,
-     "weight_delta": 0.57
+     "weight_delta": 0.32
     },
     {
-     "adjusted_shares_delta": 136000,
+     "adjusted_shares_delta": 65000,
      "code": "3017",
      "name": "奇鋐科技",
-     "prev_shares": 860000,
-     "prev_weight": 5.33,
+     "prev_shares": 931000,
+     "prev_weight": 5.54,
      "scale": 1.0,
      "shares": 996000,
-     "shares_delta": 136000,
-     "shares_delta_pct": 15.81,
+     "shares_delta": 65000,
+     "shares_delta_pct": 6.98,
      "type": "INCREASE",
      "weight": 5.72,
-     "weight_delta": 0.39
+     "weight_delta": 0.18
     },
     {
-     "adjusted_shares_delta": 360000,
+     "adjusted_shares_delta": 160000,
      "code": "3037",
      "name": "欣興電子",
-     "prev_shares": 2375000,
-     "prev_weight": 5.04,
+     "prev_shares": 2575000,
+     "prev_weight": 5.24,
      "scale": 1.0,
      "shares": 2735000,
-     "shares_delta": 360000,
-     "shares_delta_pct": 15.16,
+     "shares_delta": 160000,
+     "shares_delta_pct": 6.21,
      "type": "INCREASE",
      "weight": 5.44,
-     "weight_delta": 0.4
+     "weight_delta": 0.2
     },
     {
-     "adjusted_shares_delta": 55000,
+     "adjusted_shares_delta": 30000,
      "code": "3653",
      "name": "健策精密工業",
-     "prev_shares": 291000,
-     "prev_weight": 3.66,
+     "prev_shares": 316000,
+     "prev_weight": 3.72,
      "scale": 1.0,
      "shares": 346000,
-     "shares_delta": 55000,
-     "shares_delta_pct": 18.9,
+     "shares_delta": 30000,
+     "shares_delta_pct": 9.49,
      "type": "INCREASE",
      "weight": 3.89,
-     "weight_delta": 0.23
-    },
-    {
-     "adjusted_shares_delta": 110000,
-     "code": "2308",
-     "name": "台達電子工業",
-     "prev_shares": 1013000,
-     "prev_weight": 3.39,
-     "scale": 1.0,
-     "shares": 1123000,
-     "shares_delta": 110000,
-     "shares_delta_pct": 10.86,
-     "type": "INCREASE",
-     "weight": 3.5,
-     "weight_delta": 0.11
+     "weight_delta": 0.17
     },
     {
      "adjusted_shares_delta": 305000,
      "code": "3711",
      "name": "日月光投資控股",
      "prev_shares": 1810000,
-     "prev_weight": 2.27,
+     "prev_weight": 2.21,
      "scale": 1.0,
      "shares": 2115000,
      "shares_delta": 305000,
      "shares_delta_pct": 16.85,
      "type": "INCREASE",
      "weight": 2.46,
-     "weight_delta": 0.19
+     "weight_delta": 0.25
     },
     {
-     "adjusted_shares_delta": 3038000,
+     "adjusted_shares_delta": 1518000,
      "code": "2303",
      "name": "聯華電子",
-     "prev_shares": 6030000,
-     "prev_weight": 1.69,
+     "prev_shares": 7550000,
+     "prev_weight": 2.02,
      "scale": 1.0,
      "shares": 9068000,
-     "shares_delta": 3038000,
-     "shares_delta_pct": 50.38,
+     "shares_delta": 1518000,
+     "shares_delta_pct": 20.11,
      "type": "INCREASE",
      "weight": 2.4,
-     "weight_delta": 0.71
+     "weight_delta": 0.38
     },
     {
      "adjusted_shares_delta": 132000,
      "code": "3189",
      "name": "景碩科技",
      "prev_shares": 554000,
-     "prev_weight": 0.96,
+     "prev_weight": 0.93,
      "scale": 1.0,
      "shares": 686000,
      "shares_delta": 132000,
      "shares_delta_pct": 23.83,
      "type": "INCREASE",
      "weight": 1.13,
-     "weight_delta": 0.17
+     "weight_delta": 0.2
     },
     {
      "adjusted_shares_delta": 130000,
      "code": "2368",
      "name": "金像電子",
      "prev_shares": 180000,
-     "prev_weight": 0.37,
+     "prev_weight": 0.35,
      "scale": 1.0,
      "shares": 310000,
      "shares_delta": 130000,
      "shares_delta_pct": 72.22,
      "type": "INCREASE",
      "weight": 0.56,
-     "weight_delta": 0.19
+     "weight_delta": 0.21
+    },
+    {
+     "adjusted_shares_delta": 270000,
+     "code": "6147",
+     "name": "頎邦科技",
+     "prev_shares": 1060000,
+     "prev_weight": 0.38,
+     "scale": 1.0,
+     "shares": 1330000,
+     "shares_delta": 270000,
+     "shares_delta_pct": 25.47,
+     "type": "INCREASE",
+     "weight": 0.49,
+     "weight_delta": 0.11
     },
     {
      "code": "3529",
@@ -2425,88 +2260,46 @@
    "data_date": "2026-10-01",
    "events": [
     {
-     "adjusted_shares_delta": 65000,
-     "code": "3665",
-     "name": "貿聯-KY",
-     "prev_shares": 226000,
-     "prev_weight": 2.35,
-     "scale": 1.0,
-     "shares": 291000,
-     "shares_delta": 65000,
-     "shares_delta_pct": 28.76,
-     "type": "INCREASE",
-     "weight": 3.15,
-     "weight_delta": 0.8
-    },
-    {
      "adjusted_shares_delta": 150000,
      "code": "8046",
      "name": "南電",
      "prev_shares": 356000,
-     "prev_weight": 1.92,
+     "prev_weight": 2.03,
      "scale": 1.0,
      "shares": 506000,
      "shares_delta": 150000,
      "shares_delta_pct": 42.13,
      "type": "INCREASE",
      "weight": 3.05,
-     "weight_delta": 1.13
-    },
-    {
-     "adjusted_shares_delta": -70000,
-     "code": "2345",
-     "name": "智邦",
-     "prev_shares": 322000,
-     "prev_weight": 2.48,
-     "scale": 1.0,
-     "shares": 252000,
-     "shares_delta": -70000,
-     "shares_delta_pct": -21.74,
-     "type": "DECREASE",
-     "weight": 2.03,
-     "weight_delta": -0.45
-    },
-    {
-     "adjusted_shares_delta": -8000,
-     "code": "5274",
-     "name": "信驊",
-     "prev_shares": 30900,
-     "prev_weight": 2.55,
-     "scale": 1.0,
-     "shares": 22900,
-     "shares_delta": -8000,
-     "shares_delta_pct": -25.89,
-     "type": "DECREASE",
-     "weight": 1.85,
-     "weight_delta": -0.7
+     "weight_delta": 1.02
     },
     {
      "adjusted_shares_delta": -90000,
      "code": "6805",
      "name": "富世達",
      "prev_shares": 207000,
-     "prev_weight": 2.22,
+     "prev_weight": 2.16,
      "scale": 1.0,
      "shares": 117000,
      "shares_delta": -90000,
      "shares_delta_pct": -43.48,
      "type": "DECREASE",
      "weight": 1.19,
-     "weight_delta": -1.03
+     "weight_delta": -0.97
     },
     {
      "adjusted_shares_delta": -80000,
      "code": "2360",
      "name": "致茂",
      "prev_shares": 190000,
-     "prev_weight": 1.77,
+     "prev_weight": 1.72,
      "scale": 1.0,
      "shares": 110000,
      "shares_delta": -80000,
      "shares_delta_pct": -42.11,
      "type": "DECREASE",
      "weight": 0.97,
-     "weight_delta": -0.8
+     "weight_delta": -0.75
     }
    ],
    "holdings": [
@@ -2823,102 +2616,46 @@
    "data_date": "2026-10-01",
    "events": [
     {
-     "adjusted_shares_delta": -4000,
+     "adjusted_shares_delta": -2000,
      "code": "2454",
      "name": "聯發科",
-     "prev_shares": 18500,
-     "prev_weight": 6.21,
+     "prev_shares": 16500,
+     "prev_weight": 5.53,
      "scale": 1.0,
      "shares": 14500,
-     "shares_delta": -4000,
-     "shares_delta_pct": -21.62,
+     "shares_delta": -2000,
+     "shares_delta_pct": -12.12,
      "type": "DECREASE",
      "weight": 4.88,
-     "weight_delta": -1.33
-    },
-    {
-     "adjusted_shares_delta": 3000,
-     "code": "2308",
-     "name": "台達電",
-     "prev_shares": 22900,
-     "prev_weight": 2.87,
-     "scale": 1.0,
-     "shares": 25900,
-     "shares_delta": 3000,
-     "shares_delta_pct": 13.1,
-     "type": "INCREASE",
-     "weight": 3.33,
-     "weight_delta": 0.46
-    },
-    {
-     "adjusted_shares_delta": 60000,
-     "code": "1303",
-     "name": "南亞",
-     "prev_shares": 81000,
-     "prev_weight": 1.36,
-     "scale": 1.0,
-     "shares": 141000,
-     "shares_delta": 60000,
-     "shares_delta_pct": 74.07,
-     "type": "INCREASE",
-     "weight": 2.42,
-     "weight_delta": 1.06
-    },
-    {
-     "adjusted_shares_delta": 4000,
-     "code": "3665",
-     "name": "貿聯-KY",
-     "prev_shares": 4000,
-     "prev_weight": 0.67,
-     "scale": 1.0,
-     "shares": 8000,
-     "shares_delta": 4000,
-     "shares_delta_pct": 100.0,
-     "type": "INCREASE",
-     "weight": 1.38,
-     "weight_delta": 0.71
+     "weight_delta": -0.65
     },
     {
      "adjusted_shares_delta": -500,
      "code": "3081",
      "name": "聯亞",
      "prev_shares": 7000,
-     "prev_weight": 1.27,
+     "prev_weight": 1.28,
      "scale": 1.0,
      "shares": 6500,
      "shares_delta": -500,
      "shares_delta_pct": -7.14,
      "type": "DECREASE",
      "weight": 1.17,
-     "weight_delta": -0.1
+     "weight_delta": -0.11
     },
     {
      "adjusted_shares_delta": 7000,
      "code": "6488",
      "name": "環球晶",
      "prev_shares": 7000,
-     "prev_weight": 0.45,
+     "prev_weight": 0.49,
      "scale": 1.0,
      "shares": 14000,
      "shares_delta": 7000,
      "shares_delta_pct": 100.0,
      "type": "INCREASE",
      "weight": 1.03,
-     "weight_delta": 0.58
-    },
-    {
-     "adjusted_shares_delta": -60000,
-     "code": "9802",
-     "name": "鈺齊-KY",
-     "prev_shares": 252000,
-     "prev_weight": 1.11,
-     "scale": 1.0,
-     "shares": 192000,
-     "shares_delta": -60000,
-     "shares_delta_pct": -23.81,
-     "type": "DECREASE",
-     "weight": 0.84,
-     "weight_delta": -0.27
+     "weight_delta": 0.54
     },
     {
      "code": "2327",
@@ -2943,43 +2680,11 @@
      "weight_delta": -0.38
     },
     {
-     "code": "3105",
-     "name": "穩懋",
-     "shares": 14000,
-     "shares_delta": 14000,
-     "type": "ADD",
-     "weight": 0.51
-    },
-    {
-     "code": "6691",
-     "name": "洋基工程",
-     "shares": 7000,
-     "shares_delta": 7000,
-     "type": "ADD",
-     "weight": 0.35
-    },
-    {
      "code": "2891",
      "name": "中信金",
      "prev_shares": 240000,
      "prev_weight": 1.12,
      "shares_delta": -240000,
-     "type": "REMOVE"
-    },
-    {
-     "code": "3045",
-     "name": "台灣大",
-     "prev_shares": 125000,
-     "prev_weight": 1.03,
-     "shares_delta": -125000,
-     "type": "REMOVE"
-    },
-    {
-     "code": "9941",
-     "name": "裕融",
-     "prev_shares": 53200,
-     "prev_weight": 0.28,
-     "shares_delta": -53200,
      "type": "REMOVE"
     }
    ],
@@ -3301,42 +3006,28 @@
      "code": "3665",
      "name": "貿聯-KY",
      "prev_shares": 30000,
-     "prev_weight": 3.85,
+     "prev_weight": 4.05,
      "scale": 1.0,
      "shares": 35000,
      "shares_delta": 5000,
      "shares_delta_pct": 16.67,
      "type": "INCREASE",
      "weight": 4.63,
-     "weight_delta": 0.78
+     "weight_delta": 0.58
     },
     {
      "adjusted_shares_delta": -3000,
      "code": "3008",
      "name": "大立光",
      "prev_shares": 15000,
-     "prev_weight": 4.74,
+     "prev_weight": 4.64,
      "scale": 1.0,
      "shares": 12000,
      "shares_delta": -3000,
      "shares_delta_pct": -20.0,
      "type": "DECREASE",
      "weight": 3.86,
-     "weight_delta": -0.88
-    },
-    {
-     "adjusted_shares_delta": 50000,
-     "code": "1303",
-     "name": "南亞",
-     "prev_shares": 150000,
-     "prev_weight": 1.94,
-     "scale": 1.0,
-     "shares": 200000,
-     "shares_delta": 50000,
-     "shares_delta_pct": 33.33,
-     "type": "INCREASE",
-     "weight": 2.63,
-     "weight_delta": 0.69
+     "weight_delta": -0.78
     },
     {
      "adjusted_shares_delta": 15000,
@@ -3351,20 +3042,6 @@
      "type": "INCREASE",
      "weight": 2.21,
      "weight_delta": 0.82
-    },
-    {
-     "adjusted_shares_delta": 250000,
-     "code": "1717",
-     "name": "長興",
-     "prev_shares": 250000,
-     "prev_weight": 0.95,
-     "scale": 1.0,
-     "shares": 500000,
-     "shares_delta": 250000,
-     "shares_delta_pct": 100.0,
-     "type": "INCREASE",
-     "weight": 1.9,
-     "weight_delta": 0.95
     }
    ],
    "holdings": [
@@ -3559,42 +3236,42 @@
      "code": "2383",
      "name": "台光電子材料",
      "prev_shares": 136000,
-     "prev_weight": 3.4,
+     "prev_weight": 3.36,
      "scale": 1.0,
      "shares": 156000,
      "shares_delta": 20000,
      "shares_delta_pct": 14.71,
      "type": "INCREASE",
      "weight": 3.85,
-     "weight_delta": 0.45
+     "weight_delta": 0.49
     },
     {
      "adjusted_shares_delta": 34000,
      "code": "3037",
      "name": "欣興電子",
      "prev_shares": 591000,
-     "prev_weight": 3.47,
+     "prev_weight": 3.46,
      "scale": 1.0,
      "shares": 625000,
      "shares_delta": 34000,
      "shares_delta_pct": 5.75,
      "type": "INCREASE",
      "weight": 3.68,
-     "weight_delta": 0.21
+     "weight_delta": 0.22
     },
     {
      "adjusted_shares_delta": 22000,
      "code": "3653",
      "name": "健策精密工業",
      "prev_shares": 69000,
-     "prev_weight": 2.36,
+     "prev_weight": 2.39,
      "scale": 1.0,
      "shares": 91000,
      "shares_delta": 22000,
      "shares_delta_pct": 31.88,
      "type": "INCREASE",
      "weight": 3.1,
-     "weight_delta": 0.74
+     "weight_delta": 0.71
     },
     {
      "adjusted_shares_delta": 18000,
@@ -3615,126 +3292,126 @@
      "code": "3081",
      "name": "聯亞光電工業",
      "prev_shares": 128600,
-     "prev_weight": 1.72,
+     "prev_weight": 1.71,
      "scale": 1.0,
      "shares": 161600,
      "shares_delta": 33000,
      "shares_delta_pct": 25.66,
      "type": "INCREASE",
      "weight": 2.18,
-     "weight_delta": 0.46
+     "weight_delta": 0.47
     },
     {
      "adjusted_shares_delta": -305000,
      "code": "2317",
      "name": "鴻海精密工業",
      "prev_shares": 1921000,
-     "prev_weight": 2.38,
+     "prev_weight": 2.42,
      "scale": 1.0,
      "shares": 1616000,
      "shares_delta": -305000,
      "shares_delta_pct": -15.88,
      "type": "DECREASE",
      "weight": 2.04,
-     "weight_delta": -0.34
+     "weight_delta": -0.38
     },
     {
      "adjusted_shares_delta": 8000,
      "code": "6223",
      "name": "旺矽科技",
      "prev_shares": 66000,
-     "prev_weight": 1.77,
+     "prev_weight": 1.72,
      "scale": 1.0,
      "shares": 74000,
      "shares_delta": 8000,
      "shares_delta_pct": 12.12,
      "type": "INCREASE",
      "weight": 1.9,
-     "weight_delta": 0.13
+     "weight_delta": 0.18
     },
     {
      "adjusted_shares_delta": 6000,
      "code": "6515",
      "name": "穎崴科技",
      "prev_shares": 55000,
-     "prev_weight": 1.59,
+     "prev_weight": 1.57,
      "scale": 1.0,
      "shares": 61000,
      "shares_delta": 6000,
      "shares_delta_pct": 10.91,
      "type": "INCREASE",
      "weight": 1.81,
-     "weight_delta": 0.22
+     "weight_delta": 0.24
     },
     {
      "adjusted_shares_delta": -60000,
      "code": "6274",
      "name": "台燿科技",
      "prev_shares": 240000,
-     "prev_weight": 1.78,
+     "prev_weight": 1.79,
      "scale": 1.0,
      "shares": 180000,
      "shares_delta": -60000,
      "shares_delta_pct": -25.0,
      "type": "DECREASE",
      "weight": 1.37,
-     "weight_delta": -0.41
+     "weight_delta": -0.42
     },
     {
      "adjusted_shares_delta": -57000,
      "code": "3189",
      "name": "景碩科技",
      "prev_shares": 323000,
-     "prev_weight": 1.54,
+     "prev_weight": 1.55,
      "scale": 1.0,
      "shares": 266000,
      "shares_delta": -57000,
      "shares_delta_pct": -17.65,
      "type": "DECREASE",
      "weight": 1.29,
-     "weight_delta": -0.25
+     "weight_delta": -0.26
     },
     {
      "adjusted_shares_delta": -269000,
      "code": "2382",
      "name": "廣達電腦",
      "prev_shares": 987000,
-     "prev_weight": 1.65,
+     "prev_weight": 1.67,
      "scale": 1.0,
      "shares": 718000,
      "shares_delta": -269000,
      "shares_delta_pct": -27.25,
      "type": "DECREASE",
      "weight": 1.2,
-     "weight_delta": -0.45
+     "weight_delta": -0.47
     },
     {
      "adjusted_shares_delta": -152000,
      "code": "6213",
      "name": "聯茂電子",
      "prev_shares": 482000,
-     "prev_weight": 1.42,
+     "prev_weight": 1.5,
      "scale": 1.0,
      "shares": 330000,
      "shares_delta": -152000,
      "shares_delta_pct": -31.54,
      "type": "DECREASE",
      "weight": 1.03,
-     "weight_delta": -0.39
+     "weight_delta": -0.47
     },
     {
      "adjusted_shares_delta": -918000,
      "code": "2891",
      "name": "中國信託金融控股",
      "prev_shares": 3699000,
-     "prev_weight": 1.25,
+     "prev_weight": 1.28,
      "scale": 1.0,
      "shares": 2781000,
      "shares_delta": -918000,
      "shares_delta_pct": -24.82,
      "type": "DECREASE",
      "weight": 0.95,
-     "weight_delta": -0.3
+     "weight_delta": -0.33
     },
     {
      "adjusted_shares_delta": -2311000,
@@ -3755,42 +3432,42 @@
      "code": "2376",
      "name": "技嘉科技",
      "prev_shares": 694000,
-     "prev_weight": 1.24,
+     "prev_weight": 1.26,
      "scale": 1.0,
      "shares": 484000,
      "shares_delta": -210000,
      "shares_delta_pct": -30.26,
      "type": "DECREASE",
      "weight": 0.87,
-     "weight_delta": -0.37
+     "weight_delta": -0.39
     },
     {
      "adjusted_shares_delta": -869000,
      "code": "5904",
      "name": "寶雅國際",
      "prev_shares": 3124500,
-     "prev_weight": 1.07,
+     "prev_weight": 1.08,
      "scale": 1.0,
      "shares": 2255500,
      "shares_delta": -869000,
      "shares_delta_pct": -27.81,
      "type": "DECREASE",
      "weight": 0.79,
-     "weight_delta": -0.28
+     "weight_delta": -0.29
     },
     {
      "adjusted_shares_delta": -85000,
      "code": "8996",
      "name": "高力熱處理工業",
      "prev_shares": 181000,
-     "prev_weight": 1.37,
+     "prev_weight": 1.44,
      "scale": 1.0,
      "shares": 96000,
      "shares_delta": -85000,
      "shares_delta_pct": -46.96,
      "type": "DECREASE",
      "weight": 0.77,
-     "weight_delta": -0.6
+     "weight_delta": -0.67
     },
     {
      "code": "2303",
@@ -3805,14 +3482,14 @@
      "code": "3044",
      "name": "健鼎科技",
      "prev_shares": 345000,
-     "prev_weight": 0.92,
+     "prev_weight": 0.9,
      "scale": 1.0,
      "shares": 195000,
      "shares_delta": -150000,
      "shares_delta_pct": -43.48,
      "type": "DECREASE",
      "weight": 0.51,
-     "weight_delta": -0.41
+     "weight_delta": -0.39
     },
     {
      "code": "7751",
@@ -3826,7 +3503,7 @@
      "code": "4958",
      "name": "臻鼎科技控股",
      "prev_shares": 302000,
-     "prev_weight": 0.71,
+     "prev_weight": 0.76,
      "shares_delta": -302000,
      "type": "REMOVE"
     },
@@ -3834,7 +3511,7 @@
      "code": "3533",
      "name": "嘉澤端子工業",
      "prev_shares": 35000,
-     "prev_weight": 0.29,
+     "prev_weight": 0.3,
      "shares_delta": -35000,
      "type": "REMOVE"
     }
@@ -4151,22 +3828,7 @@
   },
   "00981A": {
    "data_date": "2026-10-01",
-   "events": [
-    {
-     "adjusted_shares_delta": 461000,
-     "code": "2368",
-     "name": "金像電",
-     "prev_shares": 2022000,
-     "prev_weight": 0.8,
-     "scale": 1.0,
-     "shares": 2483000,
-     "shares_delta": 461000,
-     "shares_delta_pct": 22.8,
-     "type": "INCREASE",
-     "weight": 0.94,
-     "weight_delta": 0.14
-    }
-   ],
+   "events": [],
    "holdings": [
     {
      "code": "2330",
@@ -4481,32 +4143,32 @@
    "data_date": "2026-10-01",
    "events": [
     {
-     "adjusted_shares_delta": 560000,
+     "adjusted_shares_delta": 200000,
      "code": "6213",
      "name": "聯茂",
-     "prev_shares": 380000,
-     "prev_weight": 0.4745,
+     "prev_shares": 740000,
+     "prev_weight": 0.9188,
      "scale": 1.0,
      "shares": 940000,
-     "shares_delta": 560000,
-     "shares_delta_pct": 147.37,
+     "shares_delta": 200000,
+     "shares_delta_pct": 27.03,
      "type": "INCREASE",
      "weight": 1.1915,
-     "weight_delta": 0.717
+     "weight_delta": 0.2727
     },
     {
-     "adjusted_shares_delta": -184000,
+     "adjusted_shares_delta": -141000,
      "code": "2345",
      "name": "智邦",
-     "prev_shares": 406000,
-     "prev_weight": 1.4802,
+     "prev_shares": 363000,
+     "prev_weight": 1.2841,
      "scale": 1.0,
      "shares": 222000,
-     "shares_delta": -184000,
-     "shares_delta_pct": -45.32,
+     "shares_delta": -141000,
+     "shares_delta_pct": -38.84,
      "type": "DECREASE",
      "weight": 0.8328,
-     "weight_delta": -0.6474
+     "weight_delta": -0.4513
     }
    ],
    "holdings": [
@@ -5464,28 +5126,28 @@
      "code": "3491",
      "name": "昇達科技",
      "prev_shares": 210000,
-     "prev_weight": 3.06,
+     "prev_weight": 3.01,
      "scale": 1.0,
      "shares": 177000,
      "shares_delta": -33000,
      "shares_delta_pct": -15.71,
      "type": "DECREASE",
      "weight": 2.5,
-     "weight_delta": -0.56
+     "weight_delta": -0.51
     },
     {
      "adjusted_shares_delta": 231000,
      "code": "2408",
      "name": "南亞科技",
      "prev_shares": 79000,
-     "prev_weight": 0.37,
+     "prev_weight": 0.38,
      "scale": 1.0,
      "shares": 310000,
      "shares_delta": 231000,
      "shares_delta_pct": 292.41,
      "type": "INCREASE",
      "weight": 1.52,
-     "weight_delta": 1.15
+     "weight_delta": 1.14
     },
     {
      "code": "1605",
@@ -5508,34 +5170,34 @@
      "code": "1301",
      "name": "台灣塑膠工業",
      "prev_shares": 1103000,
-     "prev_weight": 0.66,
+     "prev_weight": 0.68,
      "scale": 1.0,
      "shares": 1589000,
      "shares_delta": 486000,
      "shares_delta_pct": 44.06,
      "type": "INCREASE",
      "weight": 1.02,
-     "weight_delta": 0.36
+     "weight_delta": 0.34
     },
     {
      "adjusted_shares_delta": -26000,
      "code": "7750",
      "name": "新代科技",
      "prev_shares": 80000,
-     "prev_weight": 1.48,
+     "prev_weight": 1.49,
      "scale": 1.0,
      "shares": 54000,
      "shares_delta": -26000,
      "shares_delta_pct": -32.5,
      "type": "DECREASE",
      "weight": 0.98,
-     "weight_delta": -0.5
+     "weight_delta": -0.51
     },
     {
      "code": "2360",
      "name": "致茂電子",
      "prev_shares": 43000,
-     "prev_weight": 0.93,
+     "prev_weight": 0.89,
      "shares_delta": -43000,
      "type": "REMOVE"
     },
@@ -5543,7 +5205,7 @@
      "code": "3131",
      "name": "弘塑科技",
      "prev_shares": 12000,
-     "prev_weight": 0.27,
+     "prev_weight": 0.28,
      "shares_delta": -12000,
      "type": "REMOVE"
     }
@@ -5866,28 +5528,14 @@
      "code": "3443",
      "name": "創意",
      "prev_shares": 15000,
-     "prev_weight": 4.7056,
+     "prev_weight": 4.7461,
      "scale": 1.0,
      "shares": 13000,
      "shares_delta": -2000,
      "shares_delta_pct": -13.33,
      "type": "DECREASE",
      "weight": 4.0416,
-     "weight_delta": -0.664
-    },
-    {
-     "adjusted_shares_delta": -27000,
-     "code": "2408",
-     "name": "南亞科",
-     "prev_shares": 127000,
-     "prev_weight": 2.5438,
-     "scale": 1.0,
-     "shares": 100000,
-     "shares_delta": -27000,
-     "shares_delta_pct": -21.26,
-     "type": "DECREASE",
-     "weight": 2.0425,
-     "weight_delta": -0.5013
+     "weight_delta": -0.7045
     }
    ],
    "holdings": [
@@ -6078,90 +5726,32 @@
    "data_date": "2026-10-01",
    "events": [
     {
-     "adjusted_shares_delta": 200000,
-     "code": "2330",
-     "name": "台灣積體",
-     "prev_shares": 4000000,
-     "prev_weight": 12.781,
-     "scale": 1.0,
-     "shares": 4200000,
-     "shares_delta": 200000,
-     "shares_delta_pct": 5.0,
-     "type": "INCREASE",
-     "weight": 13.273,
-     "weight_delta": 0.492
-    },
-    {
      "adjusted_shares_delta": -100000,
      "code": "3081",
      "name": "聯亞光電",
      "prev_shares": 900000,
-     "prev_weight": 3.079,
+     "prev_weight": 3.108,
      "scale": 1.0,
      "shares": 800000,
      "shares_delta": -100000,
      "shares_delta_pct": -11.11,
      "type": "DECREASE",
      "weight": 2.679,
-     "weight_delta": -0.4
+     "weight_delta": -0.429
     },
     {
-     "adjusted_shares_delta": 1000000,
-     "code": "1303",
-     "name": "南亞塑膠",
-     "prev_shares": 7000000,
-     "prev_weight": 2.232,
-     "scale": 1.0,
-     "shares": 8000000,
-     "shares_delta": 1000000,
-     "shares_delta_pct": 14.29,
-     "type": "INCREASE",
-     "weight": 2.558,
-     "weight_delta": 0.326
-    },
-    {
+     "adjusted_shares_delta": 4500000,
      "code": "6505",
      "name": "台塑石化",
+     "prev_shares": 4000000,
+     "prev_weight": 0.499,
+     "scale": 1.0,
      "shares": 8500000,
-     "shares_delta": 8500000,
-     "type": "ADD",
-     "weight": 1.008
-    },
-    {
-     "adjusted_shares_delta": -230000,
-     "code": "2345",
-     "name": "智邦科技",
-     "prev_shares": 430000,
-     "prev_weight": 1.005,
-     "scale": 1.0,
-     "shares": 200000,
-     "shares_delta": -230000,
-     "shares_delta_pct": -53.49,
-     "type": "DECREASE",
-     "weight": 0.478,
-     "weight_delta": -0.527
-    },
-    {
-     "adjusted_shares_delta": -149000,
-     "code": "6223",
-     "name": "旺矽科技",
-     "prev_shares": 150000,
-     "prev_weight": 1.004,
-     "scale": 1.0,
-     "shares": 1000,
-     "shares_delta": -149000,
-     "shares_delta_pct": -99.33,
-     "type": "DECREASE",
-     "weight": 0.006,
-     "weight_delta": -0.998
-    },
-    {
-     "code": "1216",
-     "name": "統一企業",
-     "prev_shares": 1000,
-     "prev_weight": 0.0,
-     "shares_delta": -1000,
-     "type": "REMOVE"
+     "shares_delta": 4500000,
+     "shares_delta_pct": 112.5,
+     "type": "INCREASE",
+     "weight": 1.008,
+     "weight_delta": 0.509
     }
    ],
    "holdings": [
@@ -6482,14 +6072,14 @@
      "code": "3017",
      "name": "奇鋐",
      "prev_shares": 1001000,
-     "prev_weight": 8.1808,
+     "prev_weight": 8.1946,
      "scale": 1.0,
      "shares": 871000,
      "shares_delta": -130000,
      "shares_delta_pct": -12.99,
      "type": "DECREASE",
      "weight": 7.2114,
-     "weight_delta": -0.9694
+     "weight_delta": -0.9832
     }
    ],
    "holdings": [
@@ -7089,74 +6679,18 @@
    "data_date": "2026-10-01",
    "events": [
     {
-     "adjusted_shares_delta": -10000,
-     "code": "2454",
-     "name": "聯發科",
-     "prev_shares": 70101,
-     "prev_weight": 7.58,
-     "scale": 1.0,
-     "shares": 60101,
-     "shares_delta": -10000,
-     "shares_delta_pct": -14.27,
-     "type": "DECREASE",
-     "weight": 6.54,
-     "weight_delta": -1.04
-    },
-    {
-     "adjusted_shares_delta": 12000,
-     "code": "2308",
-     "name": "台達電",
-     "prev_shares": 46500,
-     "prev_weight": 1.88,
-     "scale": 1.0,
-     "shares": 58500,
-     "shares_delta": 12000,
-     "shares_delta_pct": 25.81,
-     "type": "INCREASE",
-     "weight": 2.43,
-     "weight_delta": 0.55
-    },
-    {
-     "adjusted_shares_delta": 10000,
-     "code": "3665",
-     "name": "貿聯-KY",
-     "prev_shares": 19000,
-     "prev_weight": 1.02,
-     "scale": 1.0,
-     "shares": 29000,
-     "shares_delta": 10000,
-     "shares_delta_pct": 52.63,
-     "type": "INCREASE",
-     "weight": 1.62,
-     "weight_delta": 0.6
-    },
-    {
-     "adjusted_shares_delta": 150000,
-     "code": "1303",
-     "name": "南亞",
-     "prev_shares": 95000,
-     "prev_weight": 0.52,
-     "scale": 1.0,
-     "shares": 245000,
-     "shares_delta": 150000,
-     "shares_delta_pct": 157.89,
-     "type": "INCREASE",
-     "weight": 1.36,
-     "weight_delta": 0.84
-    },
-    {
      "adjusted_shares_delta": -6000,
      "code": "3081",
      "name": "聯亞",
      "prev_shares": 28000,
-     "prev_weight": 1.63,
+     "prev_weight": 1.66,
      "scale": 1.0,
      "shares": 22000,
      "shares_delta": -6000,
      "shares_delta_pct": -21.43,
      "type": "DECREASE",
      "weight": 1.28,
-     "weight_delta": -0.35
+     "weight_delta": -0.38
     },
     {
      "code": "2327",
@@ -7165,14 +6699,6 @@
      "shares_delta": 40000,
      "type": "ADD",
      "weight": 0.53
-    },
-    {
-     "code": "3105",
-     "name": "穩懋",
-     "shares": 40000,
-     "shares_delta": 40000,
-     "type": "ADD",
-     "weight": 0.47
     },
     {
      "adjusted_shares_delta": -11000,
@@ -7195,14 +6721,6 @@
      "shares_delta": 15000,
      "type": "ADD",
      "weight": 0.36
-    },
-    {
-     "code": "6691",
-     "name": "洋基工程",
-     "shares": 20000,
-     "shares_delta": 20000,
-     "type": "ADD",
-     "weight": 0.32
     }
    ],
    "holdings": [
@@ -7469,14 +6987,14 @@
      "code": "2360",
      "name": "致茂電子",
      "prev_shares": 26000,
-     "prev_weight": 1.19,
+     "prev_weight": 1.16,
      "scale": 1.0,
      "shares": 33000,
      "shares_delta": 7000,
      "shares_delta_pct": 26.92,
      "type": "INCREASE",
      "weight": 1.42,
-     "weight_delta": 0.23
+     "weight_delta": 0.26
     },
     {
      "code": "6488",
@@ -7499,28 +7017,28 @@
      "code": "8210",
      "name": "勤誠興業",
      "prev_shares": 43000,
-     "prev_weight": 0.79,
+     "prev_weight": 0.75,
      "scale": 1.0,
      "shares": 3000,
      "shares_delta": -40000,
      "shares_delta_pct": -93.02,
      "type": "DECREASE",
      "weight": 0.05,
-     "weight_delta": -0.74
+     "weight_delta": -0.7
     },
     {
      "adjusted_shares_delta": -11000,
      "code": "7750",
      "name": "新代",
      "prev_shares": 12000,
-     "prev_weight": 0.49,
+     "prev_weight": 0.48,
      "scale": 1.0,
      "shares": 1000,
      "shares_delta": -11000,
      "shares_delta_pct": -91.67,
      "type": "DECREASE",
      "weight": 0.04,
-     "weight_delta": -0.45
+     "weight_delta": -0.44
     },
     {
      "adjusted_shares_delta": -12000,
@@ -7555,14 +7073,14 @@
      "code": "3211",
      "name": "順達科技",
      "prev_shares": 30000,
-     "prev_weight": 0.24,
+     "prev_weight": 0.25,
      "scale": 1.0,
      "shares": 1000,
      "shares_delta": -29000,
      "shares_delta_pct": -96.67,
      "type": "DECREASE",
      "weight": 0.01,
-     "weight_delta": -0.23
+     "weight_delta": -0.24
     }
    ],
    "holdings": [
@@ -8244,64 +7762,7 @@
   },
   "00999A": {
    "data_date": "2026-09-30",
-   "events": [
-    {
-     "adjusted_shares_delta": 8000,
-     "code": "3529",
-     "name": "力旺電子",
-     "prev_shares": 41000,
-     "prev_weight": 1.14,
-     "scale": 1.0,
-     "shares": 49000,
-     "shares_delta": 8000,
-     "shares_delta_pct": 19.51,
-     "type": "INCREASE",
-     "weight": 1.41,
-     "weight_delta": 0.27
-    },
-    {
-     "adjusted_shares_delta": -224000,
-     "code": "9941",
-     "name": "裕融企業",
-     "prev_shares": 2238480,
-     "prev_weight": 1.52,
-     "scale": 1.0,
-     "shares": 2014480,
-     "shares_delta": -224000,
-     "shares_delta_pct": -10.01,
-     "type": "DECREASE",
-     "weight": 1.36,
-     "weight_delta": -0.16
-    },
-    {
-     "adjusted_shares_delta": -220000,
-     "code": "2393",
-     "name": "億光電子工業",
-     "prev_shares": 733000,
-     "prev_weight": 0.4,
-     "scale": 1.0,
-     "shares": 513000,
-     "shares_delta": -220000,
-     "shares_delta_pct": -30.01,
-     "type": "DECREASE",
-     "weight": 0.29,
-     "weight_delta": -0.11
-    },
-    {
-     "adjusted_shares_delta": -99000,
-     "code": "2727",
-     "name": "王品餐飲",
-     "prev_shares": 197000,
-     "prev_weight": 0.39,
-     "scale": 1.0,
-     "shares": 98000,
-     "shares_delta": -99000,
-     "shares_delta_pct": -50.25,
-     "type": "DECREASE",
-     "weight": 0.2,
-     "weight_delta": -0.19
-    }
-   ],
+   "events": [],
    "holdings": [
     {
      "code": "2330",

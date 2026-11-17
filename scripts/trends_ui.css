@@ -1,0 +1,21 @@
+/* Extend the existing research dashboard: amber cumulative line, blue holdings,
+   explicit signed green/red flows; no extra fonts or network dependencies. */
+.trend-controls{display:flex;align-items:center;gap:.6rem;flex-wrap:wrap;margin-bottom:.7rem}
+.trend-controls label{color:var(--ink-dim);font-size:.8rem}
+.trend-controls button,.trend-link{font:inherit;color:var(--blue-lt);background:transparent;border:1px solid var(--line);border-radius:5px;padding:.35rem .6rem;cursor:pointer}
+.trend-controls button:hover,.trend-link:hover{background:var(--panel-2);border-color:var(--blue)}
+button:focus-visible,.trend-point:focus-visible{outline:2px solid var(--amber);outline-offset:3px}
+.trend-point{cursor:crosshair}.trend-point:focus{stroke:var(--amber);stroke-width:1}
+.trend-chart{display:block;width:100%;height:auto;min-height:150px;overflow:visible}
+.trend-chart text{fill:var(--ink-dim);font-size:12px;font-family:inherit}
+.trend-grid{stroke:var(--line);stroke-width:1}
+.trend-metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem;border-block:1px solid var(--line);padding:.9rem 0;margin:.7rem 0}
+.trend-metrics span{display:block;color:var(--ink-dim);font-size:.76rem;margin-bottom:.35rem}
+.trend-metrics strong{font-size:1.15rem;font-variant-numeric:tabular-nums}.trend-metrics small{margin-left:.3rem;color:var(--ink-dim)}
+.trend-figure{margin:1rem 0 1.4rem}.trend-figure figcaption{font-size:.83rem;color:var(--ink-dim);margin-bottom:.3rem}
+#trendCoverage{border-left:3px solid var(--amber);padding:.5rem .8rem;background:var(--panel-2);color:var(--ink-dim)}
+#trendCandidates{display:flex;flex-wrap:wrap;gap:.3rem;margin:.4rem 0}
+#trendPanel h3{font-size:.9rem}#trendRankNote{margin-bottom:.8rem;color:var(--ink-dim)}
+[hidden]{display:none!important}
+@media(max-width:640px){.trend-metrics{grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem}.trend-controls input{width:100%;min-width:0}.trend-chart{min-height:130px}.trend-metrics strong{font-size:1rem}.trend-controls{align-items:stretch}.trend-controls label{width:100%}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}

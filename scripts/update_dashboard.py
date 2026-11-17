@@ -2,19 +2,18 @@
 # -*- coding: utf-8 -*-
 """台股主動式 ETF 儀表板更新主流程。
 
-流程:偵測 ETF 清單 → 逐檔抓持股 → 判斷資料日/是否跳過 → 比對前日算異動
+流程:偵測 ETF 清單 → 逐檔抓持股 → 確認資料日期 → 比對前日算異動
       → 抓收盤價 → 寫 history/active.json/perf_stats → 產生 index.html
 
 守則(繼承 twse-disposition 教訓):
-- 資料日取自抓回資料的眾數,絕不用系統時鐘判斷交易日。
+- 批次日期取自抓回資料的最新有效日期,絕不用系統時鐘判斷交易日。
 - 單檔失敗標 stale 沿用前日持股,不中斷整批;全部失敗才 exit 1。
-- 跳過更新時 log 明確印「跳過更新」(workflow 以此判讀,不能只看 exit code)。
+- 同日重跑仍重建報價與畫面，修正以新 revision 保存。
 
 用法:python3 scripts/update_dashboard.py [--force]
 本機手動請走 scripts/run_local.sh(會先 pull + 跑測試)。
 """
 import argparse
-import collections
 import json
 import sys
 from pathlib import Path
@@ -28,10 +27,11 @@ import registry as registry_mod
 import render_html
 from adapters import base
 from adapters import (ab, allianz, capital, cathay,  # noqa: F401 註冊 ADAPTERS
-                      ctbc, firstsec, fubon, fuhhwa, jpmorgan,
+                      ctbc, esun, firstsec, fubon, fuhhwa, jpmorgan,
                       kgi, megafunds, nomura, president, sinopac,
                       taishin)
 from diffengine import compute_events
+from trading_calendar import adjacent, valid_date
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
@@ -46,7 +46,7 @@ TWSE_ALL = "https://openapi.twse.com.tw/v1/exchangeReport/STOCK_DAY_ALL"
 
 # active.json 的 schema 版本。新增欄位採「相加不改名」,既有 key 語意不變,
 # 下游(個人績效儀表板 dashlib/related.py)不需同步改版即可繼續運作。
-SCHEMA_VERSION = 2
+SCHEMA_VERSION = 3
 
 
 def log(msg):
@@ -78,6 +78,8 @@ def fetch_all_holdings(reg):
             continue
         try:
             data_date, holdings, meta = fn(r)
+            if not valid_date(data_date):
+                raise base.AdapterError("無效資料日期: {}".format(data_date))
             results[code] = {"status": "ok", "data_date": data_date,
                              "holdings": holdings, "meta": meta or {}}
             log("  {} {}: {} 檔 @ {}".format(code, r.get("name"), len(holdings), data_date))
@@ -136,12 +138,12 @@ def reject_regressions(results, prev_snapshot):
 
 
 def resolve_data_date(results):
-    """各檔資料日取眾數(單一投信延遲不影響整體判定)。"""
+    """批次上界取最新有效持股日，避免先更新的 ETF 被當作未來資料排除。"""
     dates = [r["data_date"] for r in results.values()
-             if r["status"] == "ok" and r.get("data_date")]
+             if r["status"] == "ok" and valid_date(r.get("data_date"))]
     if not dates:
         return None
-    return collections.Counter(dates).most_common(1)[0][0]
+    return max(dates)
 
 
 def compute_all_events(results, prev_snapshot):
@@ -159,13 +161,15 @@ def compute_all_events(results, prev_snapshot):
         prev = prev_etfs.get(code)
         # 只有資料日「前進」才算事件。原本只排除相等,日期倒退時仍會比對,
         # 產生方向相反的假事件(見 NoDateRegressionTests)。
-        pd_, cd = prev.get("data_date") or "", r.get("data_date") or ""
-        if not prev.get("holdings") or not (pd_ and cd) or cd <= pd_:
+        pd_, cd = (prev or {}).get("data_date") or "", r.get("data_date") or ""
+        if not prev or not prev.get("holdings") or not (pd_ and cd) or cd <= pd_:
             r["events"] = []
             continue
         prev_map = {h["code"]: base.Holding(**h) for h in prev["holdings"]}
         curr_map = {h.code: h for h in r["holdings"]}
         r["events"] = compute_events(prev_map, curr_map)
+        for ev in r["events"]:
+            ev.update(from_date=pd_, to_date=cd, method="median-v1", daily_comparable=adjacent(pd_, cd))
         total += len(r["events"])
     log("異動事件合計 {} 筆".format(total))
 
@@ -188,14 +192,17 @@ def build_fundamentals(results, etf_quotes, quote_date=None):
         nav_date = meta.get("nav_date") or r.get("data_date")
         meta["nav_date"] = nav_date
         meta["close"] = close
-        meta["quote_date"] = quote_date
+        qd = getattr(etf_quotes, "dates", {}).get(code, quote_date)
+        meta["quote_date"] = qd
         meta["premium_pct"] = None
         meta["premium_note"] = None
         if not (close and nav):
             pass
-        elif quote_date and nav_date and quote_date != nav_date:
+        elif not qd or not nav_date:
+            meta["premium_note"] = "NAV 或行情日期未知,不計折溢價"
+        elif qd != nav_date:
             meta["premium_note"] = "NAV {} 與收盤價 {} 非同日,不計折溢價".format(
-                nav_date, quote_date)
+                nav_date, qd)
         else:
             meta["premium_pct"] = round((close - nav) / nav * 100, 2)
         out[code] = meta
@@ -204,7 +211,7 @@ def build_fundamentals(results, etf_quotes, quote_date=None):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--force", action="store_true", help="跳過所有防呆")
+    ap.add_argument("--force", action="store_true", help="略過持股檔數驟降檢查(不略過日期防倒退)")
     args = ap.parse_args()
 
     reg = fetch_registry()
@@ -214,20 +221,18 @@ def main():
         log("✗ 全部 ETF 抓取失敗,中止(不寫入任何檔案)")
         return 1
 
-    data_date = resolve_data_date(results)
+    latest = outputs.load_latest_snapshot(HISTORY)
+    reject_regressions(results, latest)
+    carry_stale(results, reg, latest)
+    data_date = max(resolve_data_date(results) or '', latest.get('date') or '')
     if not data_date:
         log("✗ 無法判定資料日,中止")
         return 1
     log("資料日:{}".format(data_date))
+    # Always refresh quotes/metadata and render: holdings fingerprints alone cannot
+    # identify a recovered quote source or a template-only release.
 
-    # 逐檔指紋比對:只有「每一檔的資料日、狀態、持股都與上次完全相同」才跳過。
-    # 舊做法只比全域資料日眾數,補跑時單檔前進或 stale 恢復都會被誤跳過。
-    if not args.force and outputs.should_skip_results(
-            results, outputs.load_fingerprint(LAST_COUNTS)):
-        log("跳過更新:逐檔資料與上次完全相同(資料日 {})".format(data_date))
-        return 0
-
-    counts = {c: len(r["holdings"]) for c, r in results.items() if r["status"] == "ok"}
+    counts = {c: len(r["holdings"]) for c, r in results.items() if r.get("holdings")}
     anomalies = outputs.check_anomaly(counts, LAST_COUNTS)
     if anomalies and not args.force:
         log("✗ 持股檔數驟降 >50%:{}(疑似解析錯誤,--force 可強制)".format(anomalies))
@@ -238,45 +243,49 @@ def main():
     if demoted:
         log("依實際持股改判為海外型(不列入台股型統計):{}".format(
             ", ".join("{} 台股僅{:.0f}%".format(c, tw_weights[c]) for c in demoted)))
-    # 此刻所有可能中止整批更新的檢查(空結果/無法判定資料日/跳過/檔數異常)
-    # 都已經通過,才是 registry.json 該落盤的時機——早於此處寫入,一旦後面
-    # 任何步驟失敗都會留下「registry 已更新、其他產物沒更新」的半殘狀態。
-    registry_mod.save_registry(REGISTRY_PATH, reg)
-
-    prev_snapshot = outputs.load_prev_snapshot(HISTORY, data_date)
-    # 同一資料日重跑時,本日既有快照可能比前日快照更新(見 carry_stale 說明)
-    reject_regressions(results, prev_snapshot)
-    carry_stale(results, reg, prev_snapshot,
-                outputs.load_snapshot(HISTORY, data_date))
+    prev_snapshot = outputs.load_baselines(HISTORY, results)
     compute_all_events(results, prev_snapshot)
 
     quote_date, all_quotes, quote_failed = quotes_mod.fetch_all()
     log("收盤價:{} 共 {} 檔{}".format(
         quote_date, len(all_quotes),
         "(來源失敗:{})".format("、".join(quote_failed)) if quote_failed else ""))
+    if not hasattr(all_quotes, "dates"):
+        all_quotes = quotes_mod.QuoteMap(all_quotes, {c: quote_date for c in all_quotes})
     fundamentals = build_fundamentals(results, all_quotes, quote_date)
     links = crosslinks_mod.fetch_crosslinks()
     log("交叉連結:處置中 {} 檔、研究筆記 {} 篇".format(
         len(links["dispo"]), len(links["notes"])))
 
-    outputs.write_snapshot(data_date, results, HISTORY)
-    outputs.append_events(PERF_STATS, data_date, results, all_quotes)
     active = outputs.build_active_json(data_date, reg, results, fundamentals, links,
                                        quotes=all_quotes)
-    # 順序重要:schema_version 先入,build_id 才涵蓋完整內容
-    active["schema_version"] = SCHEMA_VERSION
-    active["build_id"] = render_html.build_id_of(active)
-    # 產物一律原子寫入:中途失敗留下半截檔案的話,下游(績效儀表板)會直接解析失敗
-    outputs.write_text_atomic(
-        ACTIVE_JSON,
-        json.dumps(active, ensure_ascii=False, indent=1, sort_keys=True) + "\n")
-    outputs.write_text_atomic(INDEX_HTML, render_html.render(active, reg))
-    outputs.update_last_counts(data_date, counts, LAST_COUNTS,
-                               fingerprint=outputs.results_fingerprint(results))
+    active['schema_version'] = SCHEMA_VERSION
+    active['quote_failures'] = quote_failed
+    from build_local import derived_outputs
+    doc = outputs.snapshot_document(data_date, results)
+    dest = outputs.snapshot_destination(HISTORY, doc)
+    # Current observation participates before writing, with monotone revision priority.
+    observation = [(str(dest.relative_to(HISTORY)), doc)] if dest else []
+    trend_root = HISTORY.parent.parent
+    _, trend_text, html = derived_outputs(trend_root, active, reg, observation)
+    perf = json.loads(PERF_STATS.read_text()) if PERF_STATS.exists() else {'events': []}
+    bundle = {
+        REGISTRY_PATH: outputs.json_text(reg),
+        PERF_STATS: outputs.json_text(outputs.build_perf_stats(perf, data_date, results, all_quotes)),
+        ACTIVE_JSON: outputs.json_text(active), INDEX_HTML: html,
+        HISTORY.parent / 'stock_trends.json': trend_text,
+    }
+    if dest:
+        bundle[dest] = outputs.json_text(doc)
+    # Counts/manifest is the last-written success marker.
+    bundle[LAST_COUNTS] = outputs.json_text({'data_date': data_date, 'counts': counts,
+        'fingerprint': outputs.results_fingerprint(results), 'build_id': active['build_id']})
+    outputs.write_bundle_atomic(bundle)
     log("完成:{} 檔 ETF、{} 檔個股反向索引".format(
         len(active["etfs"]), len(active["stocks"])))
     return 0
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    with outputs.project_lock(ROOT):
+        sys.exit(main())

@@ -9,6 +9,12 @@
 import statistics
 
 SHARES_THR = 0.05   # 校正後股數變化 ≥5%
+MIN_COMMON = 3
+
+def valid_scale(scale, common_count):
+    return common_count >= MIN_COMMON and scale is not None and 0.2 <= scale <= 5
+
+
 WEIGHT_THR = 0.1    # 且權重變化 ≥0.1 個百分點
 
 
@@ -37,7 +43,7 @@ def _ev(h, typ, prev=None, adj=None, scale=None):
 
 def compute_events(prev, curr, shares_thr=SHARES_THR, weight_thr=WEIGHT_THR):
     """prev/curr: {code: Holding}。回傳事件 list(dict)。"""
-    common = [c for c in curr if c in prev and prev[c].shares > 0]
+    common = [c for c in curr if c in prev and prev[c].shares > 0 and curr[c].shares > 0]
     ratios = [curr[c].shares / prev[c].shares for c in common]
     # 必須是真中位數:偶數筆時 ratios[len//2] 取的是右側中央值,會讓 scale 偏移、
     # 進而改變事件是否跨過 5% 門檻(既有歷史 26 份快照中有 1 筆因此被漏判)。
@@ -45,7 +51,9 @@ def compute_events(prev, curr, shares_thr=SHARES_THR, weight_thr=WEIGHT_THR):
     events = []
     for c, h in curr.items():
         if c not in prev:
-            events.append(_ev(h, "ADD"))
+            e = _ev(h, "ADD")
+            e.update(adjusted_shares_delta=h.shares, scale=scale, common_holdings_count=len(common))
+            events.append(e)
             continue
         p = prev[c]
         adj = (h.shares / (p.shares * scale) - 1) if p.shares and scale else 0.0
@@ -58,5 +66,13 @@ def compute_events(prev, curr, shares_thr=SHARES_THR, weight_thr=WEIGHT_THR):
         if c not in curr:
             events.append({"code": p.code, "name": p.name, "type": "REMOVE",
                            "prev_weight": p.weight, "prev_shares": p.shares,
-                           "shares_delta": -p.shares})  # 出清:全數賣出
+                           "shares_delta": -p.shares,
+                           "adjusted_shares_delta": round(-p.shares * scale, 6) if common and scale > 0 else None,
+                           "scale": scale if common else None,
+                           "common_holdings_count": len(common)})  # 出清:全數賣出
+    for event in events:
+        event["common_holdings_count"] = len(common)
+        event["quality"] = "ok" if valid_scale(scale, len(common)) else "insufficient_scale"
+        if event["quality"] != "ok":
+            event["adjusted_shares_delta"] = None
     return events

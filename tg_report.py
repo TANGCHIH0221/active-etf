@@ -20,7 +20,7 @@ import argparse
 import copy
 import glob
 import json
-from datetime import date, datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 from tg_common import (esc, fmt_amount, fmt_lots, load_state, now_tpe,
@@ -372,11 +372,19 @@ def render_calendar(path):
 
 # ------------------------------------------------------------------ 主流程
 
+def expected_data_date(now):
+    """此刻「應該已經同步進來」的最新資料日:往回 30 小時,遇週末退到週五。"""
+    d = (now - timedelta(hours=30)).date()
+    while d.weekday() >= 5:
+        d -= timedelta(days=1)
+    return d.isoformat()
+
+
 def main():
     ap = argparse.ArgumentParser(description="主動式 ETF 持股異動 Telegram 推播")
     ap.add_argument("--dry-run", action="store_true", help="只印訊息,不發 Telegram")
     ap.add_argument("--late", action="store_true",
-                    help="晚班:若今天完全沒新資料就推一則提醒")
+                    help="(已停用,保留相容)資料過期檢查現在每次執行都會做")
     ap.add_argument("--force", action="store_true",
                     help="忽略狀態重新產生最新一天的報告(測試用,不寫回狀態)")
     ap.add_argument("--active", default=str(ROOT / "active.json"))
@@ -428,22 +436,29 @@ def main():
         print("[info] %d 檔資料日前進但無主動異動,不推播" % len(processed))
         state["last_advance_session"] = sess
         state["last_advance_utc"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
-    elif args.late:
-        if state.get("last_advance_session") == sess:
-            print("[info] 今天已推播過,晚班靜默")
-        else:
-            dds = sorted({(i.get("data_date") or "?")
-                          for i in (active.get("etfs") or {}).values()})
-            sent_ok = tg_send(
-                "<b>🌙 今天沒有新資料</b>\n"
-                "%s 晚間檢查:%d 檔 ETF 的資料日都沒有前進。\n"
-                "可能是休市,也可能是 PCF 抓取失敗 —— 若隔天仍無資料請上 GitHub Actions 看 log。\n"
-                "目前各檔資料日範圍:%s ~ %s" % (
-                    tpe.strftime("%m/%d %H:%M"), len(active.get("etfs") or {}),
-                    dds[0], dds[-1]),
-                dry_run=args.dry_run)
     else:
-        print("[info] 沒有新資料,一般班靜默")
+        # 沒有新資料 → 檢查是不是「該有卻沒有」。不看這班是幾點跑的(GitHub 排程
+        # 會延遲、會被丟),只看日曆:D 日的資料最晚 D+1 06:00 前會從上游同步進來,
+        # 所以現在往回推 30 小時、再退到平日,就是「此刻應該已經有」的資料日。
+        # 每個缺漏的資料日只提醒一次(stale_alert_for 去重)。
+        expected = expected_data_date(tpe)
+        dds = sorted({i.get("data_date") for i in (active.get("etfs") or {}).values()
+                      if i.get("data_date")})
+        latest = dds[-1] if dds else "?"
+        if latest >= expected:
+            print("[info] 沒有新資料,資料日 %s 已是最新,靜默" % latest)
+        elif state.get("stale_alert_for") == expected:
+            print("[info] 資料停在 %s(應有 %s),已提醒過,靜默" % (latest, expected))
+        else:
+            sent_ok = tg_send(
+                "<b>🌙 資料沒有更新</b>\n"
+                "%s 檢查:應該已有 <b>%s</b> 的資料,但最新只到 <b>%s</b>。\n"
+                "可能是休市;若不是,代表上游沒更新或同步失敗 —— "
+                "請看上游 repo 是否還在更新、以及 GitHub Actions 的 log。" % (
+                    tpe.strftime("%m/%d %H:%M"), expected, latest),
+                dry_run=args.dry_run)
+            if sent_ok:
+                state["stale_alert_for"] = expected
 
     # 每次執行都寫狀態:(1) 記錄心跳 (2) 讓 workflow 每天都有 commit,
     # 公開 repo 連續 60 天沒活動 GitHub 會自動停用排程。

@@ -36,13 +36,14 @@ ISSUER_ADAPTERS = [
     ("第一金", "firstsec"),
     ("永豐", "sinopac"),
     ("兆豐", "megafunds"),
+    ("玉山", "esun"),
 ]
 
 # 第一階段已實作的 adapter(其餘投信標 unsupported,陸續補)
 IMPLEMENTED_ADAPTERS = {"president", "fuhhwa", "fubon", "capital", "ctbc",
                         "nomura", "allianz", "kgi", "taishin",
                         "sinopac", "cathay", "megafunds",
-                        "firstsec", "ab", "jpmorgan"}
+                        "firstsec", "ab", "jpmorgan", "esun"}
 
 
 def _classify(name):
@@ -141,6 +142,12 @@ def load_and_update(path, fetched):
     # status 一律由 adapter 是否已實作推導,不沿用舊值——否則補完 adapter 後既有
     # ETF 會永遠卡在 unsupported。掃全表(不只本次偵測到的)。手動停用設 "disabled"。
     for entry in reg.values():
+        # 偵測當時投信還沒進對照表的代號會留下空的 issuer/adapter;對照表補上後
+        # 要能自動接上(上面的 setdefault 填不進已存在的空字串)。掃全表。
+        if not entry.get("adapter"):
+            issuer, adapter = _issuer_adapter(entry.get("name", ""))
+            if adapter:
+                entry["issuer"], entry["adapter"] = issuer, adapter
         if entry.get("status") != "disabled":
             entry["status"] = ("active" if entry.get("adapter") in IMPLEMENTED_ADAPTERS
                                else "unsupported")

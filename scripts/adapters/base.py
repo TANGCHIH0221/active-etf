@@ -25,6 +25,7 @@
     聯博        holdings asOfDate         基準日(先取 basket.asOfDate 再帶入查詢)
     摩根        sheet 標題 (YYYY-MM-DD)    公告日;無獨立基準日欄位,已知比基準日新
     台新        NAV_DATE                  基準日(PUB_DATE 是公告生效日 T+1,勿用)
+    玉山        CNavDt                    基準日(CPcfdate 是公告生效日 T+1,勿用)
 
 meta 為該檔基本面 dict(缺漏欄位給 None,不影響主流程):
     scale        基金淨資產(元)
@@ -127,7 +128,7 @@ def validate_holdings(holdings, etf_code):
         w = float(x.weight)
         if not math.isfinite(w) or not math.isfinite(float(x.shares)):
             raise AdapterError("{}: {} 權重或股數非有限數值".format(etf_code, code))
-        if w > 100.0:
+        if w < 0 or w > 100.0:
             raise AdapterError("{}: {} 單筆權重 {:.2f} 超過 100%".format(etf_code, code, w))
         out.append(Holding(code=code, name=x.name.strip(), shares=int(x.shares),
                            weight=w))

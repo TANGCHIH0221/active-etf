@@ -7,6 +7,9 @@
 (藍/琥珀/洋紅)負責結構、活動、訊號三種角色,漲跌綠紅只用於狀態,兩組不混用。
 """
 import json
+from pathlib import Path
+
+ASSETS = Path(__file__).resolve().parent
 
 # 篩選 chip 的字符,與 JS 端 TYPE 表一致(綠↔紅對紅綠色盲不可靠,方向一律配字符)
 GLYPH = {"ADD": "✚", "INCREASE": "▲", "DECREASE": "▼", "REMOVE": "✕"}
@@ -247,7 +250,8 @@ let filterType = 'INCREASE', filterEtf = '', filterQ = '';
 // 該檔今日的「持股變化估值」(帶正負號)= 主動調整估算股數 × 收盤價。
 // 這不是實際成交金額:它只統計通過門檻的事件,且以收盤價估算,不是成交價。
 function netAmount(code, sharesDelta) {
-  const px = (DATA.stocks[code] || {}).close;
+  const stock = DATA.stocks[code] || {};
+  const px = stock.quote_date === DATA.updated ? stock.close : null;
   return (sharesDelta != null && px) ? sharesDelta * px : null;
 }
 
@@ -281,6 +285,7 @@ function dailyFlows() {
   const m = {};
   for (const [etf, e] of Object.entries(DATA.etfs))
     for (const ev of e.events || []) {
+      if (!ev.daily_comparable || ev.to_date !== DATA.updated || ev.adjusted_shares_delta == null) continue;
       const f = m[ev.code] || (m[ev.code] =
         {code: ev.code, name: ev.name, shares_delta: 0, etfs: []});
       // 與 outputs 一致:優先用校正後的主動調整估算
@@ -343,7 +348,7 @@ function renderEvents() {
     '</tr></thead><tbody>' + rows.map(e => {
       const dw = e.weight_delta, ds = e.shares_delta_pct;
       const dir = (e.type === 'ADD' || e.type === 'INCREASE') ? 'up' : 'down';
-      return '<tr><td data-l="ETF"><span class="mono">' + e.etf + '</span></td>' +
+      return '<tr><td data-l="ETF"><span class="mono">' + e.etf + '</span><br><small class="sub">' + esc(e.from_date || '—') + ' → ' + esc(e.to_date || '—') + '</small></td>' +
         '<td data-l="個股">' + stockCell(e.code, e.name) + '</td>' +
         '<td data-l="異動">' + pill(e.type) + '</td>' +
         '<td data-l="權重" class="num mono">' + (e.weight != null ? pct(e.weight) : pct(e.prev_weight)) + '</td>' +
@@ -469,6 +474,16 @@ function lookup(q) {
   const fuzzy = all.filter(([c, st]) => c !== q &&
     (c.includes(q) || (st.name || '').includes(q)));
   const pick = exact.length ? exact : fuzzy;
+  // 趨勢資料是另檔非同步載入;還沒載完就先等,免得把「已出清但有歷史」誤報成查無
+  const T = window.ETFTrends;
+  if (!pick.length && T && !T.settled && T.ready) {
+    $('#lookup').innerHTML = '<div class="note">歷史資料載入中…</div>';
+    T.ready.then(() => lookup(q)); return;
+  }
+  if (!pick.length && window.TREND_DATA && window.TREND_DATA.stocks[q]) {
+    window.ETFTrends.openStock(q);
+    $('#lookup').innerHTML = '<div class="note">此股目前未持有，已開啟歷史趨勢。</div>'; return;
+  }
   if (!pick.length) {
     $('#lookup').innerHTML = '<div class="empty">查無「' + esc(q) +
       '」——目前沒有主動式 ETF 持有,近期也沒有異動紀錄</div>';
@@ -508,7 +523,7 @@ function lookup(q) {
     ? '<h3 class="colh down" style="margin-top:1rem">已出清(不在上表)</h3>' +
       '<div class="scroll rt"><table><thead><tr><th>ETF</th><th>當日異動</th>' +
       '</tr></thead><tbody>' +
-      gone.map(e => '<tr><td data-l="ETF"><span class="mono">' + e.etf + '</span></td>' +
+      gone.map(e => '<tr><td data-l="ETF"><span class="mono">' + e.etf + '</span><br><small class="sub">' + esc(e.from_date || '—') + ' → ' + esc(e.to_date || '—') + '</small></td>' +
         '<td data-l="當日異動">' + pill(e.type) +
         ' <span style="color:var(--ink-mute);font-size:.72rem">' + e.date +
         '</span></td></tr>').join('') + '</tbody></table></div>'
@@ -523,7 +538,8 @@ function lookup(q) {
     ' <span class="hint" style="color:var(--ink-mute);font-size:.76rem">被 ' + rows.length +
     ' 檔持有 · 合計 ' + fmt(s.total_shares) + ' 股' + val +
     ' · 權重加總 ' + s.total_weight.toFixed(2) + '%(跨基金相加,非真實配置比例)' +
-    '</span></h2>' + cand + held + cleared;
+    '</span></h2>' + '<button type="button" class="trend-link" id="lookupTrend">查看累積加減碼趨勢</button>' + cand + held + cleared;
+  $('#lookupTrend').onclick = () => window.ETFTrends && window.ETFTrends.openStock(code);
 
   document.querySelectorAll('#lookup .cand').forEach(a => a.onclick = ev => {
     ev.preventDefault();
@@ -610,7 +626,10 @@ def build_id_of(active):
     # 排除 build_id 自身,否則「先算再塞回去」會讓後續重算得到不同結果
     payload = json.dumps({k: v for k, v in active.items() if k != "build_id"},
                          ensure_ascii=False, sort_keys=True)
-    return hashlib.sha256(payload.encode("utf-8")).hexdigest()[:12]
+    from pathlib import Path
+    assets = CSS + JS + Path(__file__).read_text()
+    assets += "".join((ASSETS / name).read_text() for name in ("trends_ui.js", "trends_ui.css", "trends_ui.html"))
+    return hashlib.sha256((payload + assets).encode("utf-8")).hexdigest()[:12]
 
 
 def render(active, registry):
@@ -686,7 +705,8 @@ def render(active, registry):
 <meta name="build-id" content="{build_id}">
 <title>台股主動式ETF追蹤 | Updated {date}</title>
 <!-- AUTO:DATE:{date} -->
-<style>{css}</style>
+<style>{css}
+{trend_css}</style>
 </head>
 <body>
 <header><div class="wrap">
@@ -706,7 +726,8 @@ def render(active, registry):
   <nav>
     <button class="on">今日異動</button>
     <button>各檔 ETF</button>
-    <button>個股反查</button>
+    <button>個股反查／趨勢</button>
+    <button>累積加減碼排行</button>
   </nav>
 
   <section>
@@ -736,7 +757,7 @@ def render(active, registry):
       <div id="events"></div>
       <div class="note" style="margin-top:.7rem">
         加碼/減碼已扣除申購贖回造成的等比例增減(以全體持股股數變化中位數校正),
-        只呈現經理人的主動調整;門檻為校正後股數變化 ≥5% 且權重變化 ≥0.1 個百分點。
+        呈現依持股差異推估的主動調整;門檻為校正後股數變化 ≥5% 且權重變化 ≥0.1 個百分點。
       </div>
     </div>
   </section>
@@ -752,9 +773,22 @@ def render(active, registry):
         <input id="lookupQ" placeholder="輸入股票代號或名稱,如 2330 或 台積電"></div>
       <div id="lookup"></div>
     </div>
+    {trend_panel}
     <div class="panel">
       <h2>共識持股排行<span class="hint">被最多檔主動式 ETF 同時持有的個股 Top 30</span></h2>
       <div id="ranking"></div>
+    </div>
+  </section>
+
+  <section style="display:none">
+    <div class="panel">
+      <h2>累積加減碼排行<span class="hint">固定樣本的淨調整估算；點個股看趨勢</span></h2>
+      <div class="trend-controls"><label for="trendRankWindow">比較期間</label>
+        <select id="trendRankWindow"><option value="5">近 5 日</option><option value="20" selected>近 20 日</option><option value="60">近 60 日</option><option value="all">全部可用歷史</option></select>
+        <label for="trendSort">排序</label><select id="trendSort"><option value="net">淨調整張數</option><option value="breadth">同方向 ETF 家數</option></select>
+        <label for="trendDirection">方向</label><select id="trendDirection"><option value="buy">淨增持</option><option value="sell">淨減持</option></select>
+      </div><p id="trendRankNote" class="note"></p><div id="trendRankTable"></div>
+      <p class="note">5 日與 20 日可能使用不同固定樣本，兩欄不可直接相減推算中間期間；請點個股檢查可比家數。</p>
     </div>
   </section>
 
@@ -767,13 +801,21 @@ def render(active, registry):
   <div class="visits" id="visits"></div>
 </div>
 <script>const DATA = {data};</script>
+<script>window.TREND_URL = {trend_url};</script>
 <script>{js}</script>
+<script>{trend_js}</script>
 </body>
 </html>
 """.format(date=date, css=CSS, build_id=active.get("build_id") or build_id_of(active), js=JS.replace("__NS__", COUNTER_NS),
+           trend_css=(ASSETS / "trends_ui.css").read_text(),
+           trend_js=(ASSETS / "trends_ui.js").read_text(),
+           trend_panel=(ASSETS / "trends_ui.html").read_text(),
+           # 趨勢資料另檔載入(內嵌曾讓 index.html 長到 12 MB);?v= 讓瀏覽器與 CDN
+           # 在內容變更時一定抓新檔
+           trend_url=json.dumps("data/stock_trends.json?v=" + (active.get("trend_build_id") or "")),
            chips=chips, opts=opts,
            stale_note=stale_note,
            n_etf=len(tracked), n_stock=len(active["stocks"]),
            n_events=n_events, n_cons=n_cons,
            z_events="" if n_events else " zero", z_cons="" if n_cons else " zero",
-           data=json.dumps(active, ensure_ascii=False, sort_keys=True))
+           data=json.dumps(active, ensure_ascii=False, sort_keys=True).replace("<", "\\u003c"))

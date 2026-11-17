@@ -1,0 +1,818 @@
+{
+ "current_events": 38,
+ "history_sha256": {
+  "data/history/2026-08-05.json": "5787c8b6a32762f23938179b730258baaa9c076145aa09c216fb8745b04a2c0d",
+  "data/history/2026-08-06.json": "4d9cbaba850dccf7ea39c1ecbb087504527d0f62fbcd3de10feb1958f409d203",
+  "data/history/2026-08-07.json": "e6b1cdfad942b3f0e23a949233c26ff51aa014d8e46d7652cfa2154d40a507f3",
+  "data/history/2026-08-10.json": "74d2979ade68ba3fc8f346f0deffc7e7b484ddff18ca8d81db10e6206117a5cb",
+  "data/history/2026-08-11.json": "f1b891f792d7f82015be072259693b036686db690d1486e5f3b8b3b7f0771e48",
+  "data/history/2026-08-12.json": "debcabf7112b4341d23802ae50ee47c69177d3af7d3234137e01bebe2bca487b",
+  "data/history/2026-08-13.json": "531909d96ec87df215158fdf7b7514f81d7314d76b2cfa3c6b6db8d99a97f63b",
+  "data/history/2026-08-14.json": "24b93f0c4610095105735289223b4529c20f0a695660c9395841b8d388ac0f93",
+  "data/history/2026-08-17.json": "f2f58e07dadc3755387da2dc81e147daef459a9f0d5e810e185d5f800829909f",
+  "data/history/2026-08-18.json": "299083f56a102aa66378d7ede04f81a94aa9b567cc9367a5a6f2bcfbeaa95997",
+  "data/history/2026-08-19.json": "9b9f8d4d918011df3c40cae8af6e7301485f0bec705c13dfd2b7727fece806d1",
+  "data/history/2026-08-20.json": "a2562ed130e3717ba0bdd14cbb990b0d1d5acb99c1fababae4b725d102f9eefa",
+  "data/history/2026-08-21.json": "67c5da280f46c1dcaa9a205d68f08d343a2690d069527d0efcb31e3eea92ade2",
+  "data/history/2026-08-24.json": "d2362bff7712d06c3efb4648f61d7592a0220bee58505f574528cffdec94ec4c",
+  "data/history/2026-08-25.json": "e61b804acd8ec1445d7bdf0f44b58afd20197771ad337313a9790e6d12019fe5",
+  "data/history/2026-08-26.json": "900f6bddc218812b31e3f62ff7ca900b60d77bccfaab279d493564b31d193eb1",
+  "data/history/2026-08-27.json": "194b204258a6808fdb94853f3574455c7ab229cc768e26af03226ddf5fd19f07",
+  "data/history/2026-08-28.json": "8d05f0c232c4809d955531fb7e715a6d575b7144358f09b4aede9322e12fb875",
+  "data/history/2026-08-31.json": "92bb9caa881d407d558fd9a0ed63ff0ae26ac69b311f545c1a419d6f947270e3",
+  "data/history/2026-09-01.json": "d25e63cd8f4bbe9ffc6ee7034490f7dd4a3234835bdb52daaec0dc097f6785ba",
+  "data/history/2026-09-02.json": "673f6955c9bb81313f3685aac5efece7037e7a9ba01a5734a1ec56794ba8e779",
+  "data/history/2026-09-03.json": "3a2aeab62522d96b4b1a3a4bb0d2e6be3236802cffa401a46a5b451026a1da57",
+  "data/history/2026-09-04.json": "6bb841a83a4cb883c85908992faf65a6f5f3dbd8bb74e3a0b23336f0cd242f70",
+  "data/history/2026-09-07.json": "787f2c5c3a7c31f605f2a9c47f40b14ef8f12893a9f46b367b38e6993de9eb3a",
+  "data/history/2026-09-08.json": "722601dff288766c2119670026f2ac1c8d13b1a2e5b415a251d45223316905eb",
+  "data/history/2026-09-09.json": "2a2f67f616f982a71f5b247acf15fb05ff3ca402dc971c3613172fee5e867aab",
+  "data/history/2026-09-10.json": "6c9cf403ccf813413ceb6ede93458a22da27b9e340fbcaddf01926c1a0d2e03e",
+  "data/history/2026-09-11.json": "5e3319bc4dc4cdb91b114ae9c789fec83c28c1442ebbde511d949780a1a45c92",
+  "data/history/2026-09-14.json": "854a75b14710544bd0b14da364c315c05cb795341b70381dd055d4dc812bedf7",
+  "data/history/2026-09-15.json": "edd45ed4508292942e3a0343b9173c778605ab55ddadd35899bc4019cb6120b6",
+  "data/history/2026-09-16.json": "42691191f07a487989fefcddee9fc150a22d40fb5de577a96fd888d4ecfffc96",
+  "data/history/2026-09-17.json": "66bf4c72f7793e5c080dc32631ca8deb31be5c37d56165f054b94fa00d59a6af",
+  "data/history/2026-09-18.json": "1bec5e873db6ffa3f4b16b1f8e8af544a14e15c9c031476624d880a86ec1b40c",
+  "data/history/2026-09-21.json": "22f5b489894dcc278fbec0e31435620c23a2bfcc8f608945b4452934c57572fb",
+  "data/history/2026-09-22.json": "ef45ab76386f1eed6350508d09373d967b8ee4ba9c9b248181a40f74246d9388",
+  "data/history/2026-09-23.json": "ad4739f66b2caea1486d933f4a714504149247249fd3c734990727ef6719f283",
+  "data/history/2026-09-24.json": "803fed1f95f9dfef25d84077b2a9fdbe72064f35a88596f3039c5937278adfa0",
+  "data/history/2026-09-29.json": "e1c8ec565a780599d5a8aa6156ceeec5ec13e1ab02bf177cb036202ad2435fdc",
+  "data/history/2026-09-30.json": "5154a76771a6f8974c041337cf7dc4ccfb6ab42ec32e90b3979415dc4bbf4ae2",
+  "data/history/2026-10-01.json": "129f37a026a6c21f69cd9de50438ed5121887c20fefa0a2715dbd00089454bea",
+  "data/history/2026-10-02.json": "7faa59acbf5871644b161628a4bf4a50206e2ab368aba3eb1b2e182f652bea19",
+  "data/history/2026-10-05.json": "e892b972ec83a99667d7783ce6567f7db5e884de1c77cb7ba4cf1bff1dca0e22",
+  "data/history/2026-10-06.json": "33c874805bcc0058c55c0b78f08ed1265f2d3034a302b7e96222011a3f0a607d",
+  "data/history/2026-10-07.json": "b07db02a646a7fdb5f219e94c481178a34cb8144888c87bf780c3dc553db4942",
+  "data/history/2026-10-08.json": "b3a9d7f3bdc075bafe7b196530e07dd40301a619217bc8598aa5593cb3b21d71",
+  "data/history/2026-10-12.json": "b65778a818806968743cadd93aca1d961332d7ff4bb7bbf478fcf50855f0e27d",
+  "data/history/2026-10-13.json": "52cfb5aa9dea58553b679407b054f9aaf58480fcd3ae6da5dc7f1d4f40cef27b",
+  "data/history/2026-10-14.json": "5657407e31b7feb154a1501826e31bfbc80f1a1d4f888cad9174d8a528ca0e5b",
+  "data/history/2026-10-15.json": "b820515a3d38b3415b1e8f3cd2e75366fc52c914afcc2474f837fad84a9c3c8a",
+  "data/history/2026-10-16.json": "2ccab1145201773be69286ecb496fbc379ec5fe739cdf8814c218ff8fcb1210f",
+  "data/history/2026-10-19.json": "40abf32cb01daf50d9e6647692d8e96eb3747dddf60b0ae9163e95520a20930d",
+  "data/history/2026-10-20.json": "5dbfbf546abbfad9df563c686b85ba986481c1f789791aeb826e52d781ea6430",
+  "data/history/2026-10-21.json": "89b848d5504080641ed853fc2df6c1d13035ccdee26c9483d1dd263193362311",
+  "data/history/2026-10-22.json": "b2857de1baf3c11ff6754641daec0f524e43d27e451222d4859497b3a5ac80f3",
+  "data/history/2026-10-27.json": "dbbe6f5e2dbf5f4d315e20794328d34a20958597f52131e1e6391395a88612ad",
+  "data/history/2026-10-28.json": "ccdfe45ffa0fbd01791491af310484b63ad6befb806ceb8038464d2711b51960",
+  "data/history/revisions/2026-10-08-0001.json": "9dc91a1346fa268a3d3292aff017f1e66b7c9ce2f279cc92af6dbd74ec09dba2",
+  "data/history/revisions/2026-10-08-0002.json": "bb58e4e50e7155ff7dc253f9411e9f258a3b5f3a0a4f567f36662eafb06ce08e",
+  "data/history/revisions/2026-10-08-0003.json": "5f7f65201033f810fea9195c6ae6e97a48270770564bf795b374bc8bf356dbb0",
+  "data/history/revisions/2026-10-12-0001.json": "db4b5cc62a5c41c5c8e4e0fa6ab4bef62aeda930b2a8bd478d5df1329113b379",
+  "data/history/revisions/2026-10-14-0001.json": "b966acbf94c145f01025c453e478b2226dadcdb2f02cc46cfb577807d1727d35",
+  "data/history/revisions/2026-10-19-0001.json": "cdaf58d5b8270ae65ce8e4509352c6fd74692d0cea86ad3283c6288bd7f589e6",
+  "data/history/revisions/2026-10-22-0001.json": "f29785dd13f623b94817b6a29486831eafc6a4eb3699ed0afa5510bd569f1c45",
+  "data/history/revisions/2026-10-22-0002.json": "9aa859b6452ad21c59299e6e63bcd8b399965dfdd9ef8efaaf49011e1ce5dd4d"
+ },
+ "legacy_stock_prices_without_dates": [],
+ "method": "median-v1",
+ "notes": [
+  "No raw history/perf_stats/registry modified.",
+  "Calendar is TWSE scheduled sessions; exceptional closures require an explicit update.",
+  "Legacy missing quote dates remain unknown; no historical amounts fabricated."
+ ],
+ "quality": {
+  "excluded_snapshots": [
+   {
+    "date": "2026-08-06",
+    "etf": "00406A",
+    "reason": "future_label",
+    "source": "2026-08-05.json"
+   },
+   {
+    "date": "2026-08-06",
+    "etf": "00407A",
+    "reason": "future_label",
+    "source": "2026-08-05.json"
+   },
+   {
+    "date": "2026-08-06",
+    "etf": "00410A",
+    "reason": "future_label",
+    "source": "2026-08-05.json"
+   },
+   {
+    "date": "2026-08-06",
+    "etf": "00981A",
+    "reason": "future_label",
+    "source": "2026-08-05.json"
+   },
+   {
+    "date": "2026-08-06",
+    "etf": "00982A",
+    "reason": "future_label",
+    "source": "2026-08-05.json"
+   },
+   {
+    "date": "2026-08-06",
+    "etf": "00987A",
+    "reason": "future_label",
+    "source": "2026-08-05.json"
+   },
+   {
+    "date": "2026-08-06",
+    "etf": "00992A",
+    "reason": "future_label",
+    "source": "2026-08-05.json"
+   },
+   {
+    "date": "2026-08-06",
+    "etf": "00995A",
+    "reason": "future_label",
+    "source": "2026-08-05.json"
+   },
+   {
+    "date": "2026-08-07",
+    "etf": "00987A",
+    "reason": "future_label",
+    "source": "2026-08-06.json"
+   },
+   {
+    "date": "2026-08-10",
+    "etf": "00987A",
+    "reason": "future_label",
+    "source": "2026-08-07.json"
+   },
+   {
+    "date": "2026-08-11",
+    "etf": "00987A",
+    "reason": "future_label",
+    "source": "2026-08-10.json"
+   },
+   {
+    "date": "2026-08-12",
+    "etf": "00987A",
+    "reason": "future_label",
+    "source": "2026-08-11.json"
+   },
+   {
+    "date": "2026-08-13",
+    "etf": "00987A",
+    "reason": "future_label",
+    "source": "2026-08-12.json"
+   },
+   {
+    "date": "2026-08-14",
+    "etf": "00987A",
+    "reason": "future_label",
+    "source": "2026-08-13.json"
+   },
+   {
+    "date": "2026-08-17",
+    "etf": "00987A",
+    "reason": "future_label",
+    "source": "2026-08-14.json"
+   },
+   {
+    "date": "2026-08-18",
+    "etf": "00987A",
+    "reason": "future_label",
+    "source": "2026-08-17.json"
+   },
+   {
+    "date": "2026-08-19",
+    "etf": "00987A",
+    "reason": "future_label",
+    "source": "2026-08-18.json"
+   },
+   {
+    "date": "2026-08-20",
+    "etf": "00987A",
+    "reason": "future_label",
+    "source": "2026-08-19.json"
+   },
+   {
+    "date": "2026-08-21",
+    "etf": "00987A",
+    "reason": "future_label",
+    "source": "2026-08-20.json"
+   },
+   {
+    "date": "2026-08-24",
+    "etf": "00400A",
+    "reason": "future_label",
+    "source": "2026-08-21.json"
+   },
+   {
+    "date": "2026-08-24",
+    "etf": "00406A",
+    "reason": "future_label",
+    "source": "2026-08-21.json"
+   },
+   {
+    "date": "2026-08-24",
+    "etf": "00407A",
+    "reason": "future_label",
+    "source": "2026-08-21.json"
+   },
+   {
+    "date": "2026-08-24",
+    "etf": "00987A",
+    "reason": "future_label",
+    "source": "2026-08-21.json"
+   },
+   {
+    "date": "2026-08-24",
+    "etf": "00995A",
+    "reason": "future_label",
+    "source": "2026-08-21.json"
+   },
+   {
+    "date": "2026-08-25",
+    "etf": "00987A",
+    "reason": "future_label",
+    "source": "2026-08-24.json"
+   },
+   {
+    "date": "2026-08-26",
+    "etf": "00987A",
+    "reason": "future_label",
+    "source": "2026-08-25.json"
+   },
+   {
+    "date": "2026-08-27",
+    "etf": "00987A",
+    "reason": "future_label",
+    "source": "2026-08-26.json"
+   },
+   {
+    "date": "2026-08-28",
+    "etf": "00987A",
+    "reason": "future_label",
+    "source": "2026-08-27.json"
+   },
+   {
+    "date": "2026-08-31",
+    "etf": "00987A",
+    "reason": "future_label",
+    "source": "2026-08-28.json"
+   },
+   {
+    "date": "2026-09-01",
+    "etf": "00987A",
+    "reason": "future_label",
+    "source": "2026-08-31.json"
+   },
+   {
+    "date": "2026-09-02",
+    "etf": "00987A",
+    "reason": "future_label",
+    "source": "2026-09-01.json"
+   },
+   {
+    "date": "2026-09-03",
+    "etf": "00987A",
+    "reason": "future_label",
+    "source": "2026-09-02.json"
+   },
+   {
+    "date": "2026-09-04",
+    "etf": "00987A",
+    "reason": "future_label",
+    "source": "2026-09-03.json"
+   },
+   {
+    "date": "2026-09-07",
+    "etf": "00987A",
+    "reason": "future_label",
+    "source": "2026-09-04.json"
+   },
+   {
+    "date": "2026-09-08",
+    "etf": "00987A",
+    "reason": "future_label",
+    "source": "2026-09-07.json"
+   },
+   {
+    "date": "2026-09-09",
+    "etf": "00987A",
+    "reason": "future_label",
+    "source": "2026-09-08.json"
+   },
+   {
+    "date": "2026-09-10",
+    "etf": "00987A",
+    "reason": "future_label",
+    "source": "2026-09-09.json"
+   }
+  ],
+  "limitations": [
+   "持股調整估算，非實際成交；公司行動僅有保守異常篩檢，未接完整調整資料。",
+   "固定樣本只包含視窗內完整資料；缺漏或疑似公司行動另行排除，不補零。"
+  ],
+  "revision_conflicts": 0,
+  "revisions": [],
+  "snapshot_count": 56
+ },
+ "source_head": "0b9643d",
+ "updated": "2026-10-28",
+ "windows": {
+  "20": {
+   "available": true,
+   "cohort_etfs": [
+    "00400A",
+    "00401A",
+    "00403A",
+    "00404A",
+    "00405A",
+    "00406A",
+    "00407A",
+    "00408A",
+    "00410A",
+    "00981A",
+    "00982A",
+    "00991A",
+    "00992A",
+    "00994A",
+    "00995A"
+   ],
+   "dates": [
+    "2026-09-24",
+    "2026-09-29",
+    "2026-09-30",
+    "2026-10-01",
+    "2026-10-02",
+    "2026-10-05",
+    "2026-10-06",
+    "2026-10-07",
+    "2026-10-08",
+    "2026-10-12",
+    "2026-10-13",
+    "2026-10-14",
+    "2026-10-15",
+    "2026-10-16",
+    "2026-10-19",
+    "2026-10-20",
+    "2026-10-21",
+    "2026-10-22",
+    "2026-10-27",
+    "2026-10-28"
+   ],
+   "excluded_etfs": [
+    {
+     "etf": "00415A",
+     "missing_dates": [
+      "2026-09-23",
+      "2026-09-24",
+      "2026-09-29",
+      "2026-09-30",
+      "2026-10-01",
+      "2026-10-02",
+      "2026-10-05",
+      "2026-10-06",
+      "2026-10-07",
+      "2026-10-08",
+      "2026-10-12",
+      "2026-10-13",
+      "2026-10-14",
+      "2026-10-15",
+      "2026-10-16",
+      "2026-10-19",
+      "2026-10-20"
+     ],
+     "reason": "missing_sessions"
+    },
+    {
+     "etf": "00980A",
+     "missing_dates": [
+      "2026-10-28"
+     ],
+     "reason": "missing_sessions"
+    },
+    {
+     "etf": "00984A",
+     "missing_dates": [
+      "2026-10-28"
+     ],
+     "reason": "missing_sessions"
+    },
+    {
+     "etf": "00985A",
+     "missing_dates": [
+      "2026-10-28"
+     ],
+     "reason": "missing_sessions"
+    },
+    {
+     "etf": "00987A",
+     "missing_dates": [
+      "2026-10-02"
+     ],
+     "reason": "missing_sessions"
+    },
+    {
+     "etf": "00993A",
+     "missing_dates": [
+      "2026-10-28"
+     ],
+     "reason": "missing_sessions"
+    },
+    {
+     "etf": "00999A",
+     "missing_dates": [
+      "2026-10-28"
+     ],
+     "reason": "missing_sessions"
+    }
+   ],
+   "expected_etf_count": 22,
+   "from_date": "2026-09-23",
+   "to_date": "2026-10-28"
+  },
+  "5": {
+   "available": true,
+   "cohort_etfs": [
+    "00400A",
+    "00401A",
+    "00403A",
+    "00404A",
+    "00405A",
+    "00406A",
+    "00407A",
+    "00408A",
+    "00410A",
+    "00981A",
+    "00982A",
+    "00987A",
+    "00991A",
+    "00992A",
+    "00994A",
+    "00995A"
+   ],
+   "dates": [
+    "2026-10-20",
+    "2026-10-21",
+    "2026-10-22",
+    "2026-10-27",
+    "2026-10-28"
+   ],
+   "excluded_etfs": [
+    {
+     "etf": "00415A",
+     "missing_dates": [
+      "2026-10-19",
+      "2026-10-20"
+     ],
+     "reason": "missing_sessions"
+    },
+    {
+     "etf": "00980A",
+     "missing_dates": [
+      "2026-10-28"
+     ],
+     "reason": "missing_sessions"
+    },
+    {
+     "etf": "00984A",
+     "missing_dates": [
+      "2026-10-28"
+     ],
+     "reason": "missing_sessions"
+    },
+    {
+     "etf": "00985A",
+     "missing_dates": [
+      "2026-10-28"
+     ],
+     "reason": "missing_sessions"
+    },
+    {
+     "etf": "00993A",
+     "missing_dates": [
+      "2026-10-28"
+     ],
+     "reason": "missing_sessions"
+    },
+    {
+     "etf": "00999A",
+     "missing_dates": [
+      "2026-10-28"
+     ],
+     "reason": "missing_sessions"
+    }
+   ],
+   "expected_etf_count": 22,
+   "from_date": "2026-10-19",
+   "to_date": "2026-10-28"
+  },
+  "60": {
+   "available": false,
+   "available_sessions": 55,
+   "reason": "insufficient_history"
+  },
+  "all": {
+   "available": true,
+   "cohort_etfs": [
+    "00403A",
+    "00405A"
+   ],
+   "dates": [
+    "2026-08-06",
+    "2026-08-07",
+    "2026-08-10",
+    "2026-08-11",
+    "2026-08-12",
+    "2026-08-13",
+    "2026-08-14",
+    "2026-08-17",
+    "2026-08-18",
+    "2026-08-19",
+    "2026-08-20",
+    "2026-08-21",
+    "2026-08-24",
+    "2026-08-25",
+    "2026-08-26",
+    "2026-08-27",
+    "2026-08-28",
+    "2026-08-31",
+    "2026-09-01",
+    "2026-09-02",
+    "2026-09-03",
+    "2026-09-04",
+    "2026-09-07",
+    "2026-09-08",
+    "2026-09-09",
+    "2026-09-10",
+    "2026-09-11",
+    "2026-09-14",
+    "2026-09-15",
+    "2026-09-16",
+    "2026-09-17",
+    "2026-09-18",
+    "2026-09-21",
+    "2026-09-22",
+    "2026-09-23",
+    "2026-09-24",
+    "2026-09-29",
+    "2026-09-30",
+    "2026-10-01",
+    "2026-10-02",
+    "2026-10-05",
+    "2026-10-06",
+    "2026-10-07",
+    "2026-10-08",
+    "2026-10-12",
+    "2026-10-13",
+    "2026-10-14",
+    "2026-10-15",
+    "2026-10-16",
+    "2026-10-19",
+    "2026-10-20",
+    "2026-10-21",
+    "2026-10-22",
+    "2026-10-27",
+    "2026-10-28"
+   ],
+   "excluded_etfs": [
+    {
+     "etf": "00400A",
+     "missing_dates": [
+      "2026-08-05",
+      "2026-08-21"
+     ],
+     "reason": "missing_sessions"
+    },
+    {
+     "etf": "00401A",
+     "missing_dates": [
+      "2026-08-05",
+      "2026-08-06"
+     ],
+     "reason": "missing_sessions"
+    },
+    {
+     "etf": "00404A",
+     "missing_dates": [
+      "2026-08-05",
+      "2026-08-06",
+      "2026-08-17",
+      "2026-08-20"
+     ],
+     "reason": "missing_sessions"
+    },
+    {
+     "etf": "00406A",
+     "missing_dates": [
+      "2026-08-05",
+      "2026-08-21"
+     ],
+     "reason": "missing_sessions"
+    },
+    {
+     "etf": "00407A",
+     "missing_dates": [
+      "2026-08-05",
+      "2026-08-21"
+     ],
+     "reason": "missing_sessions"
+    },
+    {
+     "etf": "00408A",
+     "missing_dates": [
+      "2026-08-05",
+      "2026-08-06"
+     ],
+     "reason": "missing_sessions"
+    },
+    {
+     "etf": "00410A",
+     "missing_dates": [
+      "2026-08-05"
+     ],
+     "reason": "missing_sessions"
+    },
+    {
+     "etf": "00415A",
+     "missing_dates": [
+      "2026-08-05",
+      "2026-08-06",
+      "2026-08-07",
+      "2026-08-10",
+      "2026-08-11",
+      "2026-08-12",
+      "2026-08-13",
+      "2026-08-14",
+      "2026-08-17",
+      "2026-08-18",
+      "2026-08-19",
+      "2026-08-20",
+      "2026-08-21",
+      "2026-08-24",
+      "2026-08-25",
+      "2026-08-26",
+      "2026-08-27",
+      "2026-08-28",
+      "2026-08-31",
+      "2026-09-01",
+      "2026-09-02",
+      "2026-09-03",
+      "2026-09-04",
+      "2026-09-07",
+      "2026-09-08",
+      "2026-09-09",
+      "2026-09-10",
+      "2026-09-11",
+      "2026-09-14",
+      "2026-09-15",
+      "2026-09-16",
+      "2026-09-17",
+      "2026-09-18",
+      "2026-09-21",
+      "2026-09-22",
+      "2026-09-23",
+      "2026-09-24",
+      "2026-09-29",
+      "2026-09-30",
+      "2026-10-01",
+      "2026-10-02",
+      "2026-10-05",
+      "2026-10-06",
+      "2026-10-07",
+      "2026-10-08",
+      "2026-10-12",
+      "2026-10-13",
+      "2026-10-14",
+      "2026-10-15",
+      "2026-10-16",
+      "2026-10-19",
+      "2026-10-20"
+     ],
+     "reason": "missing_sessions"
+    },
+    {
+     "etf": "00980A",
+     "missing_dates": [
+      "2026-08-17",
+      "2026-08-20",
+      "2026-09-14",
+      "2026-10-28"
+     ],
+     "reason": "missing_sessions"
+    },
+    {
+     "etf": "00981A",
+     "missing_dates": [
+      "2026-08-05"
+     ],
+     "reason": "missing_sessions"
+    },
+    {
+     "etf": "00982A",
+     "missing_dates": [
+      "2026-08-05"
+     ],
+     "reason": "missing_sessions"
+    },
+    {
+     "etf": "00984A",
+     "missing_dates": [
+      "2026-08-17",
+      "2026-08-20",
+      "2026-09-14",
+      "2026-10-28"
+     ],
+     "reason": "missing_sessions"
+    },
+    {
+     "etf": "00985A",
+     "missing_dates": [
+      "2026-08-17",
+      "2026-08-20",
+      "2026-09-14",
+      "2026-10-28"
+     ],
+     "reason": "missing_sessions"
+    },
+    {
+     "etf": "00987A",
+     "missing_dates": [
+      "2026-08-05",
+      "2026-08-06",
+      "2026-08-07",
+      "2026-08-10",
+      "2026-08-11",
+      "2026-08-12",
+      "2026-08-13",
+      "2026-08-14",
+      "2026-08-17",
+      "2026-08-18",
+      "2026-08-19",
+      "2026-08-20",
+      "2026-08-21",
+      "2026-08-24",
+      "2026-08-25",
+      "2026-08-26",
+      "2026-08-27",
+      "2026-08-28",
+      "2026-08-31",
+      "2026-09-01",
+      "2026-09-02",
+      "2026-09-03",
+      "2026-09-04",
+      "2026-09-07",
+      "2026-09-08",
+      "2026-09-09",
+      "2026-09-11",
+      "2026-10-02"
+     ],
+     "reason": "missing_sessions"
+    },
+    {
+     "etf": "00991A",
+     "missing_dates": [
+      "2026-09-04"
+     ],
+     "reason": "missing_sessions"
+    },
+    {
+     "etf": "00992A",
+     "missing_dates": [
+      "2026-08-05"
+     ],
+     "reason": "missing_sessions"
+    },
+    {
+     "etf": "00993A",
+     "missing_dates": [
+      "2026-08-17",
+      "2026-08-20",
+      "2026-09-14",
+      "2026-10-28"
+     ],
+     "reason": "missing_sessions"
+    },
+    {
+     "etf": "00994A",
+     "missing_dates": [
+      "2026-08-05",
+      "2026-08-06"
+     ],
+     "reason": "missing_sessions"
+    },
+    {
+     "etf": "00995A",
+     "missing_dates": [
+      "2026-08-05",
+      "2026-08-21"
+     ],
+     "reason": "missing_sessions"
+    },
+    {
+     "etf": "00999A",
+     "missing_dates": [
+      "2026-08-17",
+      "2026-08-20",
+      "2026-09-14",
+      "2026-10-28"
+     ],
+     "reason": "missing_sessions"
+    }
+   ],
+   "expected_etf_count": 22,
+   "from_date": "2026-08-05",
+   "to_date": "2026-10-28"
+  }
+ }
+}

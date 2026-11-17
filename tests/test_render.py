@@ -44,7 +44,7 @@ class RenderTests(unittest.TestCase):
     def test_three_tabs(self):
         for label in ("今日異動", "各檔 ETF", "個股反查"):
             self.assertIn(label, self.html)
-        self.assertEqual(self.html.count("<section"), 3)
+        self.assertEqual(self.html.count("<section"), 4)
 
     def test_data_embedded(self):
         self.assertIn("const DATA = {", self.html)

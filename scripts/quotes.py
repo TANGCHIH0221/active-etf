@@ -52,17 +52,28 @@ def parse_tpex_json(rows):
     return date_iso, out
 
 
+class QuoteMap(dict):
+    """Backward-compatible price mapping with explicit per-security provenance."""
+    def __init__(self, values=None, dates=None):
+        super().__init__(values or {})
+        self.dates = dates or {}
+
+
 def merge_quotes(twse, tpex, failed):
     """((date,dict) | None, (date,dict) | None, [失敗市場]) → (date, 合併 dict, 失敗清單)。
 
     日期以 TWSE 為準(上市股票佔絕大多數);TWSE 掛掉才退而用 TPEx 的日期。
     """
-    date_iso, out = None, {}
+    date_iso, out = None, QuoteMap()
     if twse:
-        date_iso, out = twse[0], dict(twse[1])
+        date_iso = twse[0]
+        out.update(twse[1])
+        out.dates.update({c: twse[0] for c in twse[1]})
     if tpex:
         for code, close in tpex[1].items():
-            out.setdefault(code, close)
+            if code not in out:
+                out[code] = close
+                out.dates[code] = tpex[0]
         date_iso = date_iso or tpex[0]
     return date_iso, out, failed
 

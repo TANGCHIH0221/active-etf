@@ -162,6 +162,20 @@ class StatusDerivationTests(unittest.TestCase):
             reg = registry.load_and_update(p, [])
             self.assertEqual(reg["00981A"]["status"], "disabled")
 
+    def test_empty_adapter_backfilled_when_issuer_added(self):
+        """偵測時投信未在對照表 → issuer/adapter 為空;對照表補上後要自動接上。"""
+        import tempfile
+        with tempfile.TemporaryDirectory() as tmp:
+            p = Path(tmp) / "reg.json"
+            p.write_text(json.dumps({"00413A": {
+                "code": "00413A", "name": "主動玉山關鍵科技", "market": "tw",
+                "issuer": "", "adapter": "", "status": "unsupported"}},
+                ensure_ascii=False))
+            reg = registry.load_and_update(p, [])
+            self.assertEqual(reg["00413A"]["issuer"], "玉山")
+            self.assertEqual(reg["00413A"]["adapter"], "esun")
+            self.assertEqual(reg["00413A"]["status"], "active")
+
 
 class ReclassifyUpdatesInMemoryTests(unittest.TestCase):
     """改判必須改到傳入的 reg 本身,否則本次執行的 active.json 仍是舊分類。"""

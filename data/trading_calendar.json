@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "coverage_start": "2026-08-01",
+  "coverage_end": "2026-12-31",
+  "verified_on": "2026-10-29",
+  "source": "https://wwwc.twse.com.tw/zh/trading/holiday.html",
+  "corroborating_source": "https://www.tpex.org.tw/storage/eb_data/11509/11503027221.html",
+  "note": "TWSE 115 年例行休市表；臨時休市需補入 closed_dates，不以缺快照自動推定休市。未涵蓋的年度降級為觀測日。",
+  "closed_dates": [
+    "2026-09-25",
+    "2026-09-28",
+    "2026-10-09",
+    "2026-10-23",
+    "2026-10-26",
+    "2026-12-25"
+  ],
+  "open_dates": [],
+  "exceptional_closures": [
+    {
+      "date": "2026-10-23",
+      "reason": "薔琵颱風：集中交易市場全日休市",
+      "source": "https://investoredu.twse.com.tw/FileSystem/FileUpload/c91c7dff-afb0-42cc-9949-9f072bece31d.pdf",
+      "announced_on": "2026-10-22"
+    }
+  ]
+}
